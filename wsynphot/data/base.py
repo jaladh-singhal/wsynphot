@@ -3,11 +3,8 @@ import os
 
 import requests
 from tqdm.autonotebook import tqdm
-from wsynphot.config import get_data_dir
 
-
-
-FILTER_DATA_FPATH = os.path.join(get_data_dir(), 'filter_data.h5')
+FILTER_DATA_PATH = os.path.join(os.path.dirname(__file__), 'filter_data.h5')
 
 DATA_TRANSMISSION_URL = ("https://zenodo.org/record/1467309/files/"
                          "filter_data.h5?download=1")
@@ -24,7 +21,6 @@ def download_from_url(url, dst):
     @param: url to download file
     @param: dst place to put the file
     """
-
     file_size = int(requests.head(url).headers["Content-Length"])
     if os.path.exists(dst):
         first_byte = os.path.getsize(dst)
@@ -49,12 +45,12 @@ def download_from_url(url, dst):
 
 
 def download_filter_data():
-    if os.path.exists(FILTER_DATA_FPATH):
+    if os.path.exists(FILTER_DATA_PATH):
         print('Filter Data already exists - you can delete by '
               'calling wsynphot.delete_filter_data()')
-    download_from_url(DATA_TRANSMISSION_URL, FILTER_DATA_FPATH)
+    download_from_url(DATA_TRANSMISSION_URL, FILTER_DATA_PATH)
 
 def delete_filter_data():
-    if not os.path.exists(FILTER_DATA_FPATH):
+    if not os.path.exists(FILTER_DATA_PATH):
         print('Filter Data does not exist - nothing to delete')
-    os.remove(FILTER_DATA_FPATH)
+    os.remove(FILTER_DATA_PATH)

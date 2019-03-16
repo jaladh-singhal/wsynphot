@@ -5,7 +5,7 @@ import os
 from scipy import interpolate
 from spectrum1d import SKSpectrum1D as Spectrum1D
 import pandas as pd
-from wsynphot.data.base import FILTER_DATA_FPATH
+from wsynphot.data.base import FILTER_DATA_PATH
 
 
 
@@ -63,12 +63,12 @@ def get_filter_index():
     """
     Get the index Dataframe for the Filters
     """
-    if not os.path.exists(FILTER_DATA_FPATH):
+    if not os.path.exists(FILTER_DATA_PATH):
         raise IOError('Filter Data does not exist at - {0} - please '
                       'download it by doing wsynphot.download_filter_data'
-                      '()'.format(FILTER_DATA_FPATH))
+                      '()'.format(FILTER_DATA_PATH))
 
-    filter_index = pd.read_hdf(FILTER_DATA_FPATH, 'index').set_index('wsynphot_filter_id')
+    filter_index = pd.read_hdf(FILTER_DATA_PATH, 'index').set_index('wsynphot_filter_id')
     return filter_index
 
 
@@ -114,16 +114,12 @@ class BaseFilterCurve(object):
 
 
         """
-        if not os.path.exists(FILTER_DATA_FPATH):
-            raise IOError('Filter Data does not exist at - {0} - please '
-                          'download it by doing wsynphot.download_filter_data'
-                          '()'.format(FILTER_DATA_FPATH))
         if filter_name is None:
-            filter_index = pd.read_hdf(FILTER_DATA_FPATH, 'index')
+            filter_index = get_filter_index()
             return filter_index
 
         else:
-            filter_store = HDFStore(FILTER_DATA_FPATH, mode='r')
+            filter_store = HDFStore(FILTER_DATA_PATH, mode='r')
             try:
                 filter = filter_store[filter_name]
             except KeyError:

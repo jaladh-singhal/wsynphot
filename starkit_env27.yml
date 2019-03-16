@@ -21,7 +21,7 @@ dependencies:
 # RTD requirements
 - nbformat
 - nbconvert
-- sphinx==1.5.6
+- sphinx
 
 #Coverage requirements
 - coverage=3.7.1
@@ -34,5 +34,4 @@ dependencies:
   - coveralls
   - numpydoc
   - docutils
-  - nbsphinx==0.3.5
-  
+  - nbsphinx
