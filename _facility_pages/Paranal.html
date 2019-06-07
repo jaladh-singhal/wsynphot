@@ -6,7 +6,7 @@
   <head>
     <meta http-equiv="X-UA-Compatible" content="IE=Edge" />
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-    <title>Filters of Observation Facility: Paranal &#8212; wsynphot v0.0.dev109</title>
+    <title>Filters of Observation Facility: Paranal &#8212; wsynphot v0.0.dev110</title>
     <link rel="stylesheet" href="../_static/bootstrap-astropy.css" type="text/css" />
     <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
     <link rel="stylesheet" type="text/css" href="../_static/graphviz.css" />
@@ -62,7 +62,7 @@
 	 |
       </li>
       <li>
-	<a href="../index.html">wsynphot v0.0.dev109</a>
+	<a href="../index.html">wsynphot v0.0.dev110</a>
 	 &#187;
       </li>
       <li><a href="../filter-list.html" accesskey="U">List of the available filters</a> &#187;</li>
@@ -82,62 +82,2416 @@
 <p>Following <strong>Instruments</strong> are present:</p>
 <div class="section" id="fors1">
 <h2>FORS1<a class="headerlink" href="#fors1" title="Permalink to this headline">¶</a></h2>
-<p>No. of filters = 13</p>
-<p>&lt;Table of Filters&gt;</p>
+<table border="1" class="docutils">
+<colgroup>
+<col width="9%" />
+<col width="9%" />
+<col width="9%" />
+<col width="9%" />
+<col width="9%" />
+<col width="9%" />
+<col width="9%" />
+<col width="9%" />
+<col width="9%" />
+<col width="9%" />
+<col width="9%" />
+</colgroup>
+<thead valign="bottom">
+<tr class="row-odd"><th class="head">wsynphot_filter_id</th>
+<th class="head">Filter ID</th>
+<th class="head">lambda_mean</th>
+<th class="head">lambda_eff</th>
+<th class="head">lambda_min</th>
+<th class="head">lambda_max</th>
+<th class="head">Weff</th>
+<th class="head">ZP (Jy)</th>
+<th class="head">Obs. Facility</th>
+<th class="head">Instrument</th>
+<th class="head">Description</th>
+</tr>
+</thead>
+<tbody valign="top">
+<tr class="row-even"><td>Paranal/FORS1/ESO1038</td>
+<td>Paranal/FORS1.ESO1038</td>
+<td>3498.6</td>
+<td>3500.2</td>
+<td>3123</td>
+<td>3862</td>
+<td>426.3</td>
+<td>1319.5</td>
+<td>Paranal</td>
+<td>FORS1</td>
+<td>FORS1 ESO#1038, Gunn u La</td>
+</tr>
+<tr class="row-odd"><td>Paranal/FORS1/ESO1033</td>
+<td>Paranal/FORS1.ESO1033</td>
+<td>3572.5</td>
+<td>3596.2</td>
+<td>3221</td>
+<td>3978</td>
+<td>470.6</td>
+<td>1510.2</td>
+<td>Paranal</td>
+<td>FORS1</td>
+<td>FORS1 ESO#1033, Bessell U</td>
+</tr>
+<tr class="row-even"><td>Paranal/FORS1/ESO1112</td>
+<td>Paranal/FORS1.ESO1112</td>
+<td>3602.9</td>
+<td>3632.2</td>
+<td>3172</td>
+<td>3910</td>
+<td>481.8</td>
+<td>1615.4</td>
+<td>Paranal</td>
+<td>FORS1</td>
+<td>FORS1 ESO#1112, u_High</td>
+</tr>
+<tr class="row-odd"><td>Paranal/FORS1/ESO1039</td>
+<td>Paranal/FORS1.ESO1039</td>
+<td>3930.3</td>
+<td>3973.1</td>
+<td>3487</td>
+<td>4616</td>
+<td>534.0</td>
+<td>3175.7</td>
+<td>Paranal</td>
+<td>FORS1</td>
+<td>FORS1 ESO#1039, Gunn v La</td>
+</tr>
+<tr class="row-even"><td>Paranal/FORS1/ESO1034</td>
+<td>Paranal/FORS1.ESO1034</td>
+<td>4246.5</td>
+<td>4243.0</td>
+<td>3531</td>
+<td>5123</td>
+<td>923.9</td>
+<td>3856.4</td>
+<td>Paranal</td>
+<td>FORS1</td>
+<td>FORS1 ESO#1034, Bessell B</td>
+</tr>
+<tr class="row-odd"><td>Paranal/FORS1/ESO1113</td>
+<td>Paranal/FORS1.ESO1113</td>
+<td>4390.0</td>
+<td>4353.2</td>
+<td>3788</td>
+<td>4951</td>
+<td>952.4</td>
+<td>4041.6</td>
+<td>Paranal</td>
+<td>FORS1</td>
+<td>FORS1 ESO#1113, b_High</td>
+</tr>
+<tr class="row-even"><td>Paranal/FORS1/ESO1115</td>
+<td>Paranal/FORS1.ESO1115</td>
+<td>4689.2</td>
+<td>4588.7</td>
+<td>3789</td>
+<td>5542</td>
+<td>1498.4</td>
+<td>3924.2</td>
+<td>Paranal</td>
+<td>FORS1</td>
+<td>FORS1 ESO#1115, g_High</td>
+</tr>
+<tr class="row-odd"><td>Paranal/FORS1/ESO1040</td>
+<td>Paranal/FORS1.ESO1040</td>
+<td>5092.8</td>
+<td>5065.2</td>
+<td>4626</td>
+<td>5595</td>
+<td>731.4</td>
+<td>3803.5</td>
+<td>Paranal</td>
+<td>FORS1</td>
+<td>FORS1 ESO#1040, Gunn g</td>
+</tr>
+<tr class="row-even"><td>Paranal/FORS1/ESO1035</td>
+<td>Paranal/FORS1.ESO1035</td>
+<td>5536.4</td>
+<td>5457.4</td>
+<td>4781</td>
+<td>6830</td>
+<td>1114.6</td>
+<td>3558.2</td>
+<td>Paranal</td>
+<td>FORS1</td>
+<td>FORS1 ESO#1035, Bessell V</td>
+</tr>
+<tr class="row-odd"><td>Paranal/FORS1/ESO1114</td>
+<td>Paranal/FORS1.ESO1114</td>
+<td>5558.5</td>
+<td>5490.8</td>
+<td>4814</td>
+<td>6315</td>
+<td>1186.8</td>
+<td>3554.3</td>
+<td>Paranal</td>
+<td>FORS1</td>
+<td>FORS1 ESO#1114, v_High</td>
+</tr>
+<tr class="row-even"><td>Paranal/FORS1/ESO1041</td>
+<td>Paranal/FORS1.ESO1041</td>
+<td>6520.8</td>
+<td>6489.6</td>
+<td>5959</td>
+<td>7407</td>
+<td>748.5</td>
+<td>2973.3</td>
+<td>Paranal</td>
+<td>FORS1</td>
+<td>FORS1 ESO#1041, Gunn r La</td>
+</tr>
+<tr class="row-odd"><td>Paranal/FORS1/ESO1036</td>
+<td>Paranal/FORS1.ESO1036</td>
+<td>6666.0</td>
+<td>6474.9</td>
+<td>5586</td>
+<td>9271</td>
+<td>1610.8</td>
+<td>2939.2</td>
+<td>Paranal</td>
+<td>FORS1</td>
+<td>FORS1 ESO#1036, Bessell R</td>
+</tr>
+<tr class="row-even"><td>Paranal/FORS1/ESO1037</td>
+<td>Paranal/FORS1.ESO1037</td>
+<td>7938.3</td>
+<td>7864.6</td>
+<td>6978</td>
+<td>8885</td>
+<td>1403.6</td>
+<td>2436.4</td>
+<td>Paranal</td>
+<td>FORS1</td>
+<td>FORS1 ESO#1037, Bessell I</td>
+</tr>
+</tbody>
+</table>
 <p>&lt;Plots&gt;</p>
 </div>
 <div class="section" id="fors2">
 <h2>FORS2<a class="headerlink" href="#fors2" title="Permalink to this headline">¶</a></h2>
-<p>No. of filters = 6</p>
-<p>&lt;Table of Filters&gt;</p>
+<table border="1" class="docutils">
+<colgroup>
+<col width="9%" />
+<col width="9%" />
+<col width="9%" />
+<col width="9%" />
+<col width="9%" />
+<col width="9%" />
+<col width="9%" />
+<col width="9%" />
+<col width="9%" />
+<col width="9%" />
+<col width="9%" />
+</colgroup>
+<thead valign="bottom">
+<tr class="row-odd"><th class="head">wsynphot_filter_id</th>
+<th class="head">Filter ID</th>
+<th class="head">lambda_mean</th>
+<th class="head">lambda_eff</th>
+<th class="head">lambda_min</th>
+<th class="head">lambda_max</th>
+<th class="head">Weff</th>
+<th class="head">ZP (Jy)</th>
+<th class="head">Obs. Facility</th>
+<th class="head">Instrument</th>
+<th class="head">Description</th>
+</tr>
+</thead>
+<tbody valign="top">
+<tr class="row-even"><td>Paranal/FORS2/ESO1073</td>
+<td>Paranal/FORS2.ESO1073</td>
+<td>3618.9</td>
+<td>3622.3</td>
+<td>3426</td>
+<td>3817</td>
+<td>268.0</td>
+<td>1393.1</td>
+<td>Paranal</td>
+<td>FORS2</td>
+<td>FORS2 ESO#1073, U Special</td>
+</tr>
+<tr class="row-odd"><td>Paranal/FORS2/ESO1074</td>
+<td>Paranal/FORS2.ESO1074</td>
+<td>4243.0</td>
+<td>4241.9</td>
+<td>3525</td>
+<td>5132</td>
+<td>944.1</td>
+<td>3830.4</td>
+<td>Paranal</td>
+<td>FORS2</td>
+<td>FORS2 ESO#1074, Bessell B</td>
+</tr>
+<tr class="row-even"><td>Paranal/FORS2/ESO1075</td>
+<td>Paranal/FORS2.ESO1075</td>
+<td>5503.5</td>
+<td>5432.3</td>
+<td>4783</td>
+<td>6730</td>
+<td>1051.6</td>
+<td>3579.9</td>
+<td>Paranal</td>
+<td>FORS2</td>
+<td>FORS2 ESO#1075, Bessell V</td>
+</tr>
+<tr class="row-odd"><td>Paranal/FORS2/ESO1076</td>
+<td>Paranal/FORS2.ESO1076</td>
+<td>6536.2</td>
+<td>6425.7</td>
+<td>5584</td>
+<td>7757</td>
+<td>1610.9</td>
+<td>2994.4</td>
+<td>Paranal</td>
+<td>FORS2</td>
+<td>FORS2 ESO#1076, Bessell R</td>
+</tr>
+<tr class="row-even"><td>Paranal/FORS2/ESO1077</td>
+<td>Paranal/FORS2.ESO1077</td>
+<td>7981.4</td>
+<td>7900.6</td>
+<td>6980</td>
+<td>9127</td>
+<td>1488.2</td>
+<td>2424.5</td>
+<td>Paranal</td>
+<td>FORS2</td>
+<td>FORS2 ESO#1077, Bessell I</td>
+</tr>
+<tr class="row-odd"><td>Paranal/FORS2/Gunn_z</td>
+<td>Paranal/FORS2.Gunn_z</td>
+<td>9175.5</td>
+<td>9109.2</td>
+<td>8106</td>
+<td>10993</td>
+<td>1305.4</td>
+<td>2233.7</td>
+<td>Paranal</td>
+<td>FORS2</td>
+<td>FORS2 Gunn_z + detector + atm.</td>
+</tr>
+</tbody>
+</table>
 <p>&lt;Plots&gt;</p>
 </div>
 <div class="section" id="hawki">
 <h2>HAWKI<a class="headerlink" href="#hawki" title="Permalink to this headline">¶</a></h2>
-<p>No. of filters = 10</p>
-<p>&lt;Table of Filters&gt;</p>
+<table border="1" class="docutils">
+<colgroup>
+<col width="9%" />
+<col width="9%" />
+<col width="9%" />
+<col width="9%" />
+<col width="9%" />
+<col width="9%" />
+<col width="9%" />
+<col width="9%" />
+<col width="9%" />
+<col width="9%" />
+<col width="9%" />
+</colgroup>
+<thead valign="bottom">
+<tr class="row-odd"><th class="head">wsynphot_filter_id</th>
+<th class="head">Filter ID</th>
+<th class="head">lambda_mean</th>
+<th class="head">lambda_eff</th>
+<th class="head">lambda_min</th>
+<th class="head">lambda_max</th>
+<th class="head">Weff</th>
+<th class="head">ZP (Jy)</th>
+<th class="head">Obs. Facility</th>
+<th class="head">Instrument</th>
+<th class="head">Description</th>
+</tr>
+</thead>
+<tbody valign="top">
+<tr class="row-even"><td>Paranal/HAWKI/Y</td>
+<td>Paranal/HAWKI.Y</td>
+<td>10201.6</td>
+<td>10171.8</td>
+<td>9488</td>
+<td>11004</td>
+<td>1015.7</td>
+<td>2092.9</td>
+<td>Paranal</td>
+<td>HAWKI</td>
+<td>HAWK-I Y</td>
+</tr>
+<tr class="row-odd"><td>Paranal/HAWKI/NB1060</td>
+<td>Paranal/HAWKI.NB1060</td>
+<td>10619.1</td>
+<td>10618.6</td>
+<td>10516</td>
+<td>10724</td>
+<td>103.6</td>
+<td>2003.3</td>
+<td>Paranal</td>
+<td>HAWKI</td>
+<td>HAWK-I NB1060</td>
+</tr>
+<tr class="row-even"><td>Paranal/HAWKI/NB1190</td>
+<td>Paranal/HAWKI.NB1190</td>
+<td>11864.4</td>
+<td>11863.8</td>
+<td>11717</td>
+<td>11994</td>
+<td>116.6</td>
+<td>1697.5</td>
+<td>Paranal</td>
+<td>HAWKI</td>
+<td>HAWK-I NB1190</td>
+</tr>
+<tr class="row-odd"><td>Paranal/HAWKI/J</td>
+<td>Paranal/HAWKI.J</td>
+<td>12583.9</td>
+<td>12522.3</td>
+<td>11582</td>
+<td>13602</td>
+<td>1524.2</td>
+<td>1543.5</td>
+<td>Paranal</td>
+<td>HAWKI</td>
+<td>HAWK-I J</td>
+</tr>
+<tr class="row-even"><td>Paranal/HAWKI/CH4</td>
+<td>Paranal/HAWKI.CH4</td>
+<td>15749.0</td>
+<td>15722.0</td>
+<td>14949</td>
+<td>16587</td>
+<td>1116.8</td>
+<td>1093.4</td>
+<td>Paranal</td>
+<td>HAWKI</td>
+<td>HAWK-I CH4</td>
+</tr>
+<tr class="row-odd"><td>Paranal/HAWKI/H</td>
+<td>Paranal/HAWKI.H</td>
+<td>16205.8</td>
+<td>16052.5</td>
+<td>14431</td>
+<td>18077</td>
+<td>2861.2</td>
+<td>1053.6</td>
+<td>Paranal</td>
+<td>HAWKI</td>
+<td>HAWK-I H</td>
+</tr>
+<tr class="row-even"><td>Paranal/HAWKI/NB2090</td>
+<td>Paranal/HAWKI.NB2090</td>
+<td>20954.6</td>
+<td>20953.9</td>
+<td>20767</td>
+<td>21133</td>
+<td>191.1</td>
+<td>706.7</td>
+<td>Paranal</td>
+<td>HAWKI</td>
+<td>HAWK-I NB2090</td>
+</tr>
+<tr class="row-odd"><td>Paranal/HAWKI/H2</td>
+<td>Paranal/HAWKI.H2</td>
+<td>21249.8</td>
+<td>21248.2</td>
+<td>20967</td>
+<td>21523</td>
+<td>297.1</td>
+<td>688.8</td>
+<td>Paranal</td>
+<td>HAWKI</td>
+<td>HAWK-I H2</td>
+</tr>
+<tr class="row-even"><td>Paranal/HAWKI/Ks</td>
+<td>Paranal/HAWKI.Ks</td>
+<td>21484.5</td>
+<td>21322.8</td>
+<td>19370</td>
+<td>23724</td>
+<td>3149.6</td>
+<td>675.3</td>
+<td>Paranal</td>
+<td>HAWKI</td>
+<td>HAWK-I Ks</td>
+</tr>
+<tr class="row-odd"><td>Paranal/HAWKI/BrGamma</td>
+<td>Paranal/HAWKI.BrGamma</td>
+<td>21645.2</td>
+<td>21642.9</td>
+<td>21358</td>
+<td>21890</td>
+<td>298.9</td>
+<td>638.9</td>
+<td>Paranal</td>
+<td>HAWKI</td>
+<td>HAWK-I BrGamma</td>
+</tr>
+</tbody>
+</table>
 <p>&lt;Plots&gt;</p>
 </div>
 <div class="section" id="isaac">
 <h2>ISAAC<a class="headerlink" href="#isaac" title="Permalink to this headline">¶</a></h2>
-<p>No. of filters = 13</p>
-<p>&lt;Table of Filters&gt;</p>
+<table border="1" class="docutils">
+<colgroup>
+<col width="9%" />
+<col width="9%" />
+<col width="9%" />
+<col width="9%" />
+<col width="9%" />
+<col width="9%" />
+<col width="9%" />
+<col width="9%" />
+<col width="9%" />
+<col width="9%" />
+<col width="9%" />
+</colgroup>
+<thead valign="bottom">
+<tr class="row-odd"><th class="head">wsynphot_filter_id</th>
+<th class="head">Filter ID</th>
+<th class="head">lambda_mean</th>
+<th class="head">lambda_eff</th>
+<th class="head">lambda_min</th>
+<th class="head">lambda_max</th>
+<th class="head">Weff</th>
+<th class="head">ZP (Jy)</th>
+<th class="head">Obs. Facility</th>
+<th class="head">Instrument</th>
+<th class="head">Description</th>
+</tr>
+</thead>
+<tbody valign="top">
+<tr class="row-even"><td>Paranal/ISAAC/SZ</td>
+<td>Paranal/ISAAC.SZ</td>
+<td>10678.6</td>
+<td>10609.8</td>
+<td>9697</td>
+<td>11634</td>
+<td>1533.9</td>
+<td>1951.6</td>
+<td>Paranal</td>
+<td>ISAAC</td>
+<td>ISAAC SZ</td>
+</tr>
+<tr class="row-odd"><td>Paranal/ISAAC/Js</td>
+<td>Paranal/ISAAC.Js</td>
+<td>12492.2</td>
+<td>12427.9</td>
+<td>11210</td>
+<td>13571</td>
+<td>1522.9</td>
+<td>1559.0</td>
+<td>Paranal</td>
+<td>ISAAC</td>
+<td>ISAAC Js</td>
+</tr>
+<tr class="row-even"><td>Paranal/ISAAC/H</td>
+<td>Paranal/ISAAC.H</td>
+<td>16519.9</td>
+<td>16366.1</td>
+<td>14634</td>
+<td>18422</td>
+<td>2878.9</td>
+<td>1025.4</td>
+<td>Paranal</td>
+<td>ISAAC</td>
+<td>ISAAC H</td>
+</tr>
+<tr class="row-odd"><td>Paranal/ISAAC/NB207</td>
+<td>Paranal/ISAAC.NB207</td>
+<td>20688.2</td>
+<td>20685.7</td>
+<td>20252</td>
+<td>21112</td>
+<td>295.5</td>
+<td>722.9</td>
+<td>Paranal</td>
+<td>ISAAC</td>
+<td>ISAAC NB 2.07</td>
+</tr>
+<tr class="row-even"><td>Paranal/ISAAC/NB213</td>
+<td>Paranal/ISAAC.NB213</td>
+<td>21280.9</td>
+<td>21277.8</td>
+<td>20822</td>
+<td>21720</td>
+<td>310.8</td>
+<td>686.3</td>
+<td>Paranal</td>
+<td>ISAAC</td>
+<td>ISAAC NB 2.13</td>
+</tr>
+<tr class="row-odd"><td>Paranal/ISAAC/Ks</td>
+<td>Paranal/ISAAC.Ks</td>
+<td>21638.3</td>
+<td>21521.7</td>
+<td>19806</td>
+<td>23518</td>
+<td>2719.4</td>
+<td>665.8</td>
+<td>Paranal</td>
+<td>ISAAC</td>
+<td>ISAAC Ks</td>
+</tr>
+<tr class="row-even"><td>Paranal/ISAAC/NB217</td>
+<td>Paranal/ISAAC.NB217</td>
+<td>21685.8</td>
+<td>21684.0</td>
+<td>21239</td>
+<td>22115</td>
+<td>301.0</td>
+<td>637.9</td>
+<td>Paranal</td>
+<td>ISAAC</td>
+<td>ISAAC NB 2.17</td>
+</tr>
+<tr class="row-odd"><td>Paranal/ISAAC/NB229</td>
+<td>Paranal/ISAAC.NB229</td>
+<td>22862.6</td>
+<td>22859.9</td>
+<td>22394</td>
+<td>23323</td>
+<td>324.0</td>
+<td>606.5</td>
+<td>Paranal</td>
+<td>ISAAC</td>
+<td>ISAAC NB 2.29</td>
+</tr>
+<tr class="row-even"><td>Paranal/ISAAC/NB328</td>
+<td>Paranal/ISAAC.NB328</td>
+<td>32762.0</td>
+<td>32752.7</td>
+<td>31951</td>
+<td>33636</td>
+<td>574.3</td>
+<td>317.0</td>
+<td>Paranal</td>
+<td>ISAAC</td>
+<td>ISAAC NB 3.28</td>
+</tr>
+<tr class="row-odd"><td>Paranal/ISAAC/L</td>
+<td>Paranal/ISAAC.L</td>
+<td>37787.8</td>
+<td>37485.2</td>
+<td>34233</td>
+<td>41449</td>
+<td>5767.6</td>
+<td>247.2</td>
+<td>Paranal</td>
+<td>ISAAC</td>
+<td>ISAAC L</td>
+</tr>
+<tr class="row-even"><td>Paranal/ISAAC/NB380</td>
+<td>Paranal/ISAAC.NB380</td>
+<td>38037.7</td>
+<td>38031.5</td>
+<td>37282</td>
+<td>38859</td>
+<td>672.7</td>
+<td>243.7</td>
+<td>Paranal</td>
+<td>ISAAC</td>
+<td>ISAAC NB 3.80</td>
+</tr>
+<tr class="row-odd"><td>Paranal/ISAAC/NB407</td>
+<td>Paranal/ISAAC.NB407</td>
+<td>40678.1</td>
+<td>40672.5</td>
+<td>39626</td>
+<td>41771</td>
+<td>750.5</td>
+<td>213.1</td>
+<td>Paranal</td>
+<td>ISAAC</td>
+<td>ISAAC NB 4.07</td>
+</tr>
+<tr class="row-even"><td>Paranal/ISAAC/NBm</td>
+<td>Paranal/ISAAC.NBm</td>
+<td>46567.7</td>
+<td>46555.6</td>
+<td>45561</td>
+<td>47675</td>
+<td>1015.9</td>
+<td>164.5</td>
+<td>Paranal</td>
+<td>ISAAC</td>
+<td>ISAAC NB M</td>
+</tr>
+</tbody>
+</table>
 <p>&lt;Plots&gt;</p>
 </div>
 <div class="section" id="naco">
 <h2>NACO<a class="headerlink" href="#naco" title="Permalink to this headline">¶</a></h2>
-<p>No. of filters = 34</p>
-<p>&lt;Table of Filters&gt;</p>
+<table border="1" class="docutils">
+<colgroup>
+<col width="9%" />
+<col width="9%" />
+<col width="9%" />
+<col width="9%" />
+<col width="9%" />
+<col width="9%" />
+<col width="9%" />
+<col width="9%" />
+<col width="9%" />
+<col width="9%" />
+<col width="9%" />
+</colgroup>
+<thead valign="bottom">
+<tr class="row-odd"><th class="head">wsynphot_filter_id</th>
+<th class="head">Filter ID</th>
+<th class="head">lambda_mean</th>
+<th class="head">lambda_eff</th>
+<th class="head">lambda_min</th>
+<th class="head">lambda_max</th>
+<th class="head">Weff</th>
+<th class="head">ZP (Jy)</th>
+<th class="head">Obs. Facility</th>
+<th class="head">Instrument</th>
+<th class="head">Description</th>
+</tr>
+</thead>
+<tbody valign="top">
+<tr class="row-even"><td>Paranal/NACO/NB104</td>
+<td>Paranal/NACO.NB104</td>
+<td>10467.5</td>
+<td>10466.7</td>
+<td>10360</td>
+<td>10580</td>
+<td>139.2</td>
+<td>2046.8</td>
+<td>Paranal</td>
+<td>NACO</td>
+<td>NACO NB 1.04</td>
+</tr>
+<tr class="row-odd"><td>Paranal/NACO/NB108</td>
+<td>Paranal/NACO.NB108</td>
+<td>10902.0</td>
+<td>10898.6</td>
+<td>10780</td>
+<td>11040</td>
+<td>148.9</td>
+<td>1780.0</td>
+<td>Paranal</td>
+<td>NACO</td>
+<td>NACO NB 1.08, He I</td>
+</tr>
+<tr class="row-even"><td>Paranal/NACO/NB109</td>
+<td>Paranal/NACO.NB109</td>
+<td>10967.3</td>
+<td>10968.7</td>
+<td>10840</td>
+<td>11100</td>
+<td>143.4</td>
+<td>1738.6</td>
+<td>Paranal</td>
+<td>NACO</td>
+<td>NACO NB 1.09, Pγ</td>
+</tr>
+<tr class="row-odd"><td>Paranal/NACO/NB124</td>
+<td>Paranal/NACO.NB124</td>
+<td>12441.2</td>
+<td>12440.5</td>
+<td>12320</td>
+<td>12580</td>
+<td>144.0</td>
+<td>1583.1</td>
+<td>Paranal</td>
+<td>NACO</td>
+<td>NACO NB 1.24</td>
+</tr>
+<tr class="row-even"><td>Paranal/NACO/NB126</td>
+<td>Paranal/NACO.NB126</td>
+<td>12588.9</td>
+<td>12588.2</td>
+<td>12460</td>
+<td>12720</td>
+<td>146.1</td>
+<td>1551.6</td>
+<td>Paranal</td>
+<td>NACO</td>
+<td>NACO NB 1.26, [Fe II]</td>
+</tr>
+<tr class="row-odd"><td>Paranal/NACO/J</td>
+<td>Paranal/NACO.J</td>
+<td>12650.9</td>
+<td>12477.5</td>
+<td>10600</td>
+<td>14400</td>
+<td>2438.3</td>
+<td>1537.5</td>
+<td>Paranal</td>
+<td>NACO</td>
+<td>NACO J</td>
+</tr>
+<tr class="row-even"><td>Paranal/NACO/NB128</td>
+<td>Paranal/NACO.NB128</td>
+<td>12856.1</td>
+<td>12857.6</td>
+<td>12740</td>
+<td>12980</td>
+<td>145.4</td>
+<td>1391.1</td>
+<td>Paranal</td>
+<td>NACO</td>
+<td>NACO NB 1.28, Pβ</td>
+</tr>
+<tr class="row-odd"><td>Paranal/NACO/NB164</td>
+<td>Paranal/NACO.NB164</td>
+<td>16509.7</td>
+<td>16511.2</td>
+<td>16360</td>
+<td>16660</td>
+<td>182.1</td>
+<td>1027.4</td>
+<td>Paranal</td>
+<td>NACO</td>
+<td>NACO NB 1.64, [Fe II]</td>
+</tr>
+<tr class="row-even"><td>Paranal/NACO/H</td>
+<td>Paranal/NACO.H</td>
+<td>16588.1</td>
+<td>16372.5</td>
+<td>14400</td>
+<td>18800</td>
+<td>3380.6</td>
+<td>1018.8</td>
+<td>Paranal</td>
+<td>NACO</td>
+<td>NACO H</td>
+</tr>
+<tr class="row-odd"><td>Paranal/NACO/NB175</td>
+<td>Paranal/NACO.NB175</td>
+<td>17536.2</td>
+<td>17536.2</td>
+<td>17340</td>
+<td>17740</td>
+<td>246.9</td>
+<td>948.8</td>
+<td>Paranal</td>
+<td>NACO</td>
+<td>NACO NB 1.75</td>
+</tr>
+<tr class="row-even"><td>Paranal/NACO/IB200</td>
+<td>Paranal/NACO.IB200</td>
+<td>20045.3</td>
+<td>20039.0</td>
+<td>19600</td>
+<td>20500</td>
+<td>589.3</td>
+<td>763.8</td>
+<td>Paranal</td>
+<td>NACO</td>
+<td>NACO IB 2.00</td>
+</tr>
+<tr class="row-odd"><td>Paranal/NACO/IB203</td>
+<td>Paranal/NACO.IB203</td>
+<td>20326.2</td>
+<td>20319.5</td>
+<td>19840</td>
+<td>20800</td>
+<td>614.7</td>
+<td>745.6</td>
+<td>Paranal</td>
+<td>NACO</td>
+<td>NACO IB 2.03</td>
+</tr>
+<tr class="row-even"><td>Paranal/NACO/IB206</td>
+<td>Paranal/NACO.IB206</td>
+<td>20632.4</td>
+<td>20625.6</td>
+<td>20160</td>
+<td>21100</td>
+<td>608.4</td>
+<td>726.4</td>
+<td>Paranal</td>
+<td>NACO</td>
+<td>NACO IB 2.06</td>
+</tr>
+<tr class="row-odd"><td>Paranal/NACO/IB209</td>
+<td>Paranal/NACO.IB209</td>
+<td>20982.7</td>
+<td>20975.6</td>
+<td>20500</td>
+<td>21460</td>
+<td>609.0</td>
+<td>704.9</td>
+<td>Paranal</td>
+<td>NACO</td>
+<td>NACO IB 2.09</td>
+</tr>
+<tr class="row-even"><td>Paranal/NACO/NB212</td>
+<td>Paranal/NACO.NB212</td>
+<td>21261.7</td>
+<td>21260.8</td>
+<td>21060</td>
+<td>21460</td>
+<td>229.1</td>
+<td>688.0</td>
+<td>Paranal</td>
+<td>NACO</td>
+<td>NACO NB 2.12, H2 (1-0) S(1)</td>
+</tr>
+<tr class="row-odd"><td>Paranal/NACO/IB212</td>
+<td>Paranal/NACO.IB212</td>
+<td>21315.7</td>
+<td>21309.6</td>
+<td>20900</td>
+<td>21740</td>
+<td>527.0</td>
+<td>682.5</td>
+<td>Paranal</td>
+<td>NACO</td>
+<td>NACO IB 2.12</td>
+</tr>
+<tr class="row-even"><td>Paranal/NACO/Ks</td>
+<td>Paranal/NACO.Ks</td>
+<td>21449.5</td>
+<td>21240.6</td>
+<td>19000</td>
+<td>24200</td>
+<td>3610.0</td>
+<td>677.4</td>
+<td>Paranal</td>
+<td>NACO</td>
+<td>NACO Ks</td>
+</tr>
+<tr class="row-odd"><td>Paranal/NACO/IB215</td>
+<td>Paranal/NACO.IB215</td>
+<td>21589.1</td>
+<td>21582.3</td>
+<td>21160</td>
+<td>22020</td>
+<td>544.3</td>
+<td>654.8</td>
+<td>Paranal</td>
+<td>NACO</td>
+<td>NACO IB 2.15</td>
+</tr>
+<tr class="row-even"><td>Paranal/NACO/NB217</td>
+<td>Paranal/NACO.NB217</td>
+<td>21714.2</td>
+<td>21715.3</td>
+<td>21500</td>
+<td>21920</td>
+<td>231.4</td>
+<td>631.1</td>
+<td>Paranal</td>
+<td>NACO</td>
+<td>NACO NB 2.17, Brγ</td>
+</tr>
+<tr class="row-odd"><td>Paranal/NACO/IB218</td>
+<td>Paranal/NACO.IB218</td>
+<td>21893.8</td>
+<td>21892.8</td>
+<td>21460</td>
+<td>22320</td>
+<td>547.2</td>
+<td>641.5</td>
+<td>Paranal</td>
+<td>NACO</td>
+<td>NACO IB 2.18</td>
+</tr>
+<tr class="row-even"><td>Paranal/NACO/IB221</td>
+<td>Paranal/NACO.IB221</td>
+<td>22167.1</td>
+<td>22161.8</td>
+<td>21700</td>
+<td>22600</td>
+<td>546.2</td>
+<td>639.9</td>
+<td>Paranal</td>
+<td>NACO</td>
+<td>NACO IB 2.21</td>
+</tr>
+<tr class="row-odd"><td>Paranal/NACO/IB224</td>
+<td>Paranal/NACO.IB224</td>
+<td>22435.9</td>
+<td>22430.8</td>
+<td>22000</td>
+<td>22880</td>
+<td>542.4</td>
+<td>626.9</td>
+<td>Paranal</td>
+<td>NACO</td>
+<td>NACO IB 2.24</td>
+</tr>
+<tr class="row-even"><td>Paranal/NACO/IB227</td>
+<td>Paranal/NACO.IB227</td>
+<td>22756.8</td>
+<td>22751.2</td>
+<td>22320</td>
+<td>23220</td>
+<td>567.6</td>
+<td>611.5</td>
+<td>Paranal</td>
+<td>NACO</td>
+<td>NACO IB 2.27</td>
+</tr>
+<tr class="row-odd"><td>Paranal/NACO/IB230</td>
+<td>Paranal/NACO.IB230</td>
+<td>23130.4</td>
+<td>23124.8</td>
+<td>22620</td>
+<td>23600</td>
+<td>581.7</td>
+<td>594.5</td>
+<td>Paranal</td>
+<td>NACO</td>
+<td>NACO IB 2.30</td>
+</tr>
+<tr class="row-even"><td>Paranal/NACO/IB233</td>
+<td>Paranal/NACO.IB233</td>
+<td>23427.8</td>
+<td>23422.2</td>
+<td>22920</td>
+<td>23940</td>
+<td>593.0</td>
+<td>581.6</td>
+<td>Paranal</td>
+<td>NACO</td>
+<td>NACO IB 2.33</td>
+</tr>
+<tr class="row-odd"><td>Paranal/NACO/IB236</td>
+<td>Paranal/NACO.IB236</td>
+<td>23711.3</td>
+<td>23705.8</td>
+<td>23220</td>
+<td>24180</td>
+<td>572.5</td>
+<td>569.6</td>
+<td>Paranal</td>
+<td>NACO</td>
+<td>NACO IB 2.36</td>
+</tr>
+<tr class="row-even"><td>Paranal/NACO/IB239</td>
+<td>Paranal/NACO.IB239</td>
+<td>23965.4</td>
+<td>23959.8</td>
+<td>23480</td>
+<td>24480</td>
+<td>599.6</td>
+<td>558.9</td>
+<td>Paranal</td>
+<td>NACO</td>
+<td>NACO IB 2.39</td>
+</tr>
+<tr class="row-odd"><td>Paranal/NACO/IB242</td>
+<td>Paranal/NACO.IB242</td>
+<td>24312.1</td>
+<td>24306.3</td>
+<td>23840</td>
+<td>24780</td>
+<td>602.6</td>
+<td>544.7</td>
+<td>Paranal</td>
+<td>NACO</td>
+<td>NACO IB 2.42</td>
+</tr>
+<tr class="row-even"><td>Paranal/NACO/IB245</td>
+<td>Paranal/NACO.IB245</td>
+<td>24594.1</td>
+<td>24587.7</td>
+<td>24100</td>
+<td>25120</td>
+<td>615.2</td>
+<td>533.2</td>
+<td>Paranal</td>
+<td>NACO</td>
+<td>NACO IB 2.45</td>
+</tr>
+<tr class="row-odd"><td>Paranal/NACO/IB248</td>
+<td>Paranal/NACO.IB248</td>
+<td>24924.5</td>
+<td>24918.3</td>
+<td>24420</td>
+<td>25480</td>
+<td>617.4</td>
+<td>520.1</td>
+<td>Paranal</td>
+<td>NACO</td>
+<td>NACO IB 2.48</td>
+</tr>
+<tr class="row-even"><td>Paranal/NACO/NB374</td>
+<td>Paranal/NACO.NB374</td>
+<td>37448.0</td>
+<td>37445.3</td>
+<td>36802</td>
+<td>38087</td>
+<td>477.9</td>
+<td>245.0</td>
+<td>Paranal</td>
+<td>NACO</td>
+<td>NACO NB 3.74</td>
+</tr>
+<tr class="row-odd"><td>Paranal/NACO/Lp</td>
+<td>Paranal/NACO.Lp</td>
+<td>38050.3</td>
+<td>37697.8</td>
+<td>34000</td>
+<td>42700</td>
+<td>6236.3</td>
+<td>244.2</td>
+<td>Paranal</td>
+<td>NACO</td>
+<td>NACO L’</td>
+</tr>
+<tr class="row-even"><td>Paranal/NACO/NB405</td>
+<td>Paranal/NACO.NB405</td>
+<td>40558.6</td>
+<td>40555.4</td>
+<td>39878</td>
+<td>41242</td>
+<td>616.4</td>
+<td>213.1</td>
+<td>Paranal</td>
+<td>NACO</td>
+<td>NACO NB 4.05</td>
+</tr>
+<tr class="row-odd"><td>Paranal/NACO/Mp</td>
+<td>Paranal/NACO.Mp</td>
+<td>47809.7</td>
+<td>47554.6</td>
+<td>43900</td>
+<td>52100</td>
+<td>5922.2</td>
+<td>159.7</td>
+<td>Paranal</td>
+<td>NACO</td>
+<td>NACO M’</td>
+</tr>
+</tbody>
+</table>
 <p>&lt;Plots&gt;</p>
 </div>
 <div class="section" id="omegacam">
 <h2>OmegaCAM<a class="headerlink" href="#omegacam" title="Permalink to this headline">¶</a></h2>
-<p>No. of filters = 17</p>
-<p>&lt;Table of Filters&gt;</p>
+<table border="1" class="docutils">
+<colgroup>
+<col width="9%" />
+<col width="9%" />
+<col width="9%" />
+<col width="9%" />
+<col width="9%" />
+<col width="9%" />
+<col width="9%" />
+<col width="9%" />
+<col width="9%" />
+<col width="9%" />
+<col width="9%" />
+</colgroup>
+<thead valign="bottom">
+<tr class="row-odd"><th class="head">wsynphot_filter_id</th>
+<th class="head">Filter ID</th>
+<th class="head">lambda_mean</th>
+<th class="head">lambda_eff</th>
+<th class="head">lambda_min</th>
+<th class="head">lambda_max</th>
+<th class="head">Weff</th>
+<th class="head">ZP (Jy)</th>
+<th class="head">Obs. Facility</th>
+<th class="head">Instrument</th>
+<th class="head">Description</th>
+</tr>
+</thead>
+<tbody valign="top">
+<tr class="row-even"><td>Paranal/OmegaCAM/u_CAL</td>
+<td>Paranal/OmegaCAM.u_CAL</td>
+<td>3521.6</td>
+<td>3535.5</td>
+<td>3150</td>
+<td>3891</td>
+<td>553.2</td>
+<td>1414.0</td>
+<td>Paranal</td>
+<td>OmegaCAM</td>
+<td>VST, OmegaCAM u_SDSS calibration filter. Central transmission.</td>
+</tr>
+<tr class="row-odd"><td>Paranal/OmegaCAM/u_SDSS</td>
+<td>Paranal/OmegaCAM.u_SDSS</td>
+<td>3581.8</td>
+<td>3607.9</td>
+<td>3207</td>
+<td>4003</td>
+<td>482.7</td>
+<td>1550.8</td>
+<td>Paranal</td>
+<td>OmegaCAM</td>
+<td>VST, OmegaCAM u_SDSS_ filter. Central transmission.</td>
+</tr>
+<tr class="row-even"><td>Paranal/OmegaCAM/v_strom</td>
+<td>Paranal/OmegaCAM.v_strom</td>
+<td>4144.9</td>
+<td>4144.8</td>
+<td>3959</td>
+<td>4362</td>
+<td>207.6</td>
+<td>4281.2</td>
+<td>Paranal</td>
+<td>OmegaCAM</td>
+<td>VST, OmegaCAM v_strom filter. Central transmission.</td>
+</tr>
+<tr class="row-odd"><td>Paranal/OmegaCAM/B</td>
+<td>Paranal/OmegaCAM.B</td>
+<td>4435.3</td>
+<td>4394.0</td>
+<td>3783</td>
+<td>5007</td>
+<td>866.6</td>
+<td>4037.7</td>
+<td>Paranal</td>
+<td>OmegaCAM</td>
+<td>VST, OmegaCAM B filter. Average of central transmission in the four quadrants.</td>
+</tr>
+<tr class="row-even"><td>Paranal/OmegaCAM/g_SDSS</td>
+<td>Paranal/OmegaCAM.g_SDSS</td>
+<td>4760.1</td>
+<td>4679.5</td>
+<td>3913</td>
+<td>5573</td>
+<td>1203.4</td>
+<td>3960.5</td>
+<td>Paranal</td>
+<td>OmegaCAM</td>
+<td>VST, OmegaCAM g_SDSS_ filter. Central transmission.</td>
+</tr>
+<tr class="row-odd"><td>Paranal/OmegaCAM/g_CAL</td>
+<td>Paranal/OmegaCAM.g_CAL</td>
+<td>4816.7</td>
+<td>4735.1</td>
+<td>4049</td>
+<td>5527</td>
+<td>1164.9</td>
+<td>3946.6</td>
+<td>Paranal</td>
+<td>OmegaCAM</td>
+<td>VST, OmegaCAM g_SDSS calibration filter. Central transmission.</td>
+</tr>
+<tr class="row-even"><td>Paranal/OmegaCAM/V</td>
+<td>Paranal/OmegaCAM.V</td>
+<td>5527.4</td>
+<td>5483.1</td>
+<td>4928</td>
+<td>6102</td>
+<td>908.2</td>
+<td>3580.6</td>
+<td>Paranal</td>
+<td>OmegaCAM</td>
+<td>VST, OmegaCAM V filter. Average of central transmission in the four quadrants.</td>
+</tr>
+<tr class="row-odd"><td>Paranal/OmegaCAM/r_CAL</td>
+<td>Paranal/OmegaCAM.r_CAL</td>
+<td>6255.4</td>
+<td>6164.5</td>
+<td>5409</td>
+<td>7070</td>
+<td>1410.6</td>
+<td>3132.3</td>
+<td>Paranal</td>
+<td>OmegaCAM</td>
+<td>VST, OmegaCAM r_SDSS calibration filter. Central transmission.</td>
+</tr>
+<tr class="row-even"><td>Paranal/OmegaCAM/r_SDSS</td>
+<td>Paranal/OmegaCAM.r_SDSS</td>
+<td>6325.9</td>
+<td>6241.9</td>
+<td>5405</td>
+<td>7245</td>
+<td>1313.5</td>
+<td>3094.7</td>
+<td>Paranal</td>
+<td>OmegaCAM</td>
+<td>VST, OmegaCAM r_SDSS_ filter. Central transmission.</td>
+</tr>
+<tr class="row-odd"><td>Paranal/OmegaCAM/Halpha_D</td>
+<td>Paranal/OmegaCAM.Halpha-D</td>
+<td>6588.0</td>
+<td>6589.8</td>
+<td>6482</td>
+<td>6698</td>
+<td>108.9</td>
+<td>2669.3</td>
+<td>Paranal</td>
+<td>OmegaCAM</td>
+<td>VST, OmegaCAM Halpha filter. Quadrant D. Redshift z=0.03. Central transmission.</td>
+</tr>
+<tr class="row-even"><td>Paranal/OmegaCAM/Halpha</td>
+<td>Paranal/OmegaCAM.Halpha</td>
+<td>6588.8</td>
+<td>6590.8</td>
+<td>6493</td>
+<td>6683</td>
+<td>103.8</td>
+<td>2659.4</td>
+<td>Paranal</td>
+<td>OmegaCAM</td>
+<td>OmegaCAM Halpha filter for VPHAS+</td>
+</tr>
+<tr class="row-odd"><td>Paranal/OmegaCAM/Halpha_C</td>
+<td>Paranal/OmegaCAM.Halpha-C</td>
+<td>6656.0</td>
+<td>6656.0</td>
+<td>6548</td>
+<td>6771</td>
+<td>113.1</td>
+<td>2929.1</td>
+<td>Paranal</td>
+<td>OmegaCAM</td>
+<td>VST, OmegaCAM Halpha filter. Quadrant C. Redshift z=0.02. Central transmission.</td>
+</tr>
+<tr class="row-even"><td>Paranal/OmegaCAM/Halpha_B</td>
+<td>Paranal/OmegaCAM.Halpha-B</td>
+<td>6721.3</td>
+<td>6720.7</td>
+<td>6609</td>
+<td>6841</td>
+<td>115.3</td>
+<td>2931.1</td>
+<td>Paranal</td>
+<td>OmegaCAM</td>
+<td>VST, OmegaCAM Halpha filter. Quadrant B. Redshift z=0.01. Central transmission.</td>
+</tr>
+<tr class="row-odd"><td>Paranal/OmegaCAM/Halpha_A</td>
+<td>Paranal/OmegaCAM.Halpha-A</td>
+<td>6789.4</td>
+<td>6788.7</td>
+<td>6675</td>
+<td>6910</td>
+<td>118.6</td>
+<td>2903.5</td>
+<td>Paranal</td>
+<td>OmegaCAM</td>
+<td>VST, OmegaCAM Halpha filter. Quadrant A. Redshift z=0. Central transmission.</td>
+</tr>
+<tr class="row-even"><td>Paranal/OmegaCAM/i_SDSS</td>
+<td>Paranal/OmegaCAM.i_SDSS</td>
+<td>7598.6</td>
+<td>7508.6</td>
+<td>6580</td>
+<td>8741</td>
+<td>1463.8</td>
+<td>2563.8</td>
+<td>Paranal</td>
+<td>OmegaCAM</td>
+<td>VST, OmegaCAM i_SDSS_ filter. Central transmission.</td>
+</tr>
+<tr class="row-odd"><td>Paranal/OmegaCAM/i_CAL</td>
+<td>Paranal/OmegaCAM.i_CAL</td>
+<td>7635.0</td>
+<td>7553.1</td>
+<td>6778</td>
+<td>8585</td>
+<td>1387.2</td>
+<td>2550.2</td>
+<td>Paranal</td>
+<td>OmegaCAM</td>
+<td>VST, OmegaCAM i_SDSS calibration filter. Central transmission.</td>
+</tr>
+<tr class="row-even"><td>Paranal/OmegaCAM/z_SDSS</td>
+<td>Paranal/OmegaCAM.z_SDSS</td>
+<td>8908.1</td>
+<td>8884.5</td>
+<td>8186</td>
+<td>9875</td>
+<td>864.7</td>
+<td>2255.7</td>
+<td>Paranal</td>
+<td>OmegaCAM</td>
+<td>VST, OmegaCAM z_SDSS_ filter. Central transmission.</td>
+</tr>
+</tbody>
+</table>
 <p>&lt;Plots&gt;</p>
 </div>
 <div class="section" id="sphere">
 <h2>SPHERE<a class="headerlink" href="#sphere" title="Permalink to this headline">¶</a></h2>
-<p>No. of filters = 46</p>
-<p>&lt;Table of Filters&gt;</p>
+<table border="1" class="docutils">
+<colgroup>
+<col width="9%" />
+<col width="9%" />
+<col width="9%" />
+<col width="9%" />
+<col width="9%" />
+<col width="9%" />
+<col width="9%" />
+<col width="9%" />
+<col width="9%" />
+<col width="9%" />
+<col width="9%" />
+</colgroup>
+<thead valign="bottom">
+<tr class="row-odd"><th class="head">wsynphot_filter_id</th>
+<th class="head">Filter ID</th>
+<th class="head">lambda_mean</th>
+<th class="head">lambda_eff</th>
+<th class="head">lambda_min</th>
+<th class="head">lambda_max</th>
+<th class="head">Weff</th>
+<th class="head">ZP (Jy)</th>
+<th class="head">Obs. Facility</th>
+<th class="head">Instrument</th>
+<th class="head">Description</th>
+</tr>
+</thead>
+<tbody valign="top">
+<tr class="row-even"><td>Paranal/SPHERE/ZIMPOL_V_S</td>
+<td>Paranal/SPHERE.ZIMPOL_V_S</td>
+<td>5312.0</td>
+<td>5305.2</td>
+<td>5061</td>
+<td>5583</td>
+<td>338.2</td>
+<td>3716.9</td>
+<td>Paranal</td>
+<td>SPHERE</td>
+<td>ZIMPOL V_S filter</td>
+</tr>
+<tr class="row-odd"><td>Paranal/SPHERE/ZIMPOL_V</td>
+<td>Paranal/SPHERE.ZIMPOL_V</td>
+<td>5554.1</td>
+<td>5525.0</td>
+<td>5014</td>
+<td>6081</td>
+<td>771.8</td>
+<td>3562.4</td>
+<td>Paranal</td>
+<td>SPHERE</td>
+<td>ZIMPOL V filter</td>
+</tr>
+<tr class="row-even"><td>Paranal/SPHERE/ZIMPOL_V_L</td>
+<td>Paranal/SPHERE.ZIMPOL_V_L</td>
+<td>5815.3</td>
+<td>5807.4</td>
+<td>5535</td>
+<td>6109</td>
+<td>407.3</td>
+<td>3409.2</td>
+<td>Paranal</td>
+<td>SPHERE</td>
+<td>ZIMPOL V_L filter</td>
+</tr>
+<tr class="row-odd"><td>Paranal/SPHERE/ZIMPOL_HeI</td>
+<td>Paranal/SPHERE.ZIMPOL_HeI</td>
+<td>5876.1</td>
+<td>5875.8</td>
+<td>5810</td>
+<td>5950</td>
+<td>54.9</td>
+<td>3369.8</td>
+<td>Paranal</td>
+<td>SPHERE</td>
+<td>ZIMPOL HeI filter</td>
+</tr>
+<tr class="row-even"><td>Paranal/SPHERE/ZIMPOL_R_PRIM</td>
+<td>Paranal/SPHERE.ZIMPOL_R_PRIM</td>
+<td>6278.1</td>
+<td>6187.4</td>
+<td>5410</td>
+<td>7090</td>
+<td>1425.4</td>
+<td>3120.8</td>
+<td>Paranal</td>
+<td>SPHERE</td>
+<td>ZIMPOL R_PRIM filter</td>
+</tr>
+<tr class="row-odd"><td>Paranal/SPHERE/ZIMPOL_OI_630</td>
+<td>Paranal/SPHERE.ZIMPOL_OI_630</td>
+<td>6294.8</td>
+<td>6294.6</td>
+<td>6230</td>
+<td>6360</td>
+<td>54.6</td>
+<td>3145.3</td>
+<td>Paranal</td>
+<td>SPHERE</td>
+<td>ZIMPOL OI_630 filter</td>
+</tr>
+<tr class="row-even"><td>Paranal/SPHERE/ZIMPOL_N_R</td>
+<td>Paranal/SPHERE.ZIMPOL_N_R</td>
+<td>6449.1</td>
+<td>6431.6</td>
+<td>6099</td>
+<td>6801</td>
+<td>590.9</td>
+<td>2993.9</td>
+<td>Paranal</td>
+<td>SPHERE</td>
+<td>ZIMPOL N_R filter</td>
+</tr>
+<tr class="row-odd"><td>Paranal/SPHERE/ZIMPOL_Cnt_Ha</td>
+<td>Paranal/SPHERE.ZIMPOL_Cnt_Ha</td>
+<td>6449.8</td>
+<td>6449.6</td>
+<td>6390</td>
+<td>6510</td>
+<td>43.9</td>
+<td>3052.6</td>
+<td>Paranal</td>
+<td>SPHERE</td>
+<td>ZIMPOL Cnt_Ha filter</td>
+</tr>
+<tr class="row-even"><td>Paranal/SPHERE/ZIMPOL_B_Ha</td>
+<td>Paranal/SPHERE.ZIMPOL_B_Ha</td>
+<td>6556.5</td>
+<td>6555.0</td>
+<td>6470</td>
+<td>6640</td>
+<td>59.3</td>
+<td>2477.4</td>
+<td>Paranal</td>
+<td>SPHERE</td>
+<td>ZIMPOL B_Ha filter</td>
+</tr>
+<tr class="row-odd"><td>Paranal/SPHERE/ZIMPOL_N_Ha</td>
+<td>Paranal/SPHERE.ZIMPOL_N_Ha</td>
+<td>6563.6</td>
+<td>6562.9</td>
+<td>6550</td>
+<td>6580</td>
+<td>13.0</td>
+<td>2040.5</td>
+<td>Paranal</td>
+<td>SPHERE</td>
+<td>ZIMPOL N_Ha filter</td>
+</tr>
+<tr class="row-even"><td>Paranal/SPHERE/ZIMPOL_TiO_717</td>
+<td>Paranal/SPHERE.ZIMPOL_TiO_717</td>
+<td>7170.8</td>
+<td>7168.9</td>
+<td>6988</td>
+<td>7370</td>
+<td>202.9</td>
+<td>2735.7</td>
+<td>Paranal</td>
+<td>SPHERE</td>
+<td>ZIMPOL TiO_717 filter</td>
+</tr>
+<tr class="row-odd"><td>Paranal/SPHERE/ZIMPOL_CH4_727</td>
+<td>Paranal/SPHERE.ZIMPOL_CH4_727</td>
+<td>7302.4</td>
+<td>7300.4</td>
+<td>7112</td>
+<td>7507</td>
+<td>205.7</td>
+<td>2682.4</td>
+<td>Paranal</td>
+<td>SPHERE</td>
+<td>ZIMPOL CH4_727 filter</td>
+</tr>
+<tr class="row-even"><td>Paranal/SPHERE/ZIMPOL_730_NB</td>
+<td>Paranal/SPHERE.ZIMPOL_730_NB</td>
+<td>7331.0</td>
+<td>7319.6</td>
+<td>6957</td>
+<td>7726</td>
+<td>548.6</td>
+<td>2669.9</td>
+<td>Paranal</td>
+<td>SPHERE</td>
+<td>ZIMPOL 730_NB filter</td>
+</tr>
+<tr class="row-odd"><td>Paranal/SPHERE/ZIMPOL_VBB</td>
+<td>Paranal/SPHERE.ZIMPOL_VBB</td>
+<td>7358.6</td>
+<td>7064.1</td>
+<td>5800</td>
+<td>8980</td>
+<td>2881.0</td>
+<td>2642.4</td>
+<td>Paranal</td>
+<td>SPHERE</td>
+<td>ZIMPOL VBB filter</td>
+</tr>
+<tr class="row-even"><td>Paranal/SPHERE/ZIMPOL_Cnt748</td>
+<td>Paranal/SPHERE.ZIMPOL_Cnt748</td>
+<td>7473.5</td>
+<td>7471.4</td>
+<td>7272</td>
+<td>7678</td>
+<td>210.2</td>
+<td>2612.6</td>
+<td>Paranal</td>
+<td>SPHERE</td>
+<td>ZIMPOL Cnt748 filter</td>
+</tr>
+<tr class="row-odd"><td>Paranal/SPHERE/ZIMPOL_KI</td>
+<td>Paranal/SPHERE.ZIMPOL_KI</td>
+<td>7700.3</td>
+<td>7698.2</td>
+<td>7497</td>
+<td>7909</td>
+<td>211.3</td>
+<td>2524.6</td>
+<td>Paranal</td>
+<td>SPHERE</td>
+<td>ZIMPOL KI filter</td>
+</tr>
+<tr class="row-even"><td>Paranal/SPHERE/ZIMPOL_I_PRIM</td>
+<td>Paranal/SPHERE.ZIMPOL_I_PRIM</td>
+<td>7844.0</td>
+<td>7753.2</td>
+<td>6910</td>
+<td>8790</td>
+<td>1631.2</td>
+<td>2469.4</td>
+<td>Paranal</td>
+<td>SPHERE</td>
+<td>ZIMPOL I_PRIM filter</td>
+</tr>
+<tr class="row-odd"><td>Paranal/SPHERE/ZIMPOL_Cnt820</td>
+<td>Paranal/SPHERE.ZIMPOL_Cnt820</td>
+<td>8174.1</td>
+<td>8172.5</td>
+<td>8003</td>
+<td>8364</td>
+<td>201.1</td>
+<td>2358.2</td>
+<td>Paranal</td>
+<td>SPHERE</td>
+<td>ZIMPOL Cnt820 filter</td>
+</tr>
+<tr class="row-even"><td>Paranal/SPHERE/ZIMPOL_N_I</td>
+<td>Paranal/SPHERE.ZIMPOL_N_I</td>
+<td>8183.5</td>
+<td>8159.5</td>
+<td>7598</td>
+<td>8851</td>
+<td>782.6</td>
+<td>2350.7</td>
+<td>Paranal</td>
+<td>SPHERE</td>
+<td>ZIMPOL N_I filter</td>
+</tr>
+<tr class="row-odd"><td>Paranal/SPHERE/ZIMPOL_I_L</td>
+<td>Paranal/SPHERE.ZIMPOL_I_L</td>
+<td>8702.3</td>
+<td>8696.8</td>
+<td>8239</td>
+<td>9139</td>
+<td>559.5</td>
+<td>2249.4</td>
+<td>Paranal</td>
+<td>SPHERE</td>
+<td>ZIMPOL I_L filter</td>
+</tr>
+<tr class="row-even"><td>Paranal/SPHERE/IRDIS_D_Y23_2</td>
+<td>Paranal/SPHERE.IRDIS_D_Y23_2</td>
+<td>10244.4</td>
+<td>10241.6</td>
+<td>9855</td>
+<td>10640</td>
+<td>491.4</td>
+<td>2053.9</td>
+<td>Paranal</td>
+<td>SPHERE</td>
+<td>IRDIS Y23_2 dual filter</td>
+</tr>
+<tr class="row-odd"><td>Paranal/SPHERE/IRDIS_B_Y</td>
+<td>Paranal/SPHERE.IRDIS_B_Y</td>
+<td>10414.8</td>
+<td>10355.8</td>
+<td>9476</td>
+<td>11392</td>
+<td>1351.8</td>
+<td>2018.7</td>
+<td>Paranal</td>
+<td>SPHERE</td>
+<td>IRDIS Y broad filter</td>
+</tr>
+<tr class="row-even"><td>Paranal/SPHERE/IRDIS_D_Y23_3</td>
+<td>Paranal/SPHERE.IRDIS_D_Y23_3</td>
+<td>10768.0</td>
+<td>10755.4</td>
+<td>10367</td>
+<td>11138</td>
+<td>520.2</td>
+<td>1910.0</td>
+<td>Paranal</td>
+<td>SPHERE</td>
+<td>IRDIS Y23_3 dual filter</td>
+</tr>
+<tr class="row-odd"><td>Paranal/SPHERE/IRDIS_N_HeI</td>
+<td>Paranal/SPHERE.IRDIS_N_HeI</td>
+<td>10851.2</td>
+<td>10847.8</td>
+<td>10689</td>
+<td>11022</td>
+<td>153.0</td>
+<td>1869.3</td>
+<td>Paranal</td>
+<td>SPHERE</td>
+<td>IRDIS HeI narrow filter</td>
+</tr>
+<tr class="row-even"><td>Paranal/SPHERE/IRDIS_D_J23_2</td>
+<td>Paranal/SPHERE.IRDIS_D_J23_2</td>
+<td>11868.1</td>
+<td>11862.7</td>
+<td>11504</td>
+<td>12239</td>
+<td>437.8</td>
+<td>1697.4</td>
+<td>Paranal</td>
+<td>SPHERE</td>
+<td>IRDIS J23_2 dual filter</td>
+</tr>
+<tr class="row-odd"><td>Paranal/SPHERE/IRDIS_N_CntJ</td>
+<td>Paranal/SPHERE.IRDIS_N_CntJ</td>
+<td>12126.8</td>
+<td>12125.8</td>
+<td>11942</td>
+<td>12320</td>
+<td>181.9</td>
+<td>1645.7</td>
+<td>Paranal</td>
+<td>SPHERE</td>
+<td>IRDIS CntJ narrow filter</td>
+</tr>
+<tr class="row-even"><td>Paranal/SPHERE/IRDIS_B_J</td>
+<td>Paranal/SPHERE.IRDIS_B_J</td>
+<td>12449.2</td>
+<td>12305.7</td>
+<td>10971</td>
+<td>13999</td>
+<td>2354.0</td>
+<td>1575.4</td>
+<td>Paranal</td>
+<td>SPHERE</td>
+<td>IRDIS J broad filter</td>
+</tr>
+<tr class="row-odd"><td>Paranal/SPHERE/IRDIS_D_J23_3</td>
+<td>Paranal/SPHERE.IRDIS_D_J23_3</td>
+<td>12693.5</td>
+<td>12683.8</td>
+<td>12292</td>
+<td>13100</td>
+<td>464.1</td>
+<td>1492.5</td>
+<td>Paranal</td>
+<td>SPHERE</td>
+<td>IRDIS J23_3 dual filter</td>
+</tr>
+<tr class="row-even"><td>Paranal/SPHERE/IRDIS_N_PaB</td>
+<td>Paranal/SPHERE.IRDIS_N_PaB</td>
+<td>12830.6</td>
+<td>12829.9</td>
+<td>12632</td>
+<td>13038</td>
+<td>190.0</td>
+<td>1411.5</td>
+<td>Paranal</td>
+<td>SPHERE</td>
+<td>IRDIS PaB narrow filter</td>
+</tr>
+<tr class="row-odd"><td>Paranal/SPHERE/IRDIS_N_CntH</td>
+<td>Paranal/SPHERE.IRDIS_N_CntH</td>
+<td>15732.8</td>
+<td>15731.2</td>
+<td>15480</td>
+<td>15993</td>
+<td>249.4</td>
+<td>1090.9</td>
+<td>Paranal</td>
+<td>SPHERE</td>
+<td>IRDIS CntH narrow filter</td>
+</tr>
+<tr class="row-even"><td>Paranal/SPHERE/IRDIS_D_ND_H23_2</td>
+<td>Paranal/SPHERE.IRDIS_D_ND-H23_2</td>
+<td>15863.3</td>
+<td>15856.9</td>
+<td>15445</td>
+<td>16293</td>
+<td>533.0</td>
+<td>1074.5</td>
+<td>Paranal</td>
+<td>SPHERE</td>
+<td>IRDIS ND-H23_2 dual filter</td>
+</tr>
+<tr class="row-odd"><td>Paranal/SPHERE/IRDIS_D_H23_2</td>
+<td>Paranal/SPHERE.IRDIS_D_H23_2</td>
+<td>15863.5</td>
+<td>15857.0</td>
+<td>15444</td>
+<td>16293</td>
+<td>533.8</td>
+<td>1074.4</td>
+<td>Paranal</td>
+<td>SPHERE</td>
+<td>IRDIS H23_2 dual filter</td>
+</tr>
+<tr class="row-even"><td>Paranal/SPHERE/IRDIS_B_H</td>
+<td>Paranal/SPHERE.IRDIS_B_H</td>
+<td>16255.8</td>
+<td>16098.9</td>
+<td>14464</td>
+<td>18278</td>
+<td>2861.4</td>
+<td>1049.4</td>
+<td>Paranal</td>
+<td>SPHERE</td>
+<td>IRDIS H broad filter</td>
+</tr>
+<tr class="row-odd"><td>Paranal/SPHERE/IRDIS_N_FeII</td>
+<td>Paranal/SPHERE.IRDIS_N_FeII</td>
+<td>16418.0</td>
+<td>16416.7</td>
+<td>16148</td>
+<td>16699</td>
+<td>263.7</td>
+<td>1019.3</td>
+<td>Paranal</td>
+<td>SPHERE</td>
+<td>IRDIS FeII narrow filter</td>
+</tr>
+<tr class="row-even"><td>Paranal/SPHERE/IRDIS_D_H34_3</td>
+<td>Paranal/SPHERE.IRDIS_D_H34_3</td>
+<td>16645.1</td>
+<td>16638.8</td>
+<td>16196</td>
+<td>17084</td>
+<td>551.6</td>
+<td>1003.9</td>
+<td>Paranal</td>
+<td>SPHERE</td>
+<td>IRDIS H34_3 dual filter</td>
+</tr>
+<tr class="row-odd"><td>Paranal/SPHERE/IRDIS_D_ND_H23_3</td>
+<td>Paranal/SPHERE.IRDIS_D_ND-H23_3</td>
+<td>16661.1</td>
+<td>16655.0</td>
+<td>16216</td>
+<td>17103</td>
+<td>560.6</td>
+<td>1004.3</td>
+<td>Paranal</td>
+<td>SPHERE</td>
+<td>IRDIS ND-H23_3 dual filter</td>
+</tr>
+<tr class="row-even"><td>Paranal/SPHERE/IRDIS_D_H23_3</td>
+<td>Paranal/SPHERE.IRDIS_D_H23_3</td>
+<td>16661.4</td>
+<td>16655.3</td>
+<td>16216</td>
+<td>17103</td>
+<td>561.7</td>
+<td>1004.3</td>
+<td>Paranal</td>
+<td>SPHERE</td>
+<td>IRDIS H23_3 dual filter</td>
+</tr>
+<tr class="row-odd"><td>Paranal/SPHERE/IRDIS_D_H34_4</td>
+<td>Paranal/SPHERE.IRDIS_D_H34_4</td>
+<td>17335.3</td>
+<td>17327.4</td>
+<td>16878</td>
+<td>17813</td>
+<td>590.3</td>
+<td>955.5</td>
+<td>Paranal</td>
+<td>SPHERE</td>
+<td>IRDIS H34_4 dual filter</td>
+</tr>
+<tr class="row-even"><td>Paranal/SPHERE/IRDIS_N_CntK1</td>
+<td>Paranal/SPHERE.IRDIS_N_CntK1</td>
+<td>20918.6</td>
+<td>20915.7</td>
+<td>20552</td>
+<td>21297</td>
+<td>351.4</td>
+<td>708.9</td>
+<td>Paranal</td>
+<td>SPHERE</td>
+<td>IRDIS CntK1 narrow filter</td>
+</tr>
+<tr class="row-odd"><td>Paranal/SPHERE/IRDIS_D_K12_1</td>
+<td>Paranal/SPHERE.IRDIS_D_K12_1</td>
+<td>21038.6</td>
+<td>21020.2</td>
+<td>20302</td>
+<td>21829</td>
+<td>1009.3</td>
+<td>700.6</td>
+<td>Paranal</td>
+<td>SPHERE</td>
+<td>IRDIS K12_1 dual filter</td>
+</tr>
+<tr class="row-even"><td>Paranal/SPHERE/IRDIS_N_H2</td>
+<td>Paranal/SPHERE.IRDIS_N_H2</td>
+<td>21235.5</td>
+<td>21233.0</td>
+<td>20874</td>
+<td>21595</td>
+<td>337.9</td>
+<td>689.6</td>
+<td>Paranal</td>
+<td>SPHERE</td>
+<td>IRDIS H2 narrow filter</td>
+</tr>
+<tr class="row-odd"><td>Paranal/SPHERE/IRDIS_N_BrG</td>
+<td>Paranal/SPHERE.IRDIS_N_BrG</td>
+<td>21700.7</td>
+<td>21699.7</td>
+<td>21344</td>
+<td>22058</td>
+<td>338.2</td>
+<td>639.2</td>
+<td>Paranal</td>
+<td>SPHERE</td>
+<td>IRDIS BrG narrow filter</td>
+</tr>
+<tr class="row-even"><td>Paranal/SPHERE/IRDIS_B_Ks</td>
+<td>Paranal/SPHERE.IRDIS_B_Ks</td>
+<td>21824.4</td>
+<td>21691.6</td>
+<td>19979</td>
+<td>23714</td>
+<td>2937.2</td>
+<td>656.4</td>
+<td>Paranal</td>
+<td>SPHERE</td>
+<td>IRDIS Ks broad filter</td>
+</tr>
+<tr class="row-odd"><td>Paranal/SPHERE/IRDIS_D_K12_2</td>
+<td>Paranal/SPHERE.IRDIS_D_K12_2</td>
+<td>22551.7</td>
+<td>22533.1</td>
+<td>21718</td>
+<td>23348</td>
+<td>1100.8</td>
+<td>621.3</td>
+<td>Paranal</td>
+<td>SPHERE</td>
+<td>IRDIS K12_2 dual filter</td>
+</tr>
+<tr class="row-even"><td>Paranal/SPHERE/IRDIS_N_CntK2</td>
+<td>Paranal/SPHERE.IRDIS_N_CntK2</td>
+<td>22657.5</td>
+<td>22655.3</td>
+<td>22292</td>
+<td>22997</td>
+<td>341.7</td>
+<td>616.1</td>
+<td>Paranal</td>
+<td>SPHERE</td>
+<td>IRDIS CntK2 narrow filter</td>
+</tr>
+<tr class="row-odd"><td>Paranal/SPHERE/IRDIS_N_CO</td>
+<td>Paranal/SPHERE.IRDIS_N_CO</td>
+<td>22898.9</td>
+<td>22896.3</td>
+<td>22516</td>
+<td>23287</td>
+<td>362.9</td>
+<td>604.9</td>
+<td>Paranal</td>
+<td>SPHERE</td>
+<td>IRDIS CO narrow filter</td>
+</tr>
+</tbody>
+</table>
 <p>&lt;Plots&gt;</p>
 </div>
 <div class="section" id="vimos">
 <h2>VIMOS<a class="headerlink" href="#vimos" title="Permalink to this headline">¶</a></h2>
-<p>No. of filters = 6</p>
-<p>&lt;Table of Filters&gt;</p>
+<table border="1" class="docutils">
+<colgroup>
+<col width="9%" />
+<col width="9%" />
+<col width="9%" />
+<col width="9%" />
+<col width="9%" />
+<col width="9%" />
+<col width="9%" />
+<col width="9%" />
+<col width="9%" />
+<col width="9%" />
+<col width="9%" />
+</colgroup>
+<thead valign="bottom">
+<tr class="row-odd"><th class="head">wsynphot_filter_id</th>
+<th class="head">Filter ID</th>
+<th class="head">lambda_mean</th>
+<th class="head">lambda_eff</th>
+<th class="head">lambda_min</th>
+<th class="head">lambda_max</th>
+<th class="head">Weff</th>
+<th class="head">ZP (Jy)</th>
+<th class="head">Obs. Facility</th>
+<th class="head">Instrument</th>
+<th class="head">Description</th>
+</tr>
+</thead>
+<tbody valign="top">
+<tr class="row-even"><td>Paranal/VIMOS/U</td>
+<td>Paranal/VIMOS.U</td>
+<td>3720.5</td>
+<td>3765.1</td>
+<td>3329</td>
+<td>4001</td>
+<td>375.5</td>
+<td>2131.3</td>
+<td>Paranal</td>
+<td>VIMOS</td>
+<td>VIMOS U filter. Total transmission. Average of 4 quadrants.</td>
+</tr>
+<tr class="row-odd"><td>Paranal/VIMOS/B</td>
+<td>Paranal/VIMOS.B</td>
+<td>4304.3</td>
+<td>4289.9</td>
+<td>3669</td>
+<td>4845</td>
+<td>859.1</td>
+<td>4020.6</td>
+<td>Paranal</td>
+<td>VIMOS</td>
+<td>VIMOS B filter. Total transmission. Average of 4 quadrants.</td>
+</tr>
+<tr class="row-even"><td>Paranal/VIMOS/V</td>
+<td>Paranal/VIMOS.V</td>
+<td>5450.2</td>
+<td>5413.9</td>
+<td>4872</td>
+<td>5969</td>
+<td>840.3</td>
+<td>3629.5</td>
+<td>Paranal</td>
+<td>VIMOS</td>
+<td>VIMOS V filter. Total transmission. Average of 4 quadrants.</td>
+</tr>
+<tr class="row-odd"><td>Paranal/VIMOS/R</td>
+<td>Paranal/VIMOS.R</td>
+<td>6449.7</td>
+<td>6375.5</td>
+<td>5608</td>
+<td>7231</td>
+<td>1286.3</td>
+<td>3031.5</td>
+<td>Paranal</td>
+<td>VIMOS</td>
+<td>VIMOS R filter. Total transmission. Average of 4 quadrants.</td>
+</tr>
+<tr class="row-even"><td>Paranal/VIMOS/I</td>
+<td>Paranal/VIMOS.I</td>
+<td>8129.0</td>
+<td>8027.3</td>
+<td>7124</td>
+<td>9359</td>
+<td>1430.9</td>
+<td>2403.4</td>
+<td>Paranal</td>
+<td>VIMOS</td>
+<td>VIMOS I filter. Total transmission. Average of 4 quadrants.</td>
+</tr>
+<tr class="row-odd"><td>Paranal/VIMOS/z</td>
+<td>Paranal/VIMOS.z</td>
+<td>9031.9</td>
+<td>8991.2</td>
+<td>8116</td>
+<td>10099</td>
+<td>1052.8</td>
+<td>2252.0</td>
+<td>Paranal</td>
+<td>VIMOS</td>
+<td>VIMOS z filter. Total transmission. Average of 4 quadrants.</td>
+</tr>
+</tbody>
+</table>
 <p>&lt;Plots&gt;</p>
 </div>
 <div class="section" id="visir">
 <h2>VISIR<a class="headerlink" href="#visir" title="Permalink to this headline">¶</a></h2>
-<p>No. of filters = 19</p>
-<p>&lt;Table of Filters&gt;</p>
+<table border="1" class="docutils">
+<colgroup>
+<col width="9%" />
+<col width="9%" />
+<col width="9%" />
+<col width="9%" />
+<col width="9%" />
+<col width="9%" />
+<col width="9%" />
+<col width="9%" />
+<col width="9%" />
+<col width="9%" />
+<col width="9%" />
+</colgroup>
+<thead valign="bottom">
+<tr class="row-odd"><th class="head">wsynphot_filter_id</th>
+<th class="head">Filter ID</th>
+<th class="head">lambda_mean</th>
+<th class="head">lambda_eff</th>
+<th class="head">lambda_min</th>
+<th class="head">lambda_max</th>
+<th class="head">Weff</th>
+<th class="head">ZP (Jy)</th>
+<th class="head">Obs. Facility</th>
+<th class="head">Instrument</th>
+<th class="head">Description</th>
+</tr>
+</thead>
+<tbody valign="top">
+<tr class="row-even"><td>Paranal/VISIR/J79</td>
+<td>Paranal/VISIR.J79</td>
+<td>77872.9</td>
+<td>77672.3</td>
+<td>72500</td>
+<td>84000</td>
+<td>5399.9</td>
+<td>62.9</td>
+<td>Paranal</td>
+<td>VISIR</td>
+<td>VISIR J7.9</td>
+</tr>
+<tr class="row-odd"><td>Paranal/VISIR/PAH1</td>
+<td>Paranal/VISIR.PAH1</td>
+<td>85984.5</td>
+<td>85872.5</td>
+<td>81290</td>
+<td>91286</td>
+<td>4313.6</td>
+<td>51.9</td>
+<td>Paranal</td>
+<td>VISIR</td>
+<td>VISIR PAH1</td>
+</tr>
+<tr class="row-even"><td>Paranal/VISIR/J89</td>
+<td>Paranal/VISIR.J89</td>
+<td>87183.5</td>
+<td>86912.3</td>
+<td>80545</td>
+<td>93255</td>
+<td>6980.8</td>
+<td>50.6</td>
+<td>Paranal</td>
+<td>VISIR</td>
+<td>VISIR J8.9</td>
+</tr>
+<tr class="row-odd"><td>Paranal/VISIR/B87</td>
+<td>Paranal/VISIR.B87</td>
+<td>88929.7</td>
+<td>88386.6</td>
+<td>79000</td>
+<td>98000</td>
+<td>9301.3</td>
+<td>48.8</td>
+<td>Paranal</td>
+<td>VISIR</td>
+<td>VISIR B8.7</td>
+</tr>
+<tr class="row-even"><td>Paranal/VISIR/ArIII</td>
+<td>Paranal/VISIR.ArIII</td>
+<td>89951.9</td>
+<td>89942.3</td>
+<td>88563</td>
+<td>91405</td>
+<td>1279.0</td>
+<td>47.8</td>
+<td>Paranal</td>
+<td>VISIR</td>
+<td>VISIR ArIII</td>
+</tr>
+<tr class="row-odd"><td>Paranal/VISIR/J98</td>
+<td>Paranal/VISIR.J98</td>
+<td>96054.2</td>
+<td>95689.0</td>
+<td>88399</td>
+<td>103802</td>
+<td>8795.7</td>
+<td>42.0</td>
+<td>Paranal</td>
+<td>VISIR</td>
+<td>VISIR J9.8</td>
+</tr>
+<tr class="row-even"><td>Paranal/VISIR/SIV_1</td>
+<td>Paranal/VISIR.SIV_1</td>
+<td>98624.9</td>
+<td>98606.7</td>
+<td>97040</td>
+<td>100450</td>
+<td>2016.8</td>
+<td>39.9</td>
+<td>Paranal</td>
+<td>VISIR</td>
+<td>VISIR SIV_1</td>
+</tr>
+<tr class="row-odd"><td>Paranal/VISIR/B97</td>
+<td>Paranal/VISIR.B97</td>
+<td>98747.0</td>
+<td>98358.8</td>
+<td>88608</td>
+<td>108302</td>
+<td>8452.2</td>
+<td>39.8</td>
+<td>Paranal</td>
+<td>VISIR</td>
+<td>VISIR B9.7</td>
+</tr>
+<tr class="row-even"><td>Paranal/VISIR/SIV</td>
+<td>Paranal/VISIR.SIV</td>
+<td>104560.5</td>
+<td>104546.0</td>
+<td>102925</td>
+<td>106228</td>
+<td>1617.4</td>
+<td>35.3</td>
+<td>Paranal</td>
+<td>VISIR</td>
+<td>VISIR SIV</td>
+</tr>
+<tr class="row-odd"><td>Paranal/VISIR/PAH2</td>
+<td>Paranal/VISIR.PAH2</td>
+<td>112690.5</td>
+<td>112515.7</td>
+<td>105980</td>
+<td>120284</td>
+<td>6068.3</td>
+<td>30.7</td>
+<td>Paranal</td>
+<td>VISIR</td>
+<td>VISIR PAH2</td>
+</tr>
+<tr class="row-even"><td>Paranal/VISIR/PAH2_2</td>
+<td>Paranal/VISIR.PAH2_2</td>
+<td>117412.3</td>
+<td>117365.8</td>
+<td>114810</td>
+<td>120534</td>
+<td>3560.4</td>
+<td>28.4</td>
+<td>Paranal</td>
+<td>VISIR</td>
+<td>VISIR PAH2_2</td>
+</tr>
+<tr class="row-odd"><td>Paranal/VISIR/SiC</td>
+<td>Paranal/VISIR.SiC</td>
+<td>117818.4</td>
+<td>116237.7</td>
+<td>100137</td>
+<td>133491</td>
+<td>21492.1</td>
+<td>28.3</td>
+<td>Paranal</td>
+<td>VISIR</td>
+<td>VISIR SiC</td>
+</tr>
+<tr class="row-even"><td>Paranal/VISIR/J122</td>
+<td>Paranal/VISIR.J122</td>
+<td>119417.1</td>
+<td>119292.2</td>
+<td>113000</td>
+<td>125503</td>
+<td>5382.4</td>
+<td>27.4</td>
+<td>Paranal</td>
+<td>VISIR</td>
+<td>VISIR J12.2</td>
+</tr>
+<tr class="row-odd"><td>Paranal/VISIR/NeII_1</td>
+<td>Paranal/VISIR.NeII_1</td>
+<td>122717.7</td>
+<td>122700.7</td>
+<td>121170</td>
+<td>124660</td>
+<td>1894.2</td>
+<td>25.9</td>
+<td>Paranal</td>
+<td>VISIR</td>
+<td>VISIR NeII_1</td>
+</tr>
+<tr class="row-even"><td>Paranal/VISIR/NeII</td>
+<td>Paranal/VISIR.NeII</td>
+<td>127948.5</td>
+<td>127929.0</td>
+<td>125564</td>
+<td>130535</td>
+<td>2183.5</td>
+<td>24.0</td>
+<td>Paranal</td>
+<td>VISIR</td>
+<td>VISIR NeII</td>
+</tr>
+<tr class="row-odd"><td>Paranal/VISIR/NeII_2</td>
+<td>Paranal/VISIR.NeII_2</td>
+<td>130461.4</td>
+<td>130442.4</td>
+<td>127994</td>
+<td>132853</td>
+<td>2238.0</td>
+<td>23.1</td>
+<td>Paranal</td>
+<td>VISIR</td>
+<td>VISIR NeII_2</td>
+</tr>
+<tr class="row-even"><td>Paranal/VISIR/Q1</td>
+<td>Paranal/VISIR.Q1</td>
+<td>177327.1</td>
+<td>177114.5</td>
+<td>167624</td>
+<td>187998</td>
+<td>8608.4</td>
+<td>12.6</td>
+<td>Paranal</td>
+<td>VISIR</td>
+<td>VISIR Q1</td>
+</tr>
+<tr class="row-odd"><td>Paranal/VISIR/Q2</td>
+<td>Paranal/VISIR.Q2</td>
+<td>187495.0</td>
+<td>187296.8</td>
+<td>177621</td>
+<td>196407</td>
+<td>8806.6</td>
+<td>11.2</td>
+<td>Paranal</td>
+<td>VISIR</td>
+<td>VISIR Q2</td>
+</tr>
+<tr class="row-even"><td>Paranal/VISIR/Q3</td>
+<td>Paranal/VISIR.Q3</td>
+<td>195202.0</td>
+<td>195162.7</td>
+<td>191070</td>
+<td>199530</td>
+<td>4109.7</td>
+<td>10.4</td>
+<td>Paranal</td>
+<td>VISIR</td>
+<td>VISIR Q3</td>
+</tr>
+</tbody>
+</table>
 <p>&lt;Plots&gt;</p>
 </div>
 <div class="section" id="vista">
 <h2>VISTA<a class="headerlink" href="#vista" title="Permalink to this headline">¶</a></h2>
-<p>No. of filters = 8</p>
-<p>&lt;Table of Filters&gt;</p>
+<table border="1" class="docutils">
+<colgroup>
+<col width="9%" />
+<col width="9%" />
+<col width="9%" />
+<col width="9%" />
+<col width="9%" />
+<col width="9%" />
+<col width="9%" />
+<col width="9%" />
+<col width="9%" />
+<col width="9%" />
+<col width="9%" />
+</colgroup>
+<thead valign="bottom">
+<tr class="row-odd"><th class="head">wsynphot_filter_id</th>
+<th class="head">Filter ID</th>
+<th class="head">lambda_mean</th>
+<th class="head">lambda_eff</th>
+<th class="head">lambda_min</th>
+<th class="head">lambda_max</th>
+<th class="head">Weff</th>
+<th class="head">ZP (Jy)</th>
+<th class="head">Obs. Facility</th>
+<th class="head">Instrument</th>
+<th class="head">Description</th>
+</tr>
+</thead>
+<tbody valign="top">
+<tr class="row-even"><td>Paranal/VISTA/Z</td>
+<td>Paranal/VISTA.Z</td>
+<td>8780.5</td>
+<td>8762.4</td>
+<td>8157</td>
+<td>9400</td>
+<td>977.7</td>
+<td>2263.8</td>
+<td>Paranal</td>
+<td>VISTA</td>
+<td>VISTA Z filter</td>
+</tr>
+<tr class="row-odd"><td>Paranal/VISTA/NB980</td>
+<td>Paranal/VISTA.NB980</td>
+<td>9781.3</td>
+<td>9780.6</td>
+<td>9636</td>
+<td>9910</td>
+<td>113.5</td>
+<td>2256.7</td>
+<td>Paranal</td>
+<td>VISTA</td>
+<td>VISTA NB980 filter</td>
+</tr>
+<tr class="row-even"><td>Paranal/VISTA/NB990</td>
+<td>Paranal/VISTA.NB990</td>
+<td>9908.7</td>
+<td>9907.7</td>
+<td>9763</td>
+<td>10049</td>
+<td>113.1</td>
+<td>2203.6</td>
+<td>Paranal</td>
+<td>VISTA</td>
+<td>VISTA NB990 filter</td>
+</tr>
+<tr class="row-odd"><td>Paranal/VISTA/Y</td>
+<td>Paranal/VISTA.Y</td>
+<td>10211.2</td>
+<td>10184.2</td>
+<td>9427</td>
+<td>10977</td>
+<td>905.3</td>
+<td>2087.3</td>
+<td>Paranal</td>
+<td>VISTA</td>
+<td>VISTA Y filter</td>
+</tr>
+<tr class="row-even"><td>Paranal/VISTA/NB118</td>
+<td>Paranal/VISTA.NB118</td>
+<td>11907.6</td>
+<td>11906.8</td>
+<td>11688</td>
+<td>12042</td>
+<td>116.8</td>
+<td>1689.3</td>
+<td>Paranal</td>
+<td>VISTA</td>
+<td>VISTA NB118 filter</td>
+</tr>
+<tr class="row-odd"><td>Paranal/VISTA/J</td>
+<td>Paranal/VISTA.J</td>
+<td>12540.9</td>
+<td>12464.4</td>
+<td>11427</td>
+<td>13759</td>
+<td>1628.4</td>
+<td>1554.0</td>
+<td>Paranal</td>
+<td>VISTA</td>
+<td>VISTA J filter</td>
+</tr>
+<tr class="row-even"><td>Paranal/VISTA/H</td>
+<td>Paranal/VISTA.H</td>
+<td>16463.7</td>
+<td>16310.0</td>
+<td>14604</td>
+<td>18422</td>
+<td>2833.2</td>
+<td>1030.4</td>
+<td>Paranal</td>
+<td>VISTA</td>
+<td>VISTA H filter</td>
+</tr>
+<tr class="row-odd"><td>Paranal/VISTA/Ks</td>
+<td>Paranal/VISTA.Ks</td>
+<td>21487.7</td>
+<td>21336.6</td>
+<td>19333</td>
+<td>23674</td>
+<td>3054.5</td>
+<td>674.8</td>
+<td>Paranal</td>
+<td>VISTA</td>
+<td>VISTA Ks filter</td>
+</tr>
+</tbody>
+</table>
 <p>&lt;Plots&gt;</p>
 </div>
 </div>

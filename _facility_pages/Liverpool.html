@@ -6,7 +6,7 @@
   <head>
     <meta http-equiv="X-UA-Compatible" content="IE=Edge" />
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-    <title>Filters of Observation Facility: Liverpool &#8212; wsynphot v0.0.dev109</title>
+    <title>Filters of Observation Facility: Liverpool &#8212; wsynphot v0.0.dev110</title>
     <link rel="stylesheet" href="../_static/bootstrap-astropy.css" type="text/css" />
     <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
     <link rel="stylesheet" type="text/css" href="../_static/graphviz.css" />
@@ -62,7 +62,7 @@
 	 |
       </li>
       <li>
-	<a href="../index.html">wsynphot v0.0.dev109</a>
+	<a href="../index.html">wsynphot v0.0.dev110</a>
 	 &#187;
       </li>
       <li><a href="../filter-list.html" accesskey="U">List of the available filters</a> &#187;</li>
@@ -82,26 +82,394 @@
 <p>Following <strong>Instruments</strong> are present:</p>
 <div class="section" id="ioi">
 <h2>IOI<a class="headerlink" href="#ioi" title="Permalink to this headline">¶</a></h2>
-<p>No. of filters = 1</p>
-<p>&lt;Table of Filters&gt;</p>
+<table border="1" class="docutils">
+<colgroup>
+<col width="9%" />
+<col width="9%" />
+<col width="9%" />
+<col width="9%" />
+<col width="9%" />
+<col width="9%" />
+<col width="9%" />
+<col width="9%" />
+<col width="9%" />
+<col width="9%" />
+<col width="9%" />
+</colgroup>
+<thead valign="bottom">
+<tr class="row-odd"><th class="head">wsynphot_filter_id</th>
+<th class="head">Filter ID</th>
+<th class="head">lambda_mean</th>
+<th class="head">lambda_eff</th>
+<th class="head">lambda_min</th>
+<th class="head">lambda_max</th>
+<th class="head">Weff</th>
+<th class="head">ZP (Jy)</th>
+<th class="head">Obs. Facility</th>
+<th class="head">Instrument</th>
+<th class="head">Description</th>
+</tr>
+</thead>
+<tbody valign="top">
+<tr class="row-even"><td>Liverpool/IOI/H</td>
+<td>Liverpool/IOI.H</td>
+<td>16400.3</td>
+<td>16237.9</td>
+<td>14435</td>
+<td>18715</td>
+<td>2834.0</td>
+<td>1035.9</td>
+<td>Liverpool</td>
+<td>IOI</td>
+<td>IO:I H filter</td>
+</tr>
+</tbody>
+</table>
 <p>&lt;Plots&gt;</p>
 </div>
 <div class="section" id="ioo">
 <h2>IOO<a class="headerlink" href="#ioo" title="Permalink to this headline">¶</a></h2>
-<p>No. of filters = 9</p>
-<p>&lt;Table of Filters&gt;</p>
+<table border="1" class="docutils">
+<colgroup>
+<col width="9%" />
+<col width="9%" />
+<col width="9%" />
+<col width="9%" />
+<col width="9%" />
+<col width="9%" />
+<col width="9%" />
+<col width="9%" />
+<col width="9%" />
+<col width="9%" />
+<col width="9%" />
+</colgroup>
+<thead valign="bottom">
+<tr class="row-odd"><th class="head">wsynphot_filter_id</th>
+<th class="head">Filter ID</th>
+<th class="head">lambda_mean</th>
+<th class="head">lambda_eff</th>
+<th class="head">lambda_min</th>
+<th class="head">lambda_max</th>
+<th class="head">Weff</th>
+<th class="head">ZP (Jy)</th>
+<th class="head">Obs. Facility</th>
+<th class="head">Instrument</th>
+<th class="head">Description</th>
+</tr>
+</thead>
+<tbody valign="top">
+<tr class="row-even"><td>Liverpool/IOO/SDSS_u</td>
+<td>Liverpool/IOO.SDSS-u</td>
+<td>3478.0</td>
+<td>3499.0</td>
+<td>2959</td>
+<td>3991</td>
+<td>652.1</td>
+<td>1426.5</td>
+<td>Liverpool</td>
+<td>IOO</td>
+<td>IO:I SDSS u’ filter</td>
+</tr>
+<tr class="row-odd"><td>Liverpool/IOO/SDSS_g</td>
+<td>Liverpool/IOO.SDSS-g</td>
+<td>4795.1</td>
+<td>4695.8</td>
+<td>3933</td>
+<td>5630</td>
+<td>1430.8</td>
+<td>3936.7</td>
+<td>Liverpool</td>
+<td>IOO</td>
+<td>IO:I SDSS g’ filter</td>
+</tr>
+<tr class="row-even"><td>Liverpool/IOO/SDSS_r</td>
+<td>Liverpool/IOO.SDSS-r</td>
+<td>6187.5</td>
+<td>6111.4</td>
+<td>5351</td>
+<td>7035</td>
+<td>1280.4</td>
+<td>3165.1</td>
+<td>Liverpool</td>
+<td>IOO</td>
+<td>IO:I SDSS r’ filter</td>
+</tr>
+<tr class="row-odd"><td>Liverpool/IOO/Halpha</td>
+<td>Liverpool/IOO.Halpha</td>
+<td>6566.3</td>
+<td>6566.0</td>
+<td>6469</td>
+<td>6666</td>
+<td>93.3</td>
+<td>2607.3</td>
+<td>Liverpool</td>
+<td>IOO</td>
+<td>IOO Halpha filter (rest frame)</td>
+</tr>
+<tr class="row-even"><td>Liverpool/IOO/Halpha_6634</td>
+<td>Liverpool/IOO.Halpha-6634</td>
+<td>6635.1</td>
+<td>6635.1</td>
+<td>6579</td>
+<td>6693</td>
+<td>56.5</td>
+<td>2940.3</td>
+<td>Liverpool</td>
+<td>IOO</td>
+<td>IOO Halpha filter (redshifted to 663.4 nm)</td>
+</tr>
+<tr class="row-odd"><td>Liverpool/IOO/Halpha_6755</td>
+<td>Liverpool/IOO.Halpha-6755</td>
+<td>6756.1</td>
+<td>6756.0</td>
+<td>6700</td>
+<td>6817</td>
+<td>56.8</td>
+<td>2918.1</td>
+<td>Liverpool</td>
+<td>IOO</td>
+<td>IOO Halpha filter (redshifted to 675.5 nm)</td>
+</tr>
+<tr class="row-even"><td>Liverpool/IOO/Halpha_6822</td>
+<td>Liverpool/IOO.Halpha-6822</td>
+<td>6823.4</td>
+<td>6823.2</td>
+<td>6763</td>
+<td>6884</td>
+<td>55.0</td>
+<td>2888.8</td>
+<td>Liverpool</td>
+<td>IOO</td>
+<td>IOO Halpha filter (redshifted to 682.2 nm)</td>
+</tr>
+<tr class="row-odd"><td>Liverpool/IOO/SDSS_i</td>
+<td>Liverpool/IOO.SDSS-i</td>
+<td>7658.7</td>
+<td>7589.4</td>
+<td>6732</td>
+<td>8528</td>
+<td>1367.4</td>
+<td>2541.3</td>
+<td>Liverpool</td>
+<td>IOO</td>
+<td>IO:I SDSS i’ filter</td>
+</tr>
+<tr class="row-even"><td>Liverpool/IOO/SDSS_z</td>
+<td>Liverpool/IOO.SDSS-z</td>
+<td>9668.6</td>
+<td>9505.4</td>
+<td>8181</td>
+<td>11000</td>
+<td>2625.2</td>
+<td>2138.9</td>
+<td>Liverpool</td>
+<td>IOO</td>
+<td>IO:I SDSS zi’ filter</td>
+</tr>
+</tbody>
+</table>
 <p>&lt;Plots&gt;</p>
 </div>
 <div class="section" id="ratcam">
 <h2>RATCam<a class="headerlink" href="#ratcam" title="Permalink to this headline">¶</a></h2>
-<p>No. of filters = 8</p>
-<p>&lt;Table of Filters&gt;</p>
+<table border="1" class="docutils">
+<colgroup>
+<col width="9%" />
+<col width="9%" />
+<col width="9%" />
+<col width="9%" />
+<col width="9%" />
+<col width="9%" />
+<col width="9%" />
+<col width="9%" />
+<col width="9%" />
+<col width="9%" />
+<col width="9%" />
+</colgroup>
+<thead valign="bottom">
+<tr class="row-odd"><th class="head">wsynphot_filter_id</th>
+<th class="head">Filter ID</th>
+<th class="head">lambda_mean</th>
+<th class="head">lambda_eff</th>
+<th class="head">lambda_min</th>
+<th class="head">lambda_max</th>
+<th class="head">Weff</th>
+<th class="head">ZP (Jy)</th>
+<th class="head">Obs. Facility</th>
+<th class="head">Instrument</th>
+<th class="head">Description</th>
+</tr>
+</thead>
+<tbody valign="top">
+<tr class="row-even"><td>Liverpool/RATCam/sdss_u</td>
+<td>Liverpool/RATCam.sdss-u</td>
+<td>3522.2</td>
+<td>3541.0</td>
+<td>3019</td>
+<td>3979</td>
+<td>497.7</td>
+<td>1440.5</td>
+<td>Liverpool</td>
+<td>RATCam</td>
+<td>RATCam SDSS u’ filter</td>
+</tr>
+<tr class="row-odd"><td>Liverpool/RATCam/bessel_B</td>
+<td>Liverpool/RATCam.bessel-B</td>
+<td>4384.8</td>
+<td>4348.7</td>
+<td>3569</td>
+<td>5731</td>
+<td>999.5</td>
+<td>3956.0</td>
+<td>Liverpool</td>
+<td>RATCam</td>
+<td>RATCam Bessel B filter</td>
+</tr>
+<tr class="row-even"><td>Liverpool/RATCam/sdss_g</td>
+<td>Liverpool/RATCam.sdss-g</td>
+<td>4813.9</td>
+<td>4730.2</td>
+<td>3945</td>
+<td>5532</td>
+<td>1268.7</td>
+<td>3940.5</td>
+<td>Liverpool</td>
+<td>RATCam</td>
+<td>RATCam SDSS g’ filter</td>
+</tr>
+<tr class="row-odd"><td>Liverpool/RATCam/bessel_V</td>
+<td>Liverpool/RATCam.bessel-V</td>
+<td>5406.5</td>
+<td>5355.3</td>
+<td>4742</td>
+<td>6466</td>
+<td>911.0</td>
+<td>3634.3</td>
+<td>Liverpool</td>
+<td>RATCam</td>
+<td>RATCam Bessel V filter</td>
+</tr>
+<tr class="row-even"><td>Liverpool/RATCam/sdss_r</td>
+<td>Liverpool/RATCam.sdss-r</td>
+<td>6248.1</td>
+<td>6163.8</td>
+<td>5423</td>
+<td>7022</td>
+<td>1294.9</td>
+<td>3136.1</td>
+<td>Liverpool</td>
+<td>RATCam</td>
+<td>RATCam SDSS r’ filter</td>
+</tr>
+<tr class="row-odd"><td>Liverpool/RATCam/Halpha</td>
+<td>Liverpool/RATCam.Halpha</td>
+<td>6566.7</td>
+<td>6566.4</td>
+<td>6465</td>
+<td>6669</td>
+<td>105.9</td>
+<td>2660.9</td>
+<td>Liverpool</td>
+<td>RATCam</td>
+<td>RATCam Halpha filter</td>
+</tr>
+<tr class="row-even"><td>Liverpool/RATCam/sdss_i</td>
+<td>Liverpool/RATCam.sdss-i</td>
+<td>7764.1</td>
+<td>7654.6</td>
+<td>6577</td>
+<td>8791</td>
+<td>1682.9</td>
+<td>2499.4</td>
+<td>Liverpool</td>
+<td>RATCam</td>
+<td>RATCam SDSS i’ filter</td>
+</tr>
+<tr class="row-odd"><td>Liverpool/RATCam/sdss_z</td>
+<td>Liverpool/RATCam.sdss-z</td>
+<td>10817.3</td>
+<td>10212.2</td>
+<td>7868</td>
+<td>13400</td>
+<td>4981.4</td>
+<td>1879.6</td>
+<td>Liverpool</td>
+<td>RATCam</td>
+<td>RATCam SDSS z’ filter</td>
+</tr>
+</tbody>
+</table>
 <p>&lt;Plots&gt;</p>
 </div>
 <div class="section" id="supircam">
 <h2>SupIRCam<a class="headerlink" href="#supircam" title="Permalink to this headline">¶</a></h2>
-<p>No. of filters = 3</p>
-<p>&lt;Table of Filters&gt;</p>
+<table border="1" class="docutils">
+<colgroup>
+<col width="9%" />
+<col width="9%" />
+<col width="9%" />
+<col width="9%" />
+<col width="9%" />
+<col width="9%" />
+<col width="9%" />
+<col width="9%" />
+<col width="9%" />
+<col width="9%" />
+<col width="9%" />
+</colgroup>
+<thead valign="bottom">
+<tr class="row-odd"><th class="head">wsynphot_filter_id</th>
+<th class="head">Filter ID</th>
+<th class="head">lambda_mean</th>
+<th class="head">lambda_eff</th>
+<th class="head">lambda_min</th>
+<th class="head">lambda_max</th>
+<th class="head">Weff</th>
+<th class="head">ZP (Jy)</th>
+<th class="head">Obs. Facility</th>
+<th class="head">Instrument</th>
+<th class="head">Description</th>
+</tr>
+</thead>
+<tbody valign="top">
+<tr class="row-even"><td>Liverpool/SupIRCam/J</td>
+<td>Liverpool/SupIRCam.J</td>
+<td>12525.4</td>
+<td>12351.2</td>
+<td>10996</td>
+<td>14054</td>
+<td>2450.6</td>
+<td>1562.3</td>
+<td>Liverpool</td>
+<td>SupIRCam</td>
+<td>SupIRCam J filter</td>
+</tr>
+<tr class="row-odd"><td>Liverpool/SupIRCam/H</td>
+<td>Liverpool/SupIRCam.H</td>
+<td>16732.3</td>
+<td>16572.7</td>
+<td>14822</td>
+<td>18545</td>
+<td>2771.4</td>
+<td>1005.8</td>
+<td>Liverpool</td>
+<td>SupIRCam</td>
+<td>SupIRCam H filter</td>
+</tr>
+<tr class="row-even"><td>Liverpool/SupIRCam/K</td>
+<td>Liverpool/SupIRCam.K</td>
+<td>21364.4</td>
+<td>21175.5</td>
+<td>19040</td>
+<td>23730</td>
+<td>3268.7</td>
+<td>681.6</td>
+<td>Liverpool</td>
+<td>SupIRCam</td>
+<td>SupIRCam K filter</td>
+</tr>
+</tbody>
+</table>
 <p>&lt;Plots&gt;</p>
 </div>
 </div>

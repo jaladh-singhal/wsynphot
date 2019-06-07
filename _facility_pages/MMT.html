@@ -6,7 +6,7 @@
   <head>
     <meta http-equiv="X-UA-Compatible" content="IE=Edge" />
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-    <title>Filters of Observation Facility: MMT &#8212; wsynphot v0.0.dev109</title>
+    <title>Filters of Observation Facility: MMT &#8212; wsynphot v0.0.dev110</title>
     <link rel="stylesheet" href="../_static/bootstrap-astropy.css" type="text/css" />
     <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
     <link rel="stylesheet" type="text/css" href="../_static/graphviz.css" />
@@ -62,7 +62,7 @@
 	 |
       </li>
       <li>
-	<a href="../index.html">wsynphot v0.0.dev109</a>
+	<a href="../index.html">wsynphot v0.0.dev110</a>
 	 &#187;
       </li>
       <li><a href="../filter-list.html" accesskey="U">List of the available filters</a> &#187;</li>
@@ -82,32 +82,825 @@
 <p>Following <strong>Instruments</strong> are present:</p>
 <div class="section" id="clio">
 <h2>Clio<a class="headerlink" href="#clio" title="Permalink to this headline">¶</a></h2>
-<p>No. of filters = 8</p>
-<p>&lt;Table of Filters&gt;</p>
+<table border="1" class="docutils">
+<colgroup>
+<col width="9%" />
+<col width="9%" />
+<col width="9%" />
+<col width="9%" />
+<col width="9%" />
+<col width="9%" />
+<col width="9%" />
+<col width="9%" />
+<col width="9%" />
+<col width="9%" />
+<col width="9%" />
+</colgroup>
+<thead valign="bottom">
+<tr class="row-odd"><th class="head">wsynphot_filter_id</th>
+<th class="head">Filter ID</th>
+<th class="head">lambda_mean</th>
+<th class="head">lambda_eff</th>
+<th class="head">lambda_min</th>
+<th class="head">lambda_max</th>
+<th class="head">Weff</th>
+<th class="head">ZP (Jy)</th>
+<th class="head">Obs. Facility</th>
+<th class="head">Instrument</th>
+<th class="head">Description</th>
+</tr>
+</thead>
+<tbody valign="top">
+<tr class="row-even"><td>MMT/Clio/Mp_MKO</td>
+<td>MMT/Clio.Mp_MKO</td>
+<td>16362.9</td>
+<td>16212.1</td>
+<td>14662</td>
+<td>18089</td>
+<td>2861.0</td>
+<td>1039.5</td>
+<td>MMT</td>
+<td>Clio</td>
+<td>Clio Mp MKO filter</td>
+</tr>
+<tr class="row-odd"><td>MMT/Clio/H</td>
+<td>MMT/Clio.H</td>
+<td>16377.4</td>
+<td>16215.8</td>
+<td>14559</td>
+<td>18208</td>
+<td>2925.5</td>
+<td>1038.7</td>
+<td>MMT</td>
+<td>Clio</td>
+<td>Clio H filter</td>
+</tr>
+<tr class="row-even"><td>MMT/Clio/Ks</td>
+<td>MMT/Clio.Ks</td>
+<td>21514.0</td>
+<td>21382.3</td>
+<td>19707</td>
+<td>23317</td>
+<td>2885.2</td>
+<td>673.2</td>
+<td>MMT</td>
+<td>Clio</td>
+<td>Clio Ks filter</td>
+</tr>
+<tr class="row-odd"><td>MMT/Clio/Lp_MKO</td>
+<td>MMT/Clio.Lp_MKO</td>
+<td>37569.6</td>
+<td>37113.9</td>
+<td>33164</td>
+<td>41999</td>
+<td>7120.5</td>
+<td>250.5</td>
+<td>MMT</td>
+<td>Clio</td>
+<td>Clio Lp MKO filter</td>
+</tr>
+<tr class="row-even"><td>MMT/Clio/3to5</td>
+<td>MMT/Clio.3to5</td>
+<td>39914.4</td>
+<td>36791.0</td>
+<td>29005</td>
+<td>50925</td>
+<td>19277.5</td>
+<td>230.6</td>
+<td>MMT</td>
+<td>Clio</td>
+<td>Clio 2to5 filter</td>
+</tr>
+<tr class="row-odd"><td>MMT/Clio/OCLI_M</td>
+<td>MMT/Clio.OCLI_M</td>
+<td>46478.9</td>
+<td>46191.2</td>
+<td>41809</td>
+<td>51330</td>
+<td>5946.5</td>
+<td>168.4</td>
+<td>MMT</td>
+<td>Clio</td>
+<td>Clio OCLI_M filter</td>
+</tr>
+<tr class="row-even"><td>MMT/Clio/x0047</td>
+<td>MMT/Clio.x0047</td>
+<td>46641.2</td>
+<td>46489.4</td>
+<td>41639</td>
+<td>50894</td>
+<td>2788.0</td>
+<td>166.4</td>
+<td>MMT</td>
+<td>Clio</td>
+<td>Clio x0047 filter</td>
+</tr>
+<tr class="row-odd"><td>MMT/Clio/M</td>
+<td>MMT/Clio.M</td>
+<td>47642.1</td>
+<td>47385.2</td>
+<td>43441</td>
+<td>51700</td>
+<td>5915.2</td>
+<td>160.9</td>
+<td>MMT</td>
+<td>Clio</td>
+<td>Clio M filter</td>
+</tr>
+</tbody>
+</table>
 <p>&lt;Plots&gt;</p>
 </div>
 <div class="section" id="megacam">
 <h2>MegaCam<a class="headerlink" href="#megacam" title="Permalink to this headline">¶</a></h2>
-<p>No. of filters = 20</p>
-<p>&lt;Table of Filters&gt;</p>
+<table border="1" class="docutils">
+<colgroup>
+<col width="9%" />
+<col width="9%" />
+<col width="9%" />
+<col width="9%" />
+<col width="9%" />
+<col width="9%" />
+<col width="9%" />
+<col width="9%" />
+<col width="9%" />
+<col width="9%" />
+<col width="9%" />
+</colgroup>
+<thead valign="bottom">
+<tr class="row-odd"><th class="head">wsynphot_filter_id</th>
+<th class="head">Filter ID</th>
+<th class="head">lambda_mean</th>
+<th class="head">lambda_eff</th>
+<th class="head">lambda_min</th>
+<th class="head">lambda_max</th>
+<th class="head">Weff</th>
+<th class="head">ZP (Jy)</th>
+<th class="head">Obs. Facility</th>
+<th class="head">Instrument</th>
+<th class="head">Description</th>
+</tr>
+</thead>
+<tbody valign="top">
+<tr class="row-even"><td>MMT/MegaCam/u_MMT_filter</td>
+<td>MMT/MegaCam.u_MMT_filter</td>
+<td>3535.3</td>
+<td>3550.2</td>
+<td>3207</td>
+<td>3906</td>
+<td>501.6</td>
+<td>1430.7</td>
+<td>MMT</td>
+<td>MegaCam</td>
+<td>Megacam u’ at MMT (filter only)</td>
+</tr>
+<tr class="row-odd"><td>MMT/MegaCam/u_Mag_filter</td>
+<td>MMT/MegaCam.u_Mag_filter</td>
+<td>3565.8</td>
+<td>3599.1</td>
+<td>3176</td>
+<td>3959</td>
+<td>548.1</td>
+<td>1589.6</td>
+<td>MMT</td>
+<td>MegaCam</td>
+<td>Megacam u’ at Magellan (filter only)</td>
+</tr>
+<tr class="row-even"><td>MMT/MegaCam/u_MMT</td>
+<td>MMT/MegaCam.u_MMT</td>
+<td>3612.7</td>
+<td>3632.1</td>
+<td>3235</td>
+<td>3914</td>
+<td>338.0</td>
+<td>1552.2</td>
+<td>MMT</td>
+<td>MegaCam</td>
+<td>Megacam u’ at MMT</td>
+</tr>
+<tr class="row-odd"><td>MMT/MegaCam/u_Mag</td>
+<td>MMT/MegaCam.u_Mag</td>
+<td>3646.9</td>
+<td>3681.7</td>
+<td>3221</td>
+<td>3963</td>
+<td>371.8</td>
+<td>1762.9</td>
+<td>MMT</td>
+<td>MegaCam</td>
+<td>Megacam u’ at Magellan</td>
+</tr>
+<tr class="row-even"><td>MMT/MegaCam/g_Mag_filter</td>
+<td>MMT/MegaCam.g_Mag_filter</td>
+<td>4562.1</td>
+<td>4486.2</td>
+<td>3764</td>
+<td>5430</td>
+<td>1234.8</td>
+<td>3961.3</td>
+<td>MMT</td>
+<td>MegaCam</td>
+<td>Megacam g’ at Magellan (filter only)</td>
+</tr>
+<tr class="row-odd"><td>MMT/MegaCam/g_Mag</td>
+<td>MMT/MegaCam.g_Mag</td>
+<td>4657.1</td>
+<td>4581.3</td>
+<td>3772</td>
+<td>5431</td>
+<td>972.9</td>
+<td>3952.5</td>
+<td>MMT</td>
+<td>MegaCam</td>
+<td>Megacam g’ at Magellan</td>
+</tr>
+<tr class="row-even"><td>MMT/MegaCam/g_MMT_filter</td>
+<td>MMT/MegaCam.g_MMT_filter</td>
+<td>4777.2</td>
+<td>4688.2</td>
+<td>3959</td>
+<td>5615</td>
+<td>1313.1</td>
+<td>3958.9</td>
+<td>MMT</td>
+<td>MegaCam</td>
+<td>Megacam g’ at MMT (filter only)</td>
+</tr>
+<tr class="row-odd"><td>MMT/MegaCam/g_MMT</td>
+<td>MMT/MegaCam.g_MMT</td>
+<td>4814.0</td>
+<td>4726.8</td>
+<td>3972</td>
+<td>5614</td>
+<td>1195.3</td>
+<td>3941.6</td>
+<td>MMT</td>
+<td>MegaCam</td>
+<td>Megacam g’ at MMT</td>
+</tr>
+<tr class="row-even"><td>MMT/MegaCam/r_Mag</td>
+<td>MMT/MegaCam.r_Mag</td>
+<td>6346.1</td>
+<td>6247.8</td>
+<td>5465</td>
+<td>7467</td>
+<td>1411.9</td>
+<td>3088.4</td>
+<td>MMT</td>
+<td>MegaCam</td>
+<td>Megacam r’ at Magellan</td>
+</tr>
+<tr class="row-odd"><td>MMT/MegaCam/r_MMT</td>
+<td>MMT/MegaCam.r_MMT</td>
+<td>6373.7</td>
+<td>6285.9</td>
+<td>5400</td>
+<td>7303</td>
+<td>1319.9</td>
+<td>3071.4</td>
+<td>MMT</td>
+<td>MegaCam</td>
+<td>Megacam r’ at MMT</td>
+</tr>
+<tr class="row-even"><td>MMT/MegaCam/r_Mag_filter</td>
+<td>MMT/MegaCam.r_Mag_filter</td>
+<td>6376.9</td>
+<td>6275.2</td>
+<td>5465</td>
+<td>7471</td>
+<td>1472.4</td>
+<td>3072.7</td>
+<td>MMT</td>
+<td>MegaCam</td>
+<td>Megacam r’ at Magellan (filter only)</td>
+</tr>
+<tr class="row-odd"><td>MMT/MegaCam/r_MMT_filter</td>
+<td>MMT/MegaCam.r_MMT_filter</td>
+<td>6397.5</td>
+<td>6307.3</td>
+<td>5403</td>
+<td>7317</td>
+<td>1329.3</td>
+<td>3059.5</td>
+<td>MMT</td>
+<td>MegaCam</td>
+<td>Megacam r’ at MMT (filter only)</td>
+</tr>
+<tr class="row-even"><td>MMT/MegaCam/i_MMT</td>
+<td>MMT/MegaCam.i_MMT</td>
+<td>7815.1</td>
+<td>7723.1</td>
+<td>6827</td>
+<td>8954</td>
+<td>1276.0</td>
+<td>2483.5</td>
+<td>MMT</td>
+<td>MegaCam</td>
+<td>Megacam i’ at MMT</td>
+</tr>
+<tr class="row-odd"><td>MMT/MegaCam/i_Mag</td>
+<td>MMT/MegaCam.i_Mag</td>
+<td>7886.7</td>
+<td>7818.6</td>
+<td>7034</td>
+<td>8892</td>
+<td>1118.9</td>
+<td>2456.0</td>
+<td>MMT</td>
+<td>MegaCam</td>
+<td>Megacam i’ at Magellan</td>
+</tr>
+<tr class="row-even"><td>MMT/MegaCam/i_MMT_filter</td>
+<td>MMT/MegaCam.i_MMT_filter</td>
+<td>7923.1</td>
+<td>7826.6</td>
+<td>6839</td>
+<td>9013</td>
+<td>1659.8</td>
+<td>2444.9</td>
+<td>MMT</td>
+<td>MegaCam</td>
+<td>Megacam i’ at MMT (filter only)</td>
+</tr>
+<tr class="row-odd"><td>MMT/MegaCam/i_Mag_filter</td>
+<td>MMT/MegaCam.i_Mag_filter</td>
+<td>7966.9</td>
+<td>7896.0</td>
+<td>7042</td>
+<td>8954</td>
+<td>1401.6</td>
+<td>2427.0</td>
+<td>MMT</td>
+<td>MegaCam</td>
+<td>Megacam i’ at Magellan (filter only)</td>
+</tr>
+<tr class="row-even"><td>MMT/MegaCam/z_Mag</td>
+<td>MMT/MegaCam.z_Mag</td>
+<td>9063.5</td>
+<td>9008.8</td>
+<td>8023</td>
+<td>10812</td>
+<td>1036.0</td>
+<td>2243.4</td>
+<td>MMT</td>
+<td>MegaCam</td>
+<td>Megacam z’ at Magellan</td>
+</tr>
+<tr class="row-odd"><td>MMT/MegaCam/z_MMT</td>
+<td>MMT/MegaCam.z_MMT</td>
+<td>9069.7</td>
+<td>9014.7</td>
+<td>8087</td>
+<td>10833</td>
+<td>1096.3</td>
+<td>2241.3</td>
+<td>MMT</td>
+<td>MegaCam</td>
+<td>Megacam z’ at MMT</td>
+</tr>
+<tr class="row-even"><td>MMT/MegaCam/z_Mag_filter</td>
+<td>MMT/MegaCam.z_Mag_filter</td>
+<td>10301.2</td>
+<td>9960.0</td>
+<td>8054</td>
+<td>12190</td>
+<td>3652.0</td>
+<td>2004.0</td>
+<td>MMT</td>
+<td>MegaCam</td>
+<td>Megacam z’ at Magellan (filter only)</td>
+</tr>
+<tr class="row-odd"><td>MMT/MegaCam/z_MMT_filter</td>
+<td>MMT/MegaCam.z_MMT_filter</td>
+<td>10468.0</td>
+<td>10063.0</td>
+<td>8108</td>
+<td>12530</td>
+<td>4059.3</td>
+<td>1965.9</td>
+<td>MMT</td>
+<td>MegaCam</td>
+<td>Megacam z’ at MMT (filter only)</td>
+</tr>
+</tbody>
+</table>
 <p>&lt;Plots&gt;</p>
 </div>
 <div class="section" id="mirac">
 <h2>MIRAC<a class="headerlink" href="#mirac" title="Permalink to this headline">¶</a></h2>
-<p>No. of filters = 13</p>
-<p>&lt;Table of Filters&gt;</p>
+<table border="1" class="docutils">
+<colgroup>
+<col width="9%" />
+<col width="9%" />
+<col width="9%" />
+<col width="9%" />
+<col width="9%" />
+<col width="9%" />
+<col width="9%" />
+<col width="9%" />
+<col width="9%" />
+<col width="9%" />
+<col width="9%" />
+</colgroup>
+<thead valign="bottom">
+<tr class="row-odd"><th class="head">wsynphot_filter_id</th>
+<th class="head">Filter ID</th>
+<th class="head">lambda_mean</th>
+<th class="head">lambda_eff</th>
+<th class="head">lambda_min</th>
+<th class="head">lambda_max</th>
+<th class="head">Weff</th>
+<th class="head">ZP (Jy)</th>
+<th class="head">Obs. Facility</th>
+<th class="head">Instrument</th>
+<th class="head">Description</th>
+</tr>
+</thead>
+<tbody valign="top">
+<tr class="row-even"><td>MMT/MIRAC/K_22_Amb</td>
+<td>MMT/MIRAC.K_22_Amb</td>
+<td>22166.3</td>
+<td>21961.7</td>
+<td>19528</td>
+<td>24538</td>
+<td>3055.4</td>
+<td>640.4</td>
+<td>MMT</td>
+<td>MIRAC</td>
+<td>MIRAC K_22 filter (Amb)</td>
+</tr>
+<tr class="row-odd"><td>MMT/MIRAC/L_38_77K</td>
+<td>MMT/MIRAC.L_38_77K</td>
+<td>38434.7</td>
+<td>38092.1</td>
+<td>34389</td>
+<td>42585</td>
+<td>6083.4</td>
+<td>239.6</td>
+<td>MMT</td>
+<td>MIRAC</td>
+<td>MIRAC L_38 filter (77K)</td>
+</tr>
+<tr class="row-even"><td>MMT/MIRAC/W04931_8_Amb</td>
+<td>MMT/MIRAC.W04931-8_Amb</td>
+<td>49545.3</td>
+<td>49091.8</td>
+<td>44103</td>
+<td>55392</td>
+<td>7867.1</td>
+<td>149.5</td>
+<td>MMT</td>
+<td>MIRAC</td>
+<td>MIRAC W04931-8 filter (Amb)</td>
+</tr>
+<tr class="row-odd"><td>MMT/MIRAC/O_88_5K</td>
+<td>MMT/MIRAC.O_88_5K</td>
+<td>87492.8</td>
+<td>87173.6</td>
+<td>81270</td>
+<td>94449</td>
+<td>8087.6</td>
+<td>50.3</td>
+<td>MMT</td>
+<td>MIRAC</td>
+<td>MIRAC O_88 filter (5K)</td>
+</tr>
+<tr class="row-even"><td>MMT/MIRAC/P_98_5K</td>
+<td>MMT/MIRAC.P_98_5K</td>
+<td>96957.6</td>
+<td>96620.7</td>
+<td>90374</td>
+<td>104797</td>
+<td>9234.4</td>
+<td>41.2</td>
+<td>MMT</td>
+<td>MIRAC</td>
+<td>MIRAC P_98 filter (5K)</td>
+</tr>
+<tr class="row-odd"><td>MMT/MIRAC/Q_103_5K</td>
+<td>MMT/MIRAC.Q_103_5K</td>
+<td>102328.2</td>
+<td>101965.5</td>
+<td>94955</td>
+<td>110445</td>
+<td>9600.7</td>
+<td>37.1</td>
+<td>MMT</td>
+<td>MIRAC</td>
+<td>MIRAC Q_103 filter (5K)</td>
+</tr>
+<tr class="row-even"><td>MMT/MIRAC/W10773_8_Amb</td>
+<td>MMT/MIRAC.W10773-8_Amb</td>
+<td>107464.5</td>
+<td>99562.6</td>
+<td>79234</td>
+<td>137515</td>
+<td>48488.3</td>
+<td>34.9</td>
+<td>MMT</td>
+<td>MIRAC</td>
+<td>MIRAC W10773-8 filter (Amb)</td>
+</tr>
+<tr class="row-odd"><td>MMT/MIRAC/R_117_5K</td>
+<td>MMT/MIRAC.R_117_5K</td>
+<td>116022.5</td>
+<td>115631.7</td>
+<td>108056</td>
+<td>124818</td>
+<td>10407.4</td>
+<td>29.0</td>
+<td>MMT</td>
+<td>MIRAC</td>
+<td>MIRAC R_117 filter (5K)</td>
+</tr>
+<tr class="row-even"><td>MMT/MIRAC/S_125_5K</td>
+<td>MMT/MIRAC.S_125_5K</td>
+<td>123976.8</td>
+<td>123558.7</td>
+<td>115492</td>
+<td>133458</td>
+<td>10835.9</td>
+<td>25.5</td>
+<td>MMT</td>
+<td>MIRAC</td>
+<td>MIRAC S_125 filter (5K)</td>
+</tr>
+<tr class="row-odd"><td>MMT/MIRAC/QS_Amb</td>
+<td>MMT/MIRAC.QS_Amb</td>
+<td>175038.2</td>
+<td>173934.8</td>
+<td>152213</td>
+<td>201120</td>
+<td>19157.1</td>
+<td>12.9</td>
+<td>MMT</td>
+<td>MIRAC</td>
+<td>MIRAC QS filter (Amb)</td>
+</tr>
+<tr class="row-even"><td>MMT/MIRAC/M185B7_25K</td>
+<td>MMT/MIRAC.M185B7_25K</td>
+<td>183379.6</td>
+<td>182897.3</td>
+<td>171738</td>
+<td>195767</td>
+<td>14952.2</td>
+<td>11.8</td>
+<td>MMT</td>
+<td>MIRAC</td>
+<td>MIRAC M185B7 filter (25K)</td>
+</tr>
+<tr class="row-odd"><td>MMT/MIRAC/M209B42_25K</td>
+<td>MMT/MIRAC.M209B42_25K</td>
+<td>213954.8</td>
+<td>202695.3</td>
+<td>162574</td>
+<td>280000</td>
+<td>74974.4</td>
+<td>8.9</td>
+<td>MMT</td>
+<td>MIRAC</td>
+<td>MIRAC M209B42 filter (25K)</td>
+</tr>
+<tr class="row-even"><td>MMT/MIRAC/M245B5_25K</td>
+<td>MMT/MIRAC.M245B5_25K</td>
+<td>245952.9</td>
+<td>245225.7</td>
+<td>224954</td>
+<td>265464</td>
+<td>19670.2</td>
+<td>6.6</td>
+<td>MMT</td>
+<td>MIRAC</td>
+<td>MIRAC M245B5 filter (25K)</td>
+</tr>
+</tbody>
+</table>
 <p>&lt;Plots&gt;</p>
 </div>
 <div class="section" id="mmirs">
 <h2>MMIRS<a class="headerlink" href="#mmirs" title="Permalink to this headline">¶</a></h2>
-<p>No. of filters = 8</p>
-<p>&lt;Table of Filters&gt;</p>
+<table border="1" class="docutils">
+<colgroup>
+<col width="9%" />
+<col width="9%" />
+<col width="9%" />
+<col width="9%" />
+<col width="9%" />
+<col width="9%" />
+<col width="9%" />
+<col width="9%" />
+<col width="9%" />
+<col width="9%" />
+<col width="9%" />
+</colgroup>
+<thead valign="bottom">
+<tr class="row-odd"><th class="head">wsynphot_filter_id</th>
+<th class="head">Filter ID</th>
+<th class="head">lambda_mean</th>
+<th class="head">lambda_eff</th>
+<th class="head">lambda_min</th>
+<th class="head">lambda_max</th>
+<th class="head">Weff</th>
+<th class="head">ZP (Jy)</th>
+<th class="head">Obs. Facility</th>
+<th class="head">Instrument</th>
+<th class="head">Description</th>
+</tr>
+</thead>
+<tbody valign="top">
+<tr class="row-even"><td>MMT/MMIRS/Y</td>
+<td>MMT/MMIRS.Y</td>
+<td>10200.5</td>
+<td>10166.4</td>
+<td>9423</td>
+<td>11054</td>
+<td>1077.4</td>
+<td>2093.2</td>
+<td>MMT</td>
+<td>MMIRS</td>
+<td>MMIRS Y filter</td>
+</tr>
+<tr class="row-odd"><td>MMT/MMIRS/zJ</td>
+<td>MMT/MMIRS.zJ</td>
+<td>12299.4</td>
+<td>11596.8</td>
+<td>9326</td>
+<td>15271</td>
+<td>5259.4</td>
+<td>1610.7</td>
+<td>MMT</td>
+<td>MMIRS</td>
+<td>MMIRS zJ spectroscopic filter</td>
+</tr>
+<tr class="row-even"><td>MMT/MMIRS/J</td>
+<td>MMT/MMIRS.J</td>
+<td>12519.1</td>
+<td>12453.0</td>
+<td>11490</td>
+<td>13584</td>
+<td>1545.8</td>
+<td>1556.0</td>
+<td>MMT</td>
+<td>MMIRS</td>
+<td>MMIRS J filter</td>
+</tr>
+<tr class="row-odd"><td>MMT/MMIRS/H</td>
+<td>MMT/MMIRS.H</td>
+<td>16437.2</td>
+<td>16293.6</td>
+<td>14649</td>
+<td>18267</td>
+<td>2833.4</td>
+<td>1032.5</td>
+<td>MMT</td>
+<td>MMIRS</td>
+<td>MMIRS H filter</td>
+</tr>
+<tr class="row-even"><td>MMT/MMIRS/HK3</td>
+<td>MMT/MMIRS.HK3</td>
+<td>17967.3</td>
+<td>16070.5</td>
+<td>12090</td>
+<td>23745</td>
+<td>10534.6</td>
+<td>921.7</td>
+<td>MMT</td>
+<td>MMIRS</td>
+<td>MMIRS HK filter (2014-)</td>
+</tr>
+<tr class="row-odd"><td>MMT/MMIRS/HK</td>
+<td>MMT/MMIRS.HK</td>
+<td>18805.6</td>
+<td>16509.0</td>
+<td>12246</td>
+<td>25432</td>
+<td>11523.8</td>
+<td>861.3</td>
+<td>MMT</td>
+<td>MMIRS</td>
+<td>MMIRS HK filter (2010-)</td>
+</tr>
+<tr class="row-even"><td>MMT/MMIRS/Ks</td>
+<td>MMT/MMIRS.Ks</td>
+<td>21612.5</td>
+<td>21454.3</td>
+<td>19541</td>
+<td>23833</td>
+<td>3141.3</td>
+<td>668.3</td>
+<td>MMT</td>
+<td>MMIRS</td>
+<td>MMIRS Ks filter</td>
+</tr>
+<tr class="row-odd"><td>MMT/MMIRS/Kspec</td>
+<td>MMT/MMIRS.Kspec</td>
+<td>21929.1</td>
+<td>21547.7</td>
+<td>18925</td>
+<td>25021</td>
+<td>5144.9</td>
+<td>653.4</td>
+<td>MMT</td>
+<td>MMIRS</td>
+<td>MMIRS spectroscopic filter (2014-)</td>
+</tr>
+</tbody>
+</table>
 <p>&lt;Plots&gt;</p>
 </div>
 <div class="section" id="mmtcam">
 <h2>MMTCam<a class="headerlink" href="#mmtcam" title="Permalink to this headline">¶</a></h2>
-<p>No. of filters = 5</p>
-<p>&lt;Table of Filters&gt;</p>
+<table border="1" class="docutils">
+<colgroup>
+<col width="9%" />
+<col width="9%" />
+<col width="9%" />
+<col width="9%" />
+<col width="9%" />
+<col width="9%" />
+<col width="9%" />
+<col width="9%" />
+<col width="9%" />
+<col width="9%" />
+<col width="9%" />
+</colgroup>
+<thead valign="bottom">
+<tr class="row-odd"><th class="head">wsynphot_filter_id</th>
+<th class="head">Filter ID</th>
+<th class="head">lambda_mean</th>
+<th class="head">lambda_eff</th>
+<th class="head">lambda_min</th>
+<th class="head">lambda_max</th>
+<th class="head">Weff</th>
+<th class="head">ZP (Jy)</th>
+<th class="head">Obs. Facility</th>
+<th class="head">Instrument</th>
+<th class="head">Description</th>
+</tr>
+</thead>
+<tbody valign="top">
+<tr class="row-even"><td>MMT/MMTCam/u</td>
+<td>MMT/MMTCam.u</td>
+<td>3532.0</td>
+<td>3544.0</td>
+<td>3150</td>
+<td>3935</td>
+<td>431.9</td>
+<td>1396.2</td>
+<td>MMT</td>
+<td>MMTCam</td>
+<td>MMTCam u filter</td>
+</tr>
+<tr class="row-odd"><td>MMT/MMTCam/g</td>
+<td>MMT/MMTCam.g</td>
+<td>4842.0</td>
+<td>4739.6</td>
+<td>3928</td>
+<td>5636</td>
+<td>1408.0</td>
+<td>3913.2</td>
+<td>MMT</td>
+<td>MMTCam</td>
+<td>MMTCam g filter</td>
+</tr>
+<tr class="row-even"><td>MMT/MMTCam/r</td>
+<td>MMT/MMTCam.r</td>
+<td>6234.8</td>
+<td>6122.9</td>
+<td>5336</td>
+<td>7113</td>
+<td>1513.0</td>
+<td>3144.2</td>
+<td>MMT</td>
+<td>MMTCam</td>
+<td>MMTCam r filter</td>
+</tr>
+<tr class="row-odd"><td>MMT/MMTCam/i</td>
+<td>MMT/MMTCam.i</td>
+<td>7674.9</td>
+<td>7591.2</td>
+<td>6790</td>
+<td>8506</td>
+<td>1538.2</td>
+<td>2535.4</td>
+<td>MMT</td>
+<td>MMTCam</td>
+<td>MMTCam i filter</td>
+</tr>
+<tr class="row-even"><td>MMT/MMTCam/z</td>
+<td>MMT/MMTCam.z</td>
+<td>9454.2</td>
+<td>9334.0</td>
+<td>8225</td>
+<td>10727</td>
+<td>2234.7</td>
+<td>2188.7</td>
+<td>MMT</td>
+<td>MMTCam</td>
+<td>MMTCam z filter</td>
+</tr>
+</tbody>
+</table>
 <p>&lt;Plots&gt;</p>
 </div>
 </div>

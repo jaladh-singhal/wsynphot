@@ -6,7 +6,7 @@
   <head>
     <meta http-equiv="X-UA-Compatible" content="IE=Edge" />
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-    <title>Filters of Observation Facility: MKO &#8212; wsynphot v0.0.dev109</title>
+    <title>Filters of Observation Facility: MKO &#8212; wsynphot v0.0.dev110</title>
     <link rel="stylesheet" href="../_static/bootstrap-astropy.css" type="text/css" />
     <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
     <link rel="stylesheet" type="text/css" href="../_static/graphviz.css" />
@@ -62,7 +62,7 @@
 	 |
       </li>
       <li>
-	<a href="../index.html">wsynphot v0.0.dev109</a>
+	<a href="../index.html">wsynphot v0.0.dev110</a>
 	 &#187;
       </li>
       <li><a href="../filter-list.html" accesskey="U">List of the available filters</a> &#187;</li>
@@ -82,14 +82,648 @@
 <p>Following <strong>Instruments</strong> are present:</p>
 <div class="section" id="mirsi">
 <h2>MIRSI<a class="headerlink" href="#mirsi" title="Permalink to this headline">¶</a></h2>
-<p>No. of filters = 12</p>
-<p>&lt;Table of Filters&gt;</p>
+<table border="1" class="docutils">
+<colgroup>
+<col width="9%" />
+<col width="9%" />
+<col width="9%" />
+<col width="9%" />
+<col width="9%" />
+<col width="9%" />
+<col width="9%" />
+<col width="9%" />
+<col width="9%" />
+<col width="9%" />
+<col width="9%" />
+</colgroup>
+<thead valign="bottom">
+<tr class="row-odd"><th class="head">wsynphot_filter_id</th>
+<th class="head">Filter ID</th>
+<th class="head">lambda_mean</th>
+<th class="head">lambda_eff</th>
+<th class="head">lambda_min</th>
+<th class="head">lambda_max</th>
+<th class="head">Weff</th>
+<th class="head">ZP (Jy)</th>
+<th class="head">Obs. Facility</th>
+<th class="head">Instrument</th>
+<th class="head">Description</th>
+</tr>
+</thead>
+<tbody valign="top">
+<tr class="row-even"><td>MKO/MIRSI/K</td>
+<td>MKO/MIRSI.K</td>
+<td>21952.7</td>
+<td>21721.9</td>
+<td>19671</td>
+<td>24331</td>
+<td>3625.3</td>
+<td>651.6</td>
+<td>MKO</td>
+<td>MIRSI</td>
+<td>Mauna kea Obsevatory. MIRSI K filter</td>
+</tr>
+<tr class="row-odd"><td>MKO/MIRSI/4_9</td>
+<td>MKO/MIRSI.4_9</td>
+<td>49308.2</td>
+<td>48590.6</td>
+<td>42803</td>
+<td>56038</td>
+<td>9984.3</td>
+<td>151.4</td>
+<td>MKO</td>
+<td>MIRSI</td>
+<td>Mauna kea Obsevatory. MIRSI 4.9m filter</td>
+</tr>
+<tr class="row-even"><td>MKO/MIRSI/7_7</td>
+<td>MKO/MIRSI.7_7</td>
+<td>77243.3</td>
+<td>77018.0</td>
+<td>72226</td>
+<td>83260</td>
+<td>6871.0</td>
+<td>63.8</td>
+<td>MKO</td>
+<td>MIRSI</td>
+<td>Mauna kea Obsevatory. MIRSI 7.7m filter</td>
+</tr>
+<tr class="row-odd"><td>MKO/MIRSI/8_7</td>
+<td>MKO/MIRSI.8_7</td>
+<td>87261.7</td>
+<td>87001.3</td>
+<td>81231</td>
+<td>93273</td>
+<td>7650.7</td>
+<td>50.5</td>
+<td>MKO</td>
+<td>MIRSI</td>
+<td>Mauna kea Obsevatory. MIRSI 8.7m filter</td>
+</tr>
+<tr class="row-even"><td>MKO/MIRSI/9_7</td>
+<td>MKO/MIRSI.9_7</td>
+<td>96768.7</td>
+<td>96434.0</td>
+<td>89589</td>
+<td>104385</td>
+<td>9319.1</td>
+<td>41.4</td>
+<td>MKO</td>
+<td>MIRSI</td>
+<td>Mauna kea Obsevatory. MIRSI 9.7m filter</td>
+</tr>
+<tr class="row-odd"><td>MKO/MIRSI/N</td>
+<td>MKO/MIRSI.N</td>
+<td>106025.6</td>
+<td>99054.3</td>
+<td>78226</td>
+<td>134489</td>
+<td>44136.5</td>
+<td>35.7</td>
+<td>MKO</td>
+<td>MIRSI</td>
+<td>Mauna kea Obsevatory. MIRSI N filter</td>
+</tr>
+<tr class="row-even"><td>MKO/MIRSI/11_7</td>
+<td>MKO/MIRSI.11_7</td>
+<td>116453.6</td>
+<td>116042.5</td>
+<td>107430</td>
+<td>124728</td>
+<td>11480.4</td>
+<td>28.8</td>
+<td>MKO</td>
+<td>MIRSI</td>
+<td>Mauna kea Obsevatory. MIRSI 11.7m filter</td>
+</tr>
+<tr class="row-odd"><td>MKO/MIRSI/12_282</td>
+<td>MKO/MIRSI.12_282</td>
+<td>122656.9</td>
+<td>122636.5</td>
+<td>120089</td>
+<td>125530</td>
+<td>1992.0</td>
+<td>26.0</td>
+<td>MKO</td>
+<td>MIRSI</td>
+<td>Mauna kea Obsevatory. MIRSI 12.282m filter</td>
+</tr>
+<tr class="row-even"><td>MKO/MIRSI/12_33</td>
+<td>MKO/MIRSI.12_33</td>
+<td>123451.7</td>
+<td>123016.6</td>
+<td>114237</td>
+<td>132638</td>
+<td>11764.3</td>
+<td>25.7</td>
+<td>MKO</td>
+<td>MIRSI</td>
+<td>Mauna kea Obsevatory. MIRSI 12.33m filter</td>
+</tr>
+<tr class="row-odd"><td>MKO/MIRSI/18</td>
+<td>MKO/MIRSI.18</td>
+<td>183407.9</td>
+<td>182922.7</td>
+<td>172671</td>
+<td>197233</td>
+<td>15057.9</td>
+<td>11.8</td>
+<td>MKO</td>
+<td>MIRSI</td>
+<td>Mauna kea Obsevatory. MIRSI 18m filter</td>
+</tr>
+<tr class="row-even"><td>MKO/MIRSI/20</td>
+<td>MKO/MIRSI.20</td>
+<td>214280.1</td>
+<td>202871.5</td>
+<td>162500</td>
+<td>289685</td>
+<td>75307.9</td>
+<td>8.9</td>
+<td>MKO</td>
+<td>MIRSI</td>
+<td>Mauna kea Obsevatory. MIRSI 20m filter</td>
+</tr>
+<tr class="row-odd"><td>MKO/MIRSI/24</td>
+<td>MKO/MIRSI.24</td>
+<td>248081.3</td>
+<td>247226.2</td>
+<td>224812</td>
+<td>276400</td>
+<td>20449.8</td>
+<td>6.5</td>
+<td>MKO</td>
+<td>MIRSI</td>
+<td>Mauna kea Obsevatory. MIRSI 24m filter</td>
+</tr>
+</tbody>
+</table>
 <p>&lt;Plots&gt;</p>
 </div>
 <div class="section" id="nsfcam">
 <h2>NSFCam<a class="headerlink" href="#nsfcam" title="Permalink to this headline">¶</a></h2>
-<p>No. of filters = 36</p>
-<p>&lt;Table of Filters&gt;</p>
+<table border="1" class="docutils">
+<colgroup>
+<col width="9%" />
+<col width="9%" />
+<col width="9%" />
+<col width="9%" />
+<col width="9%" />
+<col width="9%" />
+<col width="9%" />
+<col width="9%" />
+<col width="9%" />
+<col width="9%" />
+<col width="9%" />
+</colgroup>
+<thead valign="bottom">
+<tr class="row-odd"><th class="head">wsynphot_filter_id</th>
+<th class="head">Filter ID</th>
+<th class="head">lambda_mean</th>
+<th class="head">lambda_eff</th>
+<th class="head">lambda_min</th>
+<th class="head">lambda_max</th>
+<th class="head">Weff</th>
+<th class="head">ZP (Jy)</th>
+<th class="head">Obs. Facility</th>
+<th class="head">Instrument</th>
+<th class="head">Description</th>
+</tr>
+</thead>
+<tbody valign="top">
+<tr class="row-even"><td>MKO/NSFCam/J</td>
+<td>MKO/NSFCam.J</td>
+<td>12484.1</td>
+<td>12417.4</td>
+<td>11482</td>
+<td>13494</td>
+<td>1516.8</td>
+<td>1562.2</td>
+<td>MKO</td>
+<td>NSFCam</td>
+<td>Mauna kea Obsevatory. NSFCam J filter</td>
+</tr>
+<tr class="row-odd"><td>MKO/NSFCam/Pag</td>
+<td>MKO/NSFCam.Pag</td>
+<td>15092.1</td>
+<td>15090.1</td>
+<td>14802</td>
+<td>15378</td>
+<td>199.6</td>
+<td>1173.9</td>
+<td>MKO</td>
+<td>NSFCam</td>
+<td>Mauna kea Obsevatory. NSFCam Paschen gamma filter (central region)</td>
+</tr>
+<tr class="row-even"><td>MKO/NSFCam/Pag_blk</td>
+<td>MKO/NSFCam.Pag_blk</td>
+<td>15094.8</td>
+<td>15093.0</td>
+<td>14841</td>
+<td>15378</td>
+<td>197.7</td>
+<td>1173.5</td>
+<td>MKO</td>
+<td>NSFCam</td>
+<td>Mauna kea Obsevatory. NSFCam Paschen gamma + blocker filter (central region)</td>
+</tr>
+<tr class="row-odd"><td>MKO/NSFCam/HeI</td>
+<td>MKO/NSFCam.HeI</td>
+<td>15271.0</td>
+<td>15268.8</td>
+<td>15002</td>
+<td>15514</td>
+<td>221.7</td>
+<td>1150.9</td>
+<td>MKO</td>
+<td>NSFCam</td>
+<td>Mauna kea Obsevatory. NSFCam He I filter (central region)</td>
+</tr>
+<tr class="row-even"><td>MKO/NSFCam/HeI_blk</td>
+<td>MKO/NSFCam.HeI_blk</td>
+<td>15271.2</td>
+<td>15269.0</td>
+<td>15002</td>
+<td>15518</td>
+<td>222.0</td>
+<td>1150.8</td>
+<td>MKO</td>
+<td>NSFCam</td>
+<td>Mauna kea Obsevatory. NSFCam He I + blocker filter (central region)</td>
+</tr>
+<tr class="row-odd"><td>MKO/NSFCam/H_blk_old</td>
+<td>MKO/NSFCam.H_blk_old</td>
+<td>16173.3</td>
+<td>16022.8</td>
+<td>14206</td>
+<td>18065</td>
+<td>2662.6</td>
+<td>1056.4</td>
+<td>MKO</td>
+<td>NSFCam</td>
+<td>Mauna kea Obsevatory. NSFCam H+Blocker old filter</td>
+</tr>
+<tr class="row-even"><td>MKO/NSFCam/H</td>
+<td>MKO/NSFCam.H</td>
+<td>16298.3</td>
+<td>16141.1</td>
+<td>14510</td>
+<td>18091</td>
+<td>2845.8</td>
+<td>1045.9</td>
+<td>MKO</td>
+<td>NSFCam</td>
+<td>Mauna kea Obsevatory. NSFCam H filter</td>
+</tr>
+<tr class="row-odd"><td>MKO/NSFCam/FeII_blk</td>
+<td>MKO/NSFCam.FeII_blk</td>
+<td>16374.9</td>
+<td>16371.7</td>
+<td>16072</td>
+<td>16676</td>
+<td>204.6</td>
+<td>1017.3</td>
+<td>MKO</td>
+<td>NSFCam</td>
+<td>Mauna kea Obsevatory. NSFCam Fe II + blocker filter (central region)</td>
+</tr>
+<tr class="row-even"><td>MKO/NSFCam/FeII</td>
+<td>MKO/NSFCam.FeII</td>
+<td>16375.4</td>
+<td>16372.1</td>
+<td>16091</td>
+<td>16676</td>
+<td>204.9</td>
+<td>1017.3</td>
+<td>MKO</td>
+<td>NSFCam</td>
+<td>Mauna kea Obsevatory. NSFCam Fe II filter (central region)</td>
+</tr>
+<tr class="row-odd"><td>MKO/NSFCam/Sp17</td>
+<td>MKO/NSFCam.Sp17</td>
+<td>17252.8</td>
+<td>17235.6</td>
+<td>16474</td>
+<td>18023</td>
+<td>955.5</td>
+<td>963.2</td>
+<td>MKO</td>
+<td>NSFCam</td>
+<td>Mauna kea Obsevatory. NSFCam Spencer 1.7m filter (central region)</td>
+</tr>
+<tr class="row-even"><td>MKO/NSFCam/Pab</td>
+<td>MKO/NSFCam.Pab</td>
+<td>18908.9</td>
+<td>18778.5</td>
+<td>17001</td>
+<td>21484</td>
+<td>993.4</td>
+<td>831.2</td>
+<td>MKO</td>
+<td>NSFCam</td>
+<td>Mauna kea Obsevatory. NSFCam Paschen beta filter (central region)</td>
+</tr>
+<tr class="row-odd"><td>MKO/NSFCam/Pab_blk</td>
+<td>MKO/NSFCam.Pab_blk</td>
+<td>18911.8</td>
+<td>18784.8</td>
+<td>17071</td>
+<td>21502</td>
+<td>1012.4</td>
+<td>830.6</td>
+<td>MKO</td>
+<td>NSFCam</td>
+<td>Mauna kea Obsevatory. NSFCam Paschen beta + blocker filter (central region)</td>
+</tr>
+<tr class="row-even"><td>MKO/NSFCam/K_blk_old</td>
+<td>MKO/NSFCam.K_blk_old</td>
+<td>21103.0</td>
+<td>20885.2</td>
+<td>18072</td>
+<td>23895</td>
+<td>3400.2</td>
+<td>695.9</td>
+<td>MKO</td>
+<td>NSFCam</td>
+<td>Mauna kea Obsevatory. NSFCam K+Blocker old filter</td>
+</tr>
+<tr class="row-odd"><td>MKO/NSFCam/Kp</td>
+<td>MKO/NSFCam.Kp</td>
+<td>21125.2</td>
+<td>20941.5</td>
+<td>19018</td>
+<td>23235</td>
+<td>3401.9</td>
+<td>693.7</td>
+<td>MKO</td>
+<td>NSFCam</td>
+<td>Mauna kea Obsevatory. NSFCam Kp filter</td>
+</tr>
+<tr class="row-even"><td>MKO/NSFCam/Kp_old</td>
+<td>MKO/NSFCam.Kp_old</td>
+<td>21156.0</td>
+<td>20938.4</td>
+<td>18073</td>
+<td>23929</td>
+<td>3485.1</td>
+<td>692.9</td>
+<td>MKO</td>
+<td>NSFCam</td>
+<td>Mauna kea Obsevatory. NSFCam Kp old filter</td>
+</tr>
+<tr class="row-odd"><td>MKO/NSFCam/H21_blk</td>
+<td>MKO/NSFCam.H21_blk</td>
+<td>21161.2</td>
+<td>21160.1</td>
+<td>20944</td>
+<td>21381</td>
+<td>228.2</td>
+<td>694.1</td>
+<td>MKO</td>
+<td>NSFCam</td>
+<td>Mauna kea Obsevatory. NSFCam H2 v=1-0 S(1) + blocker filter (central region)</td>
+</tr>
+<tr class="row-even"><td>MKO/NSFCam/H21</td>
+<td>MKO/NSFCam.H21</td>
+<td>21161.5</td>
+<td>21160.4</td>
+<td>20944</td>
+<td>21381</td>
+<td>228.1</td>
+<td>694.1</td>
+<td>MKO</td>
+<td>NSFCam</td>
+<td>Mauna kea Obsevatory. NSFCam H2 v=1-0 S(1) filter (central region)</td>
+</tr>
+<tr class="row-odd"><td>MKO/NSFCam/Ks</td>
+<td>MKO/NSFCam.Ks</td>
+<td>21454.3</td>
+<td>21307.6</td>
+<td>19502</td>
+<td>23377</td>
+<td>3052.7</td>
+<td>676.7</td>
+<td>MKO</td>
+<td>NSFCam</td>
+<td>Mauna kea Obsevatory. NSFCam Ks filter</td>
+</tr>
+<tr class="row-even"><td>MKO/NSFCam/Ks_blk_old</td>
+<td>MKO/NSFCam.Ks_blk_old</td>
+<td>21506.8</td>
+<td>21345.9</td>
+<td>19188</td>
+<td>23692</td>
+<td>3102.8</td>
+<td>674.0</td>
+<td>MKO</td>
+<td>NSFCam</td>
+<td>Mauna kea Obsevatory. NSFCam Ks+Blocker old filter</td>
+</tr>
+<tr class="row-odd"><td>MKO/NSFCam/Brg</td>
+<td>MKO/NSFCam.Brg</td>
+<td>21554.3</td>
+<td>21550.8</td>
+<td>21330</td>
+<td>21782</td>
+<td>224.0</td>
+<td>651.2</td>
+<td>MKO</td>
+<td>NSFCam</td>
+<td>Mauna kea Obsevatory. NSFCam Brackett gamma + blocker filter</td>
+</tr>
+<tr class="row-even"><td>MKO/NSFCam/Ks_old</td>
+<td>MKO/NSFCam.Ks_old</td>
+<td>21554.8</td>
+<td>21389.7</td>
+<td>19192</td>
+<td>23713</td>
+<td>3159.1</td>
+<td>671.4</td>
+<td>MKO</td>
+<td>NSFCam</td>
+<td>Mauna kea Obsevatory. NSFCam Ks old filter</td>
+</tr>
+<tr class="row-odd"><td>MKO/NSFCam/K</td>
+<td>MKO/NSFCam.K</td>
+<td>22005.4</td>
+<td>21840.4</td>
+<td>19859</td>
+<td>24015</td>
+<td>3242.2</td>
+<td>647.7</td>
+<td>MKO</td>
+<td>NSFCam</td>
+<td>Mauna kea Obsevatory. NSFCam K filter</td>
+</tr>
+<tr class="row-even"><td>MKO/NSFCam/K_old</td>
+<td>MKO/NSFCam.K_old</td>
+<td>22034.8</td>
+<td>21803.8</td>
+<td>19144</td>
+<td>24694</td>
+<td>3854.4</td>
+<td>647.2</td>
+<td>MKO</td>
+<td>NSFCam</td>
+<td>Mauna kea Obsevatory. NSFCam K old filter</td>
+</tr>
+<tr class="row-odd"><td>MKO/NSFCam/H22_blk</td>
+<td>MKO/NSFCam.H22_blk</td>
+<td>22398.9</td>
+<td>22397.9</td>
+<td>22177</td>
+<td>22625</td>
+<td>230.4</td>
+<td>628.7</td>
+<td>MKO</td>
+<td>NSFCam</td>
+<td>Mauna kea Obsevatory. NSFCam H2 v=2-1 S(1) + blocker filter (central region)</td>
+</tr>
+<tr class="row-even"><td>MKO/NSFCam/H22</td>
+<td>MKO/NSFCam.H22</td>
+<td>22399.3</td>
+<td>22398.2</td>
+<td>22177</td>
+<td>22625</td>
+<td>229.9</td>
+<td>628.7</td>
+<td>MKO</td>
+<td>NSFCam</td>
+<td>Mauna kea Obsevatory. NSFCam H2 v=2-1 S(1) filter (central region)</td>
+</tr>
+<tr class="row-odd"><td>MKO/NSFCam/Cont_blk</td>
+<td>MKO/NSFCam.Cont_blk</td>
+<td>22670.3</td>
+<td>22665.3</td>
+<td>22180</td>
+<td>23176</td>
+<td>533.5</td>
+<td>615.6</td>
+<td>MKO</td>
+<td>NSFCam</td>
+<td>Mauna kea Obsevatory. NSFCam Continuum (K-band) + blocker filter (central region)</td>
+</tr>
+<tr class="row-even"><td>MKO/NSFCam/Cont</td>
+<td>MKO/NSFCam.Cont</td>
+<td>22671.8</td>
+<td>22666.9</td>
+<td>22182</td>
+<td>23179</td>
+<td>534.6</td>
+<td>615.5</td>
+<td>MKO</td>
+<td>NSFCam</td>
+<td>Mauna kea Obsevatory. NSFCam Continuum (K-band) filter (central region)</td>
+</tr>
+<tr class="row-odd"><td>MKO/NSFCam/Sp23</td>
+<td>MKO/NSFCam.Sp23</td>
+<td>22764.8</td>
+<td>22719.7</td>
+<td>21496</td>
+<td>24113</td>
+<td>1623.6</td>
+<td>611.4</td>
+<td>MKO</td>
+<td>NSFCam</td>
+<td>Mauna kea Obsevatory. NSFCam Spencer 2.3m filter (central region)</td>
+</tr>
+<tr class="row-even"><td>MKO/NSFCam/Co_blk</td>
+<td>MKO/NSFCam.Co_blk</td>
+<td>22995.9</td>
+<td>22994.5</td>
+<td>22717</td>
+<td>23264</td>
+<td>277.6</td>
+<td>600.5</td>
+<td>MKO</td>
+<td>NSFCam</td>
+<td>Mauna kea Obsevatory. NSFCam CO banhead + blocker filter (central region)</td>
+</tr>
+<tr class="row-odd"><td>MKO/NSFCam/Co</td>
+<td>MKO/NSFCam.Co</td>
+<td>22996.2</td>
+<td>22994.7</td>
+<td>22717</td>
+<td>23265</td>
+<td>278.0</td>
+<td>600.5</td>
+<td>MKO</td>
+<td>NSFCam</td>
+<td>Mauna kea Obsevatory. NSFCam CO banhead filter (central region)</td>
+</tr>
+<tr class="row-even"><td>MKO/NSFCam/L</td>
+<td>MKO/NSFCam.L</td>
+<td>34981.6</td>
+<td>34630.8</td>
+<td>31286</td>
+<td>38972</td>
+<td>6056.4</td>
+<td>285.4</td>
+<td>MKO</td>
+<td>NSFCam</td>
+<td>Mauna kea Obsevatory. NSFCam L filter</td>
+</tr>
+<tr class="row-odd"><td>MKO/NSFCam/Lp</td>
+<td>MKO/NSFCam.Lp</td>
+<td>37741.3</td>
+<td>37301.7</td>
+<td>33057</td>
+<td>42254</td>
+<td>6829.3</td>
+<td>248.3</td>
+<td>MKO</td>
+<td>NSFCam</td>
+<td>Mauna kea Obsevatory. NSFCam Lp filter</td>
+</tr>
+<tr class="row-even"><td>MKO/NSFCam/Lp_old</td>
+<td>MKO/NSFCam.Lp_old</td>
+<td>37815.3</td>
+<td>37495.1</td>
+<td>34056</td>
+<td>41801</td>
+<td>5918.1</td>
+<td>246.9</td>
+<td>MKO</td>
+<td>NSFCam</td>
+<td>Mauna kea Obsevatory. NSFCam Lp old filter</td>
+</tr>
+<tr class="row-odd"><td>MKO/NSFCam/Mp</td>
+<td>MKO/NSFCam.Mp</td>
+<td>46848.2</td>
+<td>46803.8</td>
+<td>45086</td>
+<td>48872</td>
+<td>2406.0</td>
+<td>164.7</td>
+<td>MKO</td>
+<td>NSFCam</td>
+<td>Mauna kea Obsevatory. NSFCam Mp filter</td>
+</tr>
+<tr class="row-even"><td>MKO/NSFCam/Mp_old</td>
+<td>MKO/NSFCam.Mp_old</td>
+<td>47783.5</td>
+<td>47744.3</td>
+<td>45528</td>
+<td>49920</td>
+<td>2279.6</td>
+<td>159.6</td>
+<td>MKO</td>
+<td>NSFCam</td>
+<td>Mauna kea Obsevatory. NSFCam Mp old filter</td>
+</tr>
+<tr class="row-odd"><td>MKO/NSFCam/M</td>
+<td>MKO/NSFCam.M</td>
+<td>48524.4</td>
+<td>48257.6</td>
+<td>44427</td>
+<td>52779</td>
+<td>5950.0</td>
+<td>155.1</td>
+<td>MKO</td>
+<td>NSFCam</td>
+<td>Mauna kea Obsevatory. NSFCam M filter</td>
+</tr>
+</tbody>
+</table>
 <p>&lt;Plots&gt;</p>
 </div>
 </div>

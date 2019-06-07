@@ -6,7 +6,7 @@
   <head>
     <meta http-equiv="X-UA-Compatible" content="IE=Edge" />
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-    <title>Filters of Observation Facility: OSN &#8212; wsynphot v0.0.dev109</title>
+    <title>Filters of Observation Facility: OSN &#8212; wsynphot v0.0.dev110</title>
     <link rel="stylesheet" href="../_static/bootstrap-astropy.css" type="text/css" />
     <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
     <link rel="stylesheet" type="text/css" href="../_static/graphviz.css" />
@@ -62,7 +62,7 @@
 	 |
       </li>
       <li>
-	<a href="../index.html">wsynphot v0.0.dev109</a>
+	<a href="../index.html">wsynphot v0.0.dev110</a>
 	 &#187;
       </li>
       <li><a href="../filter-list.html" accesskey="U">List of the available filters</a> &#187;</li>
@@ -82,38 +82,668 @@
 <p>Following <strong>Instruments</strong> are present:</p>
 <div class="section" id="circ">
 <h2>Circ<a class="headerlink" href="#circ" title="Permalink to this headline">¶</a></h2>
-<p>No. of filters = 4</p>
-<p>&lt;Table of Filters&gt;</p>
+<table border="1" class="docutils">
+<colgroup>
+<col width="9%" />
+<col width="9%" />
+<col width="9%" />
+<col width="9%" />
+<col width="9%" />
+<col width="9%" />
+<col width="9%" />
+<col width="9%" />
+<col width="9%" />
+<col width="9%" />
+<col width="9%" />
+</colgroup>
+<thead valign="bottom">
+<tr class="row-odd"><th class="head">wsynphot_filter_id</th>
+<th class="head">Filter ID</th>
+<th class="head">lambda_mean</th>
+<th class="head">lambda_eff</th>
+<th class="head">lambda_min</th>
+<th class="head">lambda_max</th>
+<th class="head">Weff</th>
+<th class="head">ZP (Jy)</th>
+<th class="head">Obs. Facility</th>
+<th class="head">Instrument</th>
+<th class="head">Description</th>
+</tr>
+</thead>
+<tbody valign="top">
+<tr class="row-even"><td>OSN/Circ/Johnson_B</td>
+<td>OSN/Circ.Johnson_B</td>
+<td>4352.8</td>
+<td>4327.4</td>
+<td>3533</td>
+<td>5761</td>
+<td>1069.6</td>
+<td>3864.5</td>
+<td>OSN</td>
+<td>Circ</td>
+<td>B Johnson, OSN #10</td>
+</tr>
+<tr class="row-odd"><td>OSN/Circ/Johnson_V</td>
+<td>OSN/Circ.Johnson_V</td>
+<td>5441.9</td>
+<td>5387.5</td>
+<td>4844</td>
+<td>6536</td>
+<td>882.4</td>
+<td>3631.9</td>
+<td>OSN</td>
+<td>Circ</td>
+<td>V Johnson, OSN #11</td>
+</tr>
+<tr class="row-even"><td>OSN/Circ/Cousins_R</td>
+<td>OSN/Circ.Cousins_R</td>
+<td>6597.8</td>
+<td>6398.7</td>
+<td>5514</td>
+<td>9227</td>
+<td>1582.6</td>
+<td>2973.6</td>
+<td>OSN</td>
+<td>Circ</td>
+<td>R Cousins, OSN #12</td>
+</tr>
+<tr class="row-odd"><td>OSN/Circ/Cousins_I</td>
+<td>OSN/Circ.Cousins_I</td>
+<td>8888.7</td>
+<td>8587.2</td>
+<td>7029</td>
+<td>11903</td>
+<td>2994.1</td>
+<td>2266.1</td>
+<td>OSN</td>
+<td>Circ</td>
+<td>I Cousins, OSN #13</td>
+</tr>
+</tbody>
+</table>
 <p>&lt;Plots&gt;</p>
 </div>
 <div class="section" id="comet25">
 <h2>Comet25<a class="headerlink" href="#comet25" title="Permalink to this headline">¶</a></h2>
-<p>No. of filters = 4</p>
-<p>&lt;Table of Filters&gt;</p>
+<table border="1" class="docutils">
+<colgroup>
+<col width="9%" />
+<col width="9%" />
+<col width="9%" />
+<col width="9%" />
+<col width="9%" />
+<col width="9%" />
+<col width="9%" />
+<col width="9%" />
+<col width="9%" />
+<col width="9%" />
+<col width="9%" />
+</colgroup>
+<thead valign="bottom">
+<tr class="row-odd"><th class="head">wsynphot_filter_id</th>
+<th class="head">Filter ID</th>
+<th class="head">lambda_mean</th>
+<th class="head">lambda_eff</th>
+<th class="head">lambda_min</th>
+<th class="head">lambda_max</th>
+<th class="head">Weff</th>
+<th class="head">ZP (Jy)</th>
+<th class="head">Obs. Facility</th>
+<th class="head">Instrument</th>
+<th class="head">Description</th>
+</tr>
+</thead>
+<tbody valign="top">
+<tr class="row-even"><td>OSN/Comet25/CO</td>
+<td>OSN/Comet25.CO</td>
+<td>4315.5</td>
+<td>4310.9</td>
+<td>4256</td>
+<td>4373</td>
+<td>67.9</td>
+<td>3689.2</td>
+<td>OSN</td>
+<td>Comet25</td>
+<td>CO+ filter, d25, OSN #66</td>
+</tr>
+<tr class="row-odd"><td>OSN/Comet25/C2</td>
+<td>OSN/Comet25.C2</td>
+<td>5161.5</td>
+<td>5160.9</td>
+<td>5088</td>
+<td>5238</td>
+<td>87.7</td>
+<td>3824.2</td>
+<td>OSN</td>
+<td>Comet25</td>
+<td>C2 filter, d25, OSN #67</td>
+</tr>
+<tr class="row-even"><td>OSN/Comet25/Cont6840</td>
+<td>OSN/Comet25.Cont6840</td>
+<td>6846.8</td>
+<td>6846.4</td>
+<td>6772</td>
+<td>6925</td>
+<td>91.3</td>
+<td>2878.4</td>
+<td>OSN</td>
+<td>Comet25</td>
+<td>Continuous filter, d25, OSN #68</td>
+</tr>
+<tr class="row-odd"><td>OSN/Comet25/H2O</td>
+<td>OSN/Comet25.H2O</td>
+<td>7041.4</td>
+<td>7039.6</td>
+<td>6880</td>
+<td>7219</td>
+<td>171.0</td>
+<td>2791.5</td>
+<td>OSN</td>
+<td>Comet25</td>
+<td>H2O+ filter, d25, OSN #69</td>
+</tr>
+</tbody>
+</table>
 <p>&lt;Plots&gt;</p>
 </div>
 <div class="section" id="comet50">
 <h2>Comet50<a class="headerlink" href="#comet50" title="Permalink to this headline">¶</a></h2>
-<p>No. of filters = 7</p>
-<p>&lt;Table of Filters&gt;</p>
+<table border="1" class="docutils">
+<colgroup>
+<col width="9%" />
+<col width="9%" />
+<col width="9%" />
+<col width="9%" />
+<col width="9%" />
+<col width="9%" />
+<col width="9%" />
+<col width="9%" />
+<col width="9%" />
+<col width="9%" />
+<col width="9%" />
+</colgroup>
+<thead valign="bottom">
+<tr class="row-odd"><th class="head">wsynphot_filter_id</th>
+<th class="head">Filter ID</th>
+<th class="head">lambda_mean</th>
+<th class="head">lambda_eff</th>
+<th class="head">lambda_min</th>
+<th class="head">lambda_max</th>
+<th class="head">Weff</th>
+<th class="head">ZP (Jy)</th>
+<th class="head">Obs. Facility</th>
+<th class="head">Instrument</th>
+<th class="head">Description</th>
+</tr>
+</thead>
+<tbody valign="top">
+<tr class="row-even"><td>OSN/Comet50/CN</td>
+<td>OSN/Comet50.CN</td>
+<td>3859.9</td>
+<td>3861.1</td>
+<td>3800</td>
+<td>3931</td>
+<td>55.7</td>
+<td>3223.9</td>
+<td>OSN</td>
+<td>Comet50</td>
+<td>CN filter, d50, OSN #60</td>
+</tr>
+<tr class="row-odd"><td>OSN/Comet50/C3_z1</td>
+<td>OSN/Comet50.C3_z1</td>
+<td>4057.3</td>
+<td>4054.9</td>
+<td>3994</td>
+<td>4121</td>
+<td>71.0</td>
+<td>4355.5</td>
+<td>OSN</td>
+<td>Comet50</td>
+<td>C3 filter, zone 1; d50, OSN #61</td>
+</tr>
+<tr class="row-even"><td>OSN/Comet50/C3_z2</td>
+<td>OSN/Comet50.C3_z2</td>
+<td>4080.6</td>
+<td>4076.9</td>
+<td>4008</td>
+<td>4160</td>
+<td>74.9</td>
+<td>3950.3</td>
+<td>OSN</td>
+<td>Comet50</td>
+<td>C3 filter, zone 2; d50, OSN #61</td>
+</tr>
+<tr class="row-odd"><td>OSN/Comet50/Cont4430</td>
+<td>OSN/Comet50.Cont4430</td>
+<td>4428.7</td>
+<td>4428.6</td>
+<td>4389</td>
+<td>4472</td>
+<td>37.6</td>
+<td>4412.6</td>
+<td>OSN</td>
+<td>Comet50</td>
+<td>Continuous filter, CW=4420A, d50, OSN #62</td>
+</tr>
+<tr class="row-even"><td>OSN/Comet50/C2</td>
+<td>OSN/Comet50.C2</td>
+<td>5116.1</td>
+<td>5115.2</td>
+<td>5025</td>
+<td>5213</td>
+<td>120.4</td>
+<td>3871.6</td>
+<td>OSN</td>
+<td>Comet50</td>
+<td>C2 filter, d50, OSN #63</td>
+</tr>
+<tr class="row-odd"><td>OSN/Comet50/NH2</td>
+<td>OSN/Comet50.NH2</td>
+<td>6622.9</td>
+<td>6622.9</td>
+<td>6588</td>
+<td>6658</td>
+<td>36.2</td>
+<td>2934.8</td>
+<td>OSN</td>
+<td>Comet50</td>
+<td>NH2 filter, d50, OSN #64</td>
+</tr>
+<tr class="row-even"><td>OSN/Comet50/Cont6840</td>
+<td>OSN/Comet50.Cont6840</td>
+<td>6841.1</td>
+<td>6840.8</td>
+<td>6772</td>
+<td>6913</td>
+<td>84.2</td>
+<td>2880.9</td>
+<td>OSN</td>
+<td>Comet50</td>
+<td>Continuous filter, CW=6840A, d50, OSN #65</td>
+</tr>
+</tbody>
+</table>
 <p>&lt;Plots&gt;</p>
 </div>
 <div class="section" id="gunn">
 <h2>Gunn<a class="headerlink" href="#gunn" title="Permalink to this headline">¶</a></h2>
-<p>No. of filters = 3</p>
-<p>&lt;Table of Filters&gt;</p>
+<table border="1" class="docutils">
+<colgroup>
+<col width="9%" />
+<col width="9%" />
+<col width="9%" />
+<col width="9%" />
+<col width="9%" />
+<col width="9%" />
+<col width="9%" />
+<col width="9%" />
+<col width="9%" />
+<col width="9%" />
+<col width="9%" />
+</colgroup>
+<thead valign="bottom">
+<tr class="row-odd"><th class="head">wsynphot_filter_id</th>
+<th class="head">Filter ID</th>
+<th class="head">lambda_mean</th>
+<th class="head">lambda_eff</th>
+<th class="head">lambda_min</th>
+<th class="head">lambda_max</th>
+<th class="head">Weff</th>
+<th class="head">ZP (Jy)</th>
+<th class="head">Obs. Facility</th>
+<th class="head">Instrument</th>
+<th class="head">Description</th>
+</tr>
+</thead>
+<tbody valign="top">
+<tr class="row-even"><td>OSN/Gunn/v</td>
+<td>OSN/Gunn.v</td>
+<td>4017.2</td>
+<td>4025.8</td>
+<td>3707</td>
+<td>4347</td>
+<td>381.9</td>
+<td>3842.2</td>
+<td>OSN</td>
+<td>Gunn</td>
+<td>Gunn v filter, OSN #20</td>
+</tr>
+<tr class="row-odd"><td>OSN/Gunn/g</td>
+<td>OSN/Gunn.g</td>
+<td>4917.6</td>
+<td>4894.8</td>
+<td>4509</td>
+<td>5312</td>
+<td>657.8</td>
+<td>3911.6</td>
+<td>OSN</td>
+<td>Gunn</td>
+<td>Gunn g filter, OSN #21</td>
+</tr>
+<tr class="row-even"><td>OSN/Gunn/r</td>
+<td>OSN/Gunn.r</td>
+<td>6513.5</td>
+<td>6479.4</td>
+<td>5887</td>
+<td>7018</td>
+<td>835.2</td>
+<td>2987.3</td>
+<td>OSN</td>
+<td>Gunn</td>
+<td>Gunn r filter, OSN #22</td>
+</tr>
+</tbody>
+</table>
 <p>&lt;Plots&gt;</p>
 </div>
 <div class="section" id="johnson">
 <h2>Johnson<a class="headerlink" href="#johnson" title="Permalink to this headline">¶</a></h2>
-<p>No. of filters = 7</p>
-<p>&lt;Table of Filters&gt;</p>
+<table border="1" class="docutils">
+<colgroup>
+<col width="9%" />
+<col width="9%" />
+<col width="9%" />
+<col width="9%" />
+<col width="9%" />
+<col width="9%" />
+<col width="9%" />
+<col width="9%" />
+<col width="9%" />
+<col width="9%" />
+<col width="9%" />
+</colgroup>
+<thead valign="bottom">
+<tr class="row-odd"><th class="head">wsynphot_filter_id</th>
+<th class="head">Filter ID</th>
+<th class="head">lambda_mean</th>
+<th class="head">lambda_eff</th>
+<th class="head">lambda_min</th>
+<th class="head">lambda_max</th>
+<th class="head">Weff</th>
+<th class="head">ZP (Jy)</th>
+<th class="head">Obs. Facility</th>
+<th class="head">Instrument</th>
+<th class="head">Description</th>
+</tr>
+</thead>
+<tbody valign="top">
+<tr class="row-even"><td>OSN/Johnson/U</td>
+<td>OSN/Johnson.U</td>
+<td>3637.9</td>
+<td>3687.8</td>
+<td>3149</td>
+<td>4108</td>
+<td>526.0</td>
+<td>1818.0</td>
+<td>OSN</td>
+<td>Johnson</td>
+<td>U Johnson filter, OSN #01</td>
+</tr>
+<tr class="row-odd"><td>OSN/Johnson/B</td>
+<td>OSN/Johnson.B</td>
+<td>4364.5</td>
+<td>4336.7</td>
+<td>3528</td>
+<td>5777</td>
+<td>1094.4</td>
+<td>3856.9</td>
+<td>OSN</td>
+<td>Johnson</td>
+<td>B Johnson filter, OSN #03</td>
+</tr>
+<tr class="row-even"><td>OSN/Johnson/V</td>
+<td>OSN/Johnson.V</td>
+<td>5456.0</td>
+<td>5399.2</td>
+<td>4842</td>
+<td>6571</td>
+<td>914.9</td>
+<td>3622.2</td>
+<td>OSN</td>
+<td>Johnson</td>
+<td>V Johnson filter, OSN #04</td>
+</tr>
+<tr class="row-odd"><td>OSN/Johnson/Cousins_R1</td>
+<td>OSN/Johnson.Cousins_R1</td>
+<td>6604.9</td>
+<td>6406.6</td>
+<td>5522</td>
+<td>9233</td>
+<td>1577.2</td>
+<td>2970.0</td>
+<td>OSN</td>
+<td>Johnson</td>
+<td>R(1) Cousins filter, OSN #05</td>
+</tr>
+<tr class="row-even"><td>OSN/Johnson/Cousins_R2</td>
+<td>OSN/Johnson.Cousins_R2</td>
+<td>6633.8</td>
+<td>6443.5</td>
+<td>5572</td>
+<td>9221</td>
+<td>1533.5</td>
+<td>2955.5</td>
+<td>OSN</td>
+<td>Johnson</td>
+<td>R(2) Cousins filter, OSN #06</td>
+</tr>
+<tr class="row-odd"><td>OSN/Johnson/Cousins_I2</td>
+<td>OSN/Johnson.Cousins_I2</td>
+<td>8881.6</td>
+<td>8586.6</td>
+<td>7037</td>
+<td>11863</td>
+<td>2957.1</td>
+<td>2267.5</td>
+<td>OSN</td>
+<td>Johnson</td>
+<td>I(2) Cousins filter, OSN #08</td>
+</tr>
+<tr class="row-even"><td>OSN/Johnson/Cousins_I1</td>
+<td>OSN/Johnson.Cousins_I1</td>
+<td>8910.2</td>
+<td>8610.5</td>
+<td>7038</td>
+<td>11927</td>
+<td>2993.3</td>
+<td>2261.6</td>
+<td>OSN</td>
+<td>Johnson</td>
+<td>I(1) Cousins filter, OSN #07</td>
+</tr>
+</tbody>
+</table>
 <p>&lt;Plots&gt;</p>
 </div>
 <div class="section" id="stromgren">
 <h2>Stromgren<a class="headerlink" href="#stromgren" title="Permalink to this headline">¶</a></h2>
-<p>No. of filters = 13</p>
-<p>&lt;Table of Filters&gt;</p>
+<table border="1" class="docutils">
+<colgroup>
+<col width="9%" />
+<col width="9%" />
+<col width="9%" />
+<col width="9%" />
+<col width="9%" />
+<col width="9%" />
+<col width="9%" />
+<col width="9%" />
+<col width="9%" />
+<col width="9%" />
+<col width="9%" />
+</colgroup>
+<thead valign="bottom">
+<tr class="row-odd"><th class="head">wsynphot_filter_id</th>
+<th class="head">Filter ID</th>
+<th class="head">lambda_mean</th>
+<th class="head">lambda_eff</th>
+<th class="head">lambda_min</th>
+<th class="head">lambda_max</th>
+<th class="head">Weff</th>
+<th class="head">ZP (Jy)</th>
+<th class="head">Obs. Facility</th>
+<th class="head">Instrument</th>
+<th class="head">Description</th>
+</tr>
+</thead>
+<tbody valign="top">
+<tr class="row-even"><td>OSN/Stromgren/u</td>
+<td>OSN/Stromgren.u</td>
+<td>3422.5</td>
+<td>3419.9</td>
+<td>2884</td>
+<td>3726</td>
+<td>276.4</td>
+<td>1252.8</td>
+<td>OSN</td>
+<td>Stromgren</td>
+<td>u stromgren, OSN #14</td>
+</tr>
+<tr class="row-odd"><td>OSN/Stromgren/v_z3</td>
+<td>OSN/Stromgren.v_z3</td>
+<td>4128.8</td>
+<td>4129.1</td>
+<td>3940</td>
+<td>4322</td>
+<td>190.3</td>
+<td>4211.0</td>
+<td>OSN</td>
+<td>Stromgren</td>
+<td>v stromgren, zone 3, OSN #15</td>
+</tr>
+<tr class="row-even"><td>OSN/Stromgren/v_z2</td>
+<td>OSN/Stromgren.v_z2</td>
+<td>4130.4</td>
+<td>4130.6</td>
+<td>3947</td>
+<td>4321</td>
+<td>196.3</td>
+<td>4222.1</td>
+<td>OSN</td>
+<td>Stromgren</td>
+<td>v stromgren, zone 2, OSN #15</td>
+</tr>
+<tr class="row-odd"><td>OSN/Stromgren/v_z1</td>
+<td>OSN/Stromgren.v_z1</td>
+<td>4130.9</td>
+<td>4131.1</td>
+<td>3952</td>
+<td>4325</td>
+<td>198.3</td>
+<td>4224.0</td>
+<td>OSN</td>
+<td>Stromgren</td>
+<td>v stromgren, zone 1, OSN #15</td>
+</tr>
+<tr class="row-even"><td>OSN/Stromgren/b_z1</td>
+<td>OSN/Stromgren.b_z1</td>
+<td>4725.7</td>
+<td>4721.6</td>
+<td>4541</td>
+<td>4911</td>
+<td>197.2</td>
+<td>4124.2</td>
+<td>OSN</td>
+<td>Stromgren</td>
+<td>b stromgren, zone 1, OSN #16</td>
+</tr>
+<tr class="row-odd"><td>OSN/Stromgren/b_z2</td>
+<td>OSN/Stromgren.b_z2</td>
+<td>4727.7</td>
+<td>4723.3</td>
+<td>4543</td>
+<td>4913</td>
+<td>191.7</td>
+<td>4115.4</td>
+<td>OSN</td>
+<td>Stromgren</td>
+<td>b stromgren, zone 2, OSN #16</td>
+</tr>
+<tr class="row-even"><td>OSN/Stromgren/Hbetan_z1</td>
+<td>OSN/Stromgren.Hbetan_z1</td>
+<td>4879.3</td>
+<td>4881.1</td>
+<td>4834</td>
+<td>4923</td>
+<td>32.2</td>
+<td>3166.0</td>
+<td>OSN</td>
+<td>Stromgren</td>
+<td>Hbeta(n) stromgren, zone 1, OSN #19</td>
+</tr>
+<tr class="row-odd"><td>OSN/Stromgren/Hbetan_z2</td>
+<td>OSN/Stromgren.Hbetan_z2</td>
+<td>4882.2</td>
+<td>4883.8</td>
+<td>4801</td>
+<td>4950</td>
+<td>34.1</td>
+<td>3307.5</td>
+<td>OSN</td>
+<td>Stromgren</td>
+<td>Hbeta(n) stromgren, zone 2, OSN #19</td>
+</tr>
+<tr class="row-even"><td>OSN/Stromgren/Hbetaw_z1</td>
+<td>OSN/Stromgren.Hbetaw_z1</td>
+<td>4886.0</td>
+<td>4888.8</td>
+<td>4783</td>
+<td>4992</td>
+<td>102.6</td>
+<td>3429.7</td>
+<td>OSN</td>
+<td>Stromgren</td>
+<td>Hbeta(w) stromgren, zone 1, OSN #18</td>
+</tr>
+<tr class="row-odd"><td>OSN/Stromgren/Hbetaw_z2</td>
+<td>OSN/Stromgren.Hbetaw_z2</td>
+<td>4887.1</td>
+<td>4890.1</td>
+<td>4784</td>
+<td>4995</td>
+<td>102.2</td>
+<td>3431.6</td>
+<td>OSN</td>
+<td>Stromgren</td>
+<td>Hbeta(w) stromgren, zone 2, OSN #18</td>
+</tr>
+<tr class="row-even"><td>OSN/Stromgren/Hbetaw_z3</td>
+<td>OSN/Stromgren.Hbetaw_z3</td>
+<td>4894.5</td>
+<td>4897.8</td>
+<td>4786</td>
+<td>5011</td>
+<td>102.0</td>
+<td>3488.0</td>
+<td>OSN</td>
+<td>Stromgren</td>
+<td>Hbeta(w) stromgren, zone 3, OSN #18</td>
+</tr>
+<tr class="row-odd"><td>OSN/Stromgren/y_z1</td>
+<td>OSN/Stromgren.y_z1</td>
+<td>5505.3</td>
+<td>5502.7</td>
+<td>5260</td>
+<td>5684</td>
+<td>200.3</td>
+<td>3593.2</td>
+<td>OSN</td>
+<td>Stromgren</td>
+<td>y stromgren, zone 1, OSN #17</td>
+</tr>
+<tr class="row-even"><td>OSN/Stromgren/y_z2</td>
+<td>OSN/Stromgren.y_z2</td>
+<td>5513.3</td>
+<td>5510.6</td>
+<td>5270</td>
+<td>5703</td>
+<td>197.2</td>
+<td>3588.7</td>
+<td>OSN</td>
+<td>Stromgren</td>
+<td>y stromgren, zone 2, OSN #17</td>
+</tr>
+</tbody>
+</table>
 <p>&lt;Plots&gt;</p>
 </div>
 </div>

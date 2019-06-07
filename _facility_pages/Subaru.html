@@ -6,7 +6,7 @@
   <head>
     <meta http-equiv="X-UA-Compatible" content="IE=Edge" />
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-    <title>Filters of Observation Facility: Subaru &#8212; wsynphot v0.0.dev109</title>
+    <title>Filters of Observation Facility: Subaru &#8212; wsynphot v0.0.dev110</title>
     <link rel="stylesheet" href="../_static/bootstrap-astropy.css" type="text/css" />
     <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
     <link rel="stylesheet" type="text/css" href="../_static/graphviz.css" />
@@ -62,7 +62,7 @@
 	 |
       </li>
       <li>
-	<a href="../index.html">wsynphot v0.0.dev109</a>
+	<a href="../index.html">wsynphot v0.0.dev110</a>
 	 &#187;
       </li>
       <li><a href="../filter-list.html" accesskey="U">List of the available filters</a> &#187;</li>
@@ -82,44 +82,1219 @@
 <p>Following <strong>Instruments</strong> are present:</p>
 <div class="section" id="ciao">
 <h2>CIAO<a class="headerlink" href="#ciao" title="Permalink to this headline">¶</a></h2>
-<p>No. of filters = 19</p>
-<p>&lt;Table of Filters&gt;</p>
+<table border="1" class="docutils">
+<colgroup>
+<col width="9%" />
+<col width="9%" />
+<col width="9%" />
+<col width="9%" />
+<col width="9%" />
+<col width="9%" />
+<col width="9%" />
+<col width="9%" />
+<col width="9%" />
+<col width="9%" />
+<col width="9%" />
+</colgroup>
+<thead valign="bottom">
+<tr class="row-odd"><th class="head">wsynphot_filter_id</th>
+<th class="head">Filter ID</th>
+<th class="head">lambda_mean</th>
+<th class="head">lambda_eff</th>
+<th class="head">lambda_min</th>
+<th class="head">lambda_max</th>
+<th class="head">Weff</th>
+<th class="head">ZP (Jy)</th>
+<th class="head">Obs. Facility</th>
+<th class="head">Instrument</th>
+<th class="head">Description</th>
+</tr>
+</thead>
+<tbody valign="top">
+<tr class="row-even"><td>Subaru/CIAO/z</td>
+<td>Subaru/CIAO.z</td>
+<td>10320.5</td>
+<td>10314.1</td>
+<td>9840</td>
+<td>10846</td>
+<td>514.8</td>
+<td>2064.3</td>
+<td>Subaru</td>
+<td>CIAO</td>
+<td>CIAO z</td>
+</tr>
+<tr class="row-odd"><td>Subaru/CIAO/Jcont</td>
+<td>Subaru/CIAO.Jcont</td>
+<td>12118.0</td>
+<td>12116.8</td>
+<td>11916</td>
+<td>12311</td>
+<td>188.8</td>
+<td>1647.5</td>
+<td>Subaru</td>
+<td>CIAO</td>
+<td>CIAO Jcont</td>
+</tr>
+<tr class="row-even"><td>Subaru/CIAO/J</td>
+<td>Subaru/CIAO.J</td>
+<td>12484.1</td>
+<td>12417.4</td>
+<td>11482</td>
+<td>13495</td>
+<td>1516.7</td>
+<td>1562.2</td>
+<td>Subaru</td>
+<td>CIAO</td>
+<td>CIAO J</td>
+</tr>
+<tr class="row-odd"><td>Subaru/CIAO/Pabeta</td>
+<td>Subaru/CIAO.Pabeta</td>
+<td>12944.4</td>
+<td>12944.9</td>
+<td>12730</td>
+<td>13138</td>
+<td>186.8</td>
+<td>1462.6</td>
+<td>Subaru</td>
+<td>CIAO</td>
+<td>CIAO Pabeta</td>
+</tr>
+<tr class="row-even"><td>Subaru/CIAO/Hcont</td>
+<td>Subaru/CIAO.Hcont</td>
+<td>15813.5</td>
+<td>15811.8</td>
+<td>15602</td>
+<td>16019</td>
+<td>212.3</td>
+<td>1074.1</td>
+<td>Subaru</td>
+<td>CIAO</td>
+<td>CIAO HCont</td>
+</tr>
+<tr class="row-odd"><td>Subaru/CIAO/CH4s</td>
+<td>Subaru/CIAO.CH4s</td>
+<td>16062.4</td>
+<td>16030.5</td>
+<td>14942</td>
+<td>17375</td>
+<td>1195.6</td>
+<td>1060.6</td>
+<td>Subaru</td>
+<td>CIAO</td>
+<td>CIAO CH4</td>
+</tr>
+<tr class="row-even"><td>Subaru/CIAO/H</td>
+<td>Subaru/CIAO.H</td>
+<td>16298.3</td>
+<td>16141.1</td>
+<td>14510</td>
+<td>18091</td>
+<td>2845.7</td>
+<td>1045.9</td>
+<td>Subaru</td>
+<td>CIAO</td>
+<td>CIAO H</td>
+</tr>
+<tr class="row-odd"><td>Subaru/CIAO/FeII</td>
+<td>Subaru/CIAO.FeII</td>
+<td>16516.1</td>
+<td>16517.5</td>
+<td>16280</td>
+<td>16764</td>
+<td>251.6</td>
+<td>1024.0</td>
+<td>Subaru</td>
+<td>CIAO</td>
+<td>CIAO [FeII]</td>
+</tr>
+<tr class="row-even"><td>Subaru/CIAO/CH4l</td>
+<td>Subaru/CIAO.CH4l</td>
+<td>16888.3</td>
+<td>16850.9</td>
+<td>15684</td>
+<td>18229</td>
+<td>1309.2</td>
+<td>990.1</td>
+<td>Subaru</td>
+<td>CIAO</td>
+<td>CIAO CH4 off</td>
+</tr>
+<tr class="row-odd"><td>Subaru/CIAO/H2v1_0</td>
+<td>Subaru/CIAO.H2v1-0</td>
+<td>21299.7</td>
+<td>21297.9</td>
+<td>21004</td>
+<td>21605</td>
+<td>310.1</td>
+<td>685.7</td>
+<td>Subaru</td>
+<td>CIAO</td>
+<td>CIAO H2 1-0</td>
+</tr>
+<tr class="row-even"><td>Subaru/CIAO/Ks</td>
+<td>Subaru/CIAO.Ks</td>
+<td>21461.3</td>
+<td>21315.1</td>
+<td>19503</td>
+<td>23390</td>
+<td>3057.4</td>
+<td>676.3</td>
+<td>Subaru</td>
+<td>CIAO</td>
+<td>CIAO Ks</td>
+</tr>
+<tr class="row-odd"><td>Subaru/CIAO/K</td>
+<td>Subaru/CIAO.K</td>
+<td>22005.4</td>
+<td>21840.5</td>
+<td>19859</td>
+<td>24015</td>
+<td>3242.3</td>
+<td>647.7</td>
+<td>Subaru</td>
+<td>CIAO</td>
+<td>CIAO K</td>
+</tr>
+<tr class="row-even"><td>Subaru/CIAO/H2v2_1</td>
+<td>Subaru/CIAO.H2v2-1</td>
+<td>22627.9</td>
+<td>22625.2</td>
+<td>22203</td>
+<td>23020</td>
+<td>379.3</td>
+<td>617.5</td>
+<td>Subaru</td>
+<td>CIAO</td>
+<td>CIAO H2 2-1</td>
+</tr>
+<tr class="row-odd"><td>Subaru/CIAO/Kcont</td>
+<td>Subaru/CIAO.Kcont</td>
+<td>22854.6</td>
+<td>22852.5</td>
+<td>22461</td>
+<td>23186</td>
+<td>318.2</td>
+<td>606.9</td>
+<td>Subaru</td>
+<td>CIAO</td>
+<td>CIAO Kcont</td>
+</tr>
+<tr class="row-even"><td>Subaru/CIAO/COv2_0</td>
+<td>Subaru/CIAO.COv2-0</td>
+<td>23067.7</td>
+<td>23065.8</td>
+<td>22716</td>
+<td>23400</td>
+<td>292.3</td>
+<td>597.3</td>
+<td>Subaru</td>
+<td>CIAO</td>
+<td>CIAO CO 2-0</td>
+</tr>
+<tr class="row-odd"><td>Subaru/CIAO/H2Oice</td>
+<td>Subaru/CIAO.H2Oice</td>
+<td>30877.1</td>
+<td>30844.2</td>
+<td>28878</td>
+<td>32750</td>
+<td>1469.4</td>
+<td>356.1</td>
+<td>Subaru</td>
+<td>CIAO</td>
+<td>CIAO H2O ice</td>
+</tr>
+<tr class="row-even"><td>Subaru/CIAO/PAH</td>
+<td>Subaru/CIAO.PAH</td>
+<td>33196.2</td>
+<td>33195.5</td>
+<td>32656</td>
+<td>33719</td>
+<td>538.8</td>
+<td>308.8</td>
+<td>Subaru</td>
+<td>CIAO</td>
+<td>CIAO PAH</td>
+</tr>
+<tr class="row-odd"><td>Subaru/CIAO/Lp</td>
+<td>Subaru/CIAO.Lp</td>
+<td>37741.3</td>
+<td>37301.7</td>
+<td>33057</td>
+<td>42254</td>
+<td>6829.6</td>
+<td>248.3</td>
+<td>Subaru</td>
+<td>CIAO</td>
+<td>CIAO L’</td>
+</tr>
+<tr class="row-even"><td>Subaru/CIAO/Mp</td>
+<td>Subaru/CIAO.Mp</td>
+<td>46848.2</td>
+<td>46803.8</td>
+<td>45086</td>
+<td>48872</td>
+<td>2406.0</td>
+<td>164.7</td>
+<td>Subaru</td>
+<td>CIAO</td>
+<td>CIAO M’</td>
+</tr>
+</tbody>
+</table>
 <p>&lt;Plots&gt;</p>
 </div>
 <div class="section" id="focas">
 <h2>FOCAS<a class="headerlink" href="#focas" title="Permalink to this headline">¶</a></h2>
-<p>No. of filters = 13</p>
-<p>&lt;Table of Filters&gt;</p>
+<table border="1" class="docutils">
+<colgroup>
+<col width="9%" />
+<col width="9%" />
+<col width="9%" />
+<col width="9%" />
+<col width="9%" />
+<col width="9%" />
+<col width="9%" />
+<col width="9%" />
+<col width="9%" />
+<col width="9%" />
+<col width="9%" />
+</colgroup>
+<thead valign="bottom">
+<tr class="row-odd"><th class="head">wsynphot_filter_id</th>
+<th class="head">Filter ID</th>
+<th class="head">lambda_mean</th>
+<th class="head">lambda_eff</th>
+<th class="head">lambda_min</th>
+<th class="head">lambda_max</th>
+<th class="head">Weff</th>
+<th class="head">ZP (Jy)</th>
+<th class="head">Obs. Facility</th>
+<th class="head">Instrument</th>
+<th class="head">Description</th>
+</tr>
+</thead>
+<tbody valign="top">
+<tr class="row-even"><td>Subaru/FOCAS/U</td>
+<td>Subaru/FOCAS.U</td>
+<td>3591.2</td>
+<td>3636.1</td>
+<td>3047</td>
+<td>4107</td>
+<td>550.1</td>
+<td>1682.5</td>
+<td>Subaru</td>
+<td>FOCAS</td>
+<td>FOCAS U</td>
+</tr>
+<tr class="row-odd"><td>Subaru/FOCAS/N373</td>
+<td>Subaru/FOCAS.N373</td>
+<td>3732.8</td>
+<td>3735.1</td>
+<td>3672</td>
+<td>3790</td>
+<td>59.8</td>
+<td>1644.0</td>
+<td>Subaru</td>
+<td>FOCAS</td>
+<td>FOCAS N373</td>
+</tr>
+<tr class="row-even"><td>Subaru/FOCAS/N386</td>
+<td>Subaru/FOCAS.N386</td>
+<td>3857.3</td>
+<td>3860.4</td>
+<td>3762</td>
+<td>3957</td>
+<td>109.7</td>
+<td>3108.7</td>
+<td>Subaru</td>
+<td>FOCAS</td>
+<td>FOCAS N386</td>
+</tr>
+<tr class="row-odd"><td>Subaru/FOCAS/B</td>
+<td>Subaru/FOCAS.B</td>
+<td>4410.1</td>
+<td>4373.8</td>
+<td>3638</td>
+<td>5103</td>
+<td>1023.4</td>
+<td>3963.9</td>
+<td>Subaru</td>
+<td>FOCAS</td>
+<td>FOCAS B</td>
+</tr>
+<tr class="row-even"><td>Subaru/FOCAS/N487</td>
+<td>Subaru/FOCAS.N487</td>
+<td>4874.4</td>
+<td>4876.5</td>
+<td>4820</td>
+<td>4929</td>
+<td>53.8</td>
+<td>3111.5</td>
+<td>Subaru</td>
+<td>FOCAS</td>
+<td>FOCAS N487</td>
+</tr>
+<tr class="row-odd"><td>Subaru/FOCAS/N502</td>
+<td>Subaru/FOCAS.N502</td>
+<td>5020.7</td>
+<td>5020.4</td>
+<td>4961</td>
+<td>5079</td>
+<td>60.0</td>
+<td>3943.3</td>
+<td>Subaru</td>
+<td>FOCAS</td>
+<td>FOCAS N502</td>
+</tr>
+<tr class="row-even"><td>Subaru/FOCAS/N512</td>
+<td>Subaru/FOCAS.N512</td>
+<td>5115.5</td>
+<td>5115.2</td>
+<td>5060</td>
+<td>5170</td>
+<td>61.1</td>
+<td>3884.5</td>
+<td>Subaru</td>
+<td>FOCAS</td>
+<td>FOCAS N512</td>
+</tr>
+<tr class="row-odd"><td>Subaru/FOCAS/V</td>
+<td>Subaru/FOCAS.V</td>
+<td>5489.3</td>
+<td>5440.8</td>
+<td>4804</td>
+<td>6182</td>
+<td>972.3</td>
+<td>3597.0</td>
+<td>Subaru</td>
+<td>FOCAS</td>
+<td>FOCAS V</td>
+</tr>
+<tr class="row-even"><td>Subaru/FOCAS/N642</td>
+<td>Subaru/FOCAS.N642</td>
+<td>6417.8</td>
+<td>6417.0</td>
+<td>6321</td>
+<td>6516</td>
+<td>125.7</td>
+<td>3071.7</td>
+<td>Subaru</td>
+<td>FOCAS</td>
+<td>FOCAS N642</td>
+</tr>
+<tr class="row-odd"><td>Subaru/FOCAS/N658</td>
+<td>Subaru/FOCAS.N658</td>
+<td>6571.7</td>
+<td>6572.4</td>
+<td>6510</td>
+<td>6630</td>
+<td>73.5</td>
+<td>2528.1</td>
+<td>Subaru</td>
+<td>FOCAS</td>
+<td>FOCAS N658</td>
+</tr>
+<tr class="row-even"><td>Subaru/FOCAS/R</td>
+<td>Subaru/FOCAS.R</td>
+<td>6577.2</td>
+<td>6519.5</td>
+<td>5844</td>
+<td>7446</td>
+<td>1159.3</td>
+<td>2965.1</td>
+<td>Subaru</td>
+<td>FOCAS</td>
+<td>FOCAS R</td>
+</tr>
+<tr class="row-odd"><td>Subaru/FOCAS/N670</td>
+<td>Subaru/FOCAS.N670</td>
+<td>6706.4</td>
+<td>6706.1</td>
+<td>6640</td>
+<td>6779</td>
+<td>84.3</td>
+<td>2938.0</td>
+<td>Subaru</td>
+<td>FOCAS</td>
+<td>FOCAS N670</td>
+</tr>
+<tr class="row-even"><td>Subaru/FOCAS/I</td>
+<td>Subaru/FOCAS.I</td>
+<td>8071.0</td>
+<td>7995.8</td>
+<td>7098</td>
+<td>9078</td>
+<td>1454.6</td>
+<td>2397.8</td>
+<td>Subaru</td>
+<td>FOCAS</td>
+<td>FOCAS I</td>
+</tr>
+</tbody>
+</table>
 <p>&lt;Plots&gt;</p>
 </div>
 <div class="section" id="hsc">
 <h2>HSC<a class="headerlink" href="#hsc" title="Permalink to this headline">¶</a></h2>
-<p>No. of filters = 18</p>
-<p>&lt;Table of Filters&gt;</p>
+<table border="1" class="docutils">
+<colgroup>
+<col width="9%" />
+<col width="9%" />
+<col width="9%" />
+<col width="9%" />
+<col width="9%" />
+<col width="9%" />
+<col width="9%" />
+<col width="9%" />
+<col width="9%" />
+<col width="9%" />
+<col width="9%" />
+</colgroup>
+<thead valign="bottom">
+<tr class="row-odd"><th class="head">wsynphot_filter_id</th>
+<th class="head">Filter ID</th>
+<th class="head">lambda_mean</th>
+<th class="head">lambda_eff</th>
+<th class="head">lambda_min</th>
+<th class="head">lambda_max</th>
+<th class="head">Weff</th>
+<th class="head">ZP (Jy)</th>
+<th class="head">Obs. Facility</th>
+<th class="head">Instrument</th>
+<th class="head">Description</th>
+</tr>
+</thead>
+<tbody valign="top">
+<tr class="row-even"><td>Subaru/HSC/NB387_filter</td>
+<td>Subaru/HSC.NB387_filter</td>
+<td>3858.6</td>
+<td>3859.7</td>
+<td>3813</td>
+<td>3906</td>
+<td>56.6</td>
+<td>3188.7</td>
+<td>Subaru</td>
+<td>HSC</td>
+<td>HSC NB387 (filter only)</td>
+</tr>
+<tr class="row-odd"><td>Subaru/HSC/NB468_filter</td>
+<td>Subaru/HSC.NB468_filter</td>
+<td>4688.9</td>
+<td>4688.3</td>
+<td>4608</td>
+<td>4769</td>
+<td>90.0</td>
+<td>4212.1</td>
+<td>Subaru</td>
+<td>HSC</td>
+<td>HSC NB468 (filter only)</td>
+</tr>
+<tr class="row-even"><td>Subaru/HSC/g_filter</td>
+<td>Subaru/HSC.g_filter</td>
+<td>4730.4</td>
+<td>4632.9</td>
+<td>3940</td>
+<td>5546</td>
+<td>1459.8</td>
+<td>3970.0</td>
+<td>Subaru</td>
+<td>HSC</td>
+<td>HSC g (filter only)</td>
+</tr>
+<tr class="row-odd"><td>Subaru/HSC/NB515_filter</td>
+<td>Subaru/HSC.NB515_filter</td>
+<td>5154.9</td>
+<td>5154.4</td>
+<td>5088</td>
+<td>5224</td>
+<td>76.1</td>
+<td>3828.6</td>
+<td>Subaru</td>
+<td>HSC</td>
+<td>HSC NB515 (filter only)</td>
+</tr>
+<tr class="row-even"><td>Subaru/HSC/NB527_filter</td>
+<td>Subaru/HSC.NB527_filter</td>
+<td>5253.5</td>
+<td>5253.1</td>
+<td>5188</td>
+<td>5312</td>
+<td>73.3</td>
+<td>3763.6</td>
+<td>Subaru</td>
+<td>HSC</td>
+<td>HSC NB527 (filter only)</td>
+</tr>
+<tr class="row-odd"><td>Subaru/HSC/r_filter</td>
+<td>Subaru/HSC.r_filter</td>
+<td>6205.9</td>
+<td>6104.2</td>
+<td>5325</td>
+<td>7071</td>
+<td>1502.7</td>
+<td>3160.8</td>
+<td>Subaru</td>
+<td>HSC</td>
+<td>HSC r (filter only)</td>
+</tr>
+<tr class="row-even"><td>Subaru/HSC/r2_filter</td>
+<td>Subaru/HSC.r2_filter</td>
+<td>6231.1</td>
+<td>6131.3</td>
+<td>5021</td>
+<td>7217</td>
+<td>1518.2</td>
+<td>3146.5</td>
+<td>Subaru</td>
+<td>HSC</td>
+<td>HSC r2 (filter only)</td>
+</tr>
+<tr class="row-odd"><td>Subaru/HSC/NB656_filter</td>
+<td>Subaru/HSC.NB656_filter</td>
+<td>6543.6</td>
+<td>6540.8</td>
+<td>6444</td>
+<td>6644</td>
+<td>109.3</td>
+<td>2681.6</td>
+<td>Subaru</td>
+<td>HSC</td>
+<td>HSC NB656 (filter only)</td>
+</tr>
+<tr class="row-even"><td>Subaru/HSC/NB718_filter</td>
+<td>Subaru/HSC.NB718_filter</td>
+<td>7165.9</td>
+<td>7165.3</td>
+<td>7056</td>
+<td>7268</td>
+<td>107.6</td>
+<td>2737.5</td>
+<td>Subaru</td>
+<td>HSC</td>
+<td>HSC NB718 (filter only)</td>
+</tr>
+<tr class="row-odd"><td>Subaru/HSC/i_filter</td>
+<td>Subaru/HSC.i_filter</td>
+<td>7710.7</td>
+<td>7632.5</td>
+<td>6791</td>
+<td>8658</td>
+<td>1482.5</td>
+<td>2521.6</td>
+<td>Subaru</td>
+<td>HSC</td>
+<td>HSC i (filter only)</td>
+</tr>
+<tr class="row-even"><td>Subaru/HSC/i2_filter</td>
+<td>Subaru/HSC.i2_filter</td>
+<td>7761.0</td>
+<td>7676.9</td>
+<td>6882</td>
+<td>8999</td>
+<td>1545.4</td>
+<td>2502.2</td>
+<td>Subaru</td>
+<td>HSC</td>
+<td>HSC i2 (filter only)</td>
+</tr>
+<tr class="row-odd"><td>Subaru/HSC/NB816_filter</td>
+<td>Subaru/HSC.NB816_filter</td>
+<td>8168.2</td>
+<td>8167.6</td>
+<td>8056</td>
+<td>8287</td>
+<td>111.8</td>
+<td>2359.5</td>
+<td>Subaru</td>
+<td>HSC</td>
+<td>HSC NB816 (filter only)</td>
+</tr>
+<tr class="row-even"><td>Subaru/HSC/z_filter</td>
+<td>Subaru/HSC.z_filter</td>
+<td>8925.0</td>
+<td>8915.3</td>
+<td>8280</td>
+<td>9498</td>
+<td>793.3</td>
+<td>2266.1</td>
+<td>Subaru</td>
+<td>HSC</td>
+<td>HSC z (filter only)</td>
+</tr>
+<tr class="row-odd"><td>Subaru/HSC/NB921_filter</td>
+<td>Subaru/HSC.NB921_filter</td>
+<td>9204.7</td>
+<td>9201.6</td>
+<td>9082</td>
+<td>9331</td>
+<td>133.5</td>
+<td>2219.1</td>
+<td>Subaru</td>
+<td>HSC</td>
+<td>HSC NB921 (filter only)</td>
+</tr>
+<tr class="row-even"><td>Subaru/HSC/NB926_filter</td>
+<td>Subaru/HSC.NB926_filter</td>
+<td>9253.6</td>
+<td>9254.7</td>
+<td>9113</td>
+<td>9411</td>
+<td>139.3</td>
+<td>2197.8</td>
+<td>Subaru</td>
+<td>HSC</td>
+<td>HSC NB926 (filter only)</td>
+</tr>
+<tr class="row-odd"><td>Subaru/HSC/IB945_filter</td>
+<td>Subaru/HSC.IB945_filter</td>
+<td>9447.6</td>
+<td>9440.7</td>
+<td>9191</td>
+<td>9734</td>
+<td>325.7</td>
+<td>2260.7</td>
+<td>Subaru</td>
+<td>HSC</td>
+<td>HSC IB945 (filter only)</td>
+</tr>
+<tr class="row-even"><td>Subaru/HSC/NB973_filter</td>
+<td>Subaru/HSC.NB973_filter</td>
+<td>9697.3</td>
+<td>9696.9</td>
+<td>9542</td>
+<td>9853</td>
+<td>114.8</td>
+<td>2273.1</td>
+<td>Subaru</td>
+<td>HSC</td>
+<td>HSC NB973 (filter only)</td>
+</tr>
+<tr class="row-odd"><td>Subaru/HSC/Y_filter</td>
+<td>Subaru/HSC.Y_filter</td>
+<td>10028.3</td>
+<td>9976.2</td>
+<td>9000</td>
+<td>10931</td>
+<td>1385.8</td>
+<td>2127.8</td>
+<td>Subaru</td>
+<td>HSC</td>
+<td>HSC Y (filter only)</td>
+</tr>
+</tbody>
+</table>
 <p>&lt;Plots&gt;</p>
 </div>
 <div class="section" id="ircs">
 <h2>IRCS<a class="headerlink" href="#ircs" title="Permalink to this headline">¶</a></h2>
-<p>No. of filters = 6</p>
-<p>&lt;Table of Filters&gt;</p>
+<table border="1" class="docutils">
+<colgroup>
+<col width="9%" />
+<col width="9%" />
+<col width="9%" />
+<col width="9%" />
+<col width="9%" />
+<col width="9%" />
+<col width="9%" />
+<col width="9%" />
+<col width="9%" />
+<col width="9%" />
+<col width="9%" />
+</colgroup>
+<thead valign="bottom">
+<tr class="row-odd"><th class="head">wsynphot_filter_id</th>
+<th class="head">Filter ID</th>
+<th class="head">lambda_mean</th>
+<th class="head">lambda_eff</th>
+<th class="head">lambda_min</th>
+<th class="head">lambda_max</th>
+<th class="head">Weff</th>
+<th class="head">ZP (Jy)</th>
+<th class="head">Obs. Facility</th>
+<th class="head">Instrument</th>
+<th class="head">Description</th>
+</tr>
+</thead>
+<tbody valign="top">
+<tr class="row-even"><td>Subaru/IRCS/J</td>
+<td>Subaru/IRCS.J</td>
+<td>12483.8</td>
+<td>12417.2</td>
+<td>11482</td>
+<td>13494</td>
+<td>1515.9</td>
+<td>1562.3</td>
+<td>Subaru</td>
+<td>IRCS</td>
+<td>IRCS J</td>
+</tr>
+<tr class="row-odd"><td>Subaru/IRCS/H</td>
+<td>Subaru/IRCS.H</td>
+<td>16298.3</td>
+<td>16141.4</td>
+<td>14510</td>
+<td>18091</td>
+<td>2844.7</td>
+<td>1045.9</td>
+<td>Subaru</td>
+<td>IRCS</td>
+<td>IRCS H</td>
+</tr>
+<tr class="row-even"><td>Subaru/IRCS/Kp</td>
+<td>Subaru/IRCS.Kp</td>
+<td>21125.2</td>
+<td>20941.7</td>
+<td>19018</td>
+<td>23235</td>
+<td>3401.0</td>
+<td>693.7</td>
+<td>Subaru</td>
+<td>IRCS</td>
+<td>IRCS K’</td>
+</tr>
+<tr class="row-odd"><td>Subaru/IRCS/K</td>
+<td>Subaru/IRCS.K</td>
+<td>22005.5</td>
+<td>21840.8</td>
+<td>19859</td>
+<td>24015</td>
+<td>3241.2</td>
+<td>647.7</td>
+<td>Subaru</td>
+<td>IRCS</td>
+<td>IRCS K</td>
+</tr>
+<tr class="row-even"><td>Subaru/IRCS/Lp</td>
+<td>Subaru/IRCS.Lp</td>
+<td>37741.6</td>
+<td>37302.0</td>
+<td>33057</td>
+<td>42254</td>
+<td>6828.6</td>
+<td>248.3</td>
+<td>Subaru</td>
+<td>IRCS</td>
+<td>IRCS L’</td>
+</tr>
+<tr class="row-odd"><td>Subaru/IRCS/Mp</td>
+<td>Subaru/IRCS.Mp</td>
+<td>46847.2</td>
+<td>46802.9</td>
+<td>45086</td>
+<td>48872</td>
+<td>2404.9</td>
+<td>164.7</td>
+<td>Subaru</td>
+<td>IRCS</td>
+<td>IRCS M’</td>
+</tr>
+</tbody>
+</table>
 <p>&lt;Plots&gt;</p>
 </div>
 <div class="section" id="moircs">
 <h2>MOIRCS<a class="headerlink" href="#moircs" title="Permalink to this headline">¶</a></h2>
-<p>No. of filters = 5</p>
-<p>&lt;Table of Filters&gt;</p>
+<table border="1" class="docutils">
+<colgroup>
+<col width="9%" />
+<col width="9%" />
+<col width="9%" />
+<col width="9%" />
+<col width="9%" />
+<col width="9%" />
+<col width="9%" />
+<col width="9%" />
+<col width="9%" />
+<col width="9%" />
+<col width="9%" />
+</colgroup>
+<thead valign="bottom">
+<tr class="row-odd"><th class="head">wsynphot_filter_id</th>
+<th class="head">Filter ID</th>
+<th class="head">lambda_mean</th>
+<th class="head">lambda_eff</th>
+<th class="head">lambda_min</th>
+<th class="head">lambda_max</th>
+<th class="head">Weff</th>
+<th class="head">ZP (Jy)</th>
+<th class="head">Obs. Facility</th>
+<th class="head">Instrument</th>
+<th class="head">Description</th>
+</tr>
+</thead>
+<tbody valign="top">
+<tr class="row-even"><td>Subaru/MOIRCS/Y</td>
+<td>Subaru/MOIRCS.Y</td>
+<td>10243.7</td>
+<td>10218.1</td>
+<td>9604</td>
+<td>10899</td>
+<td>978.8</td>
+<td>2079.6</td>
+<td>Subaru</td>
+<td>MOIRCS</td>
+<td>MOIRCS Y</td>
+</tr>
+<tr class="row-odd"><td>Subaru/MOIRCS/J</td>
+<td>Subaru/MOIRCS.J</td>
+<td>12532.8</td>
+<td>12466.4</td>
+<td>11528</td>
+<td>13539</td>
+<td>1537.0</td>
+<td>1553.8</td>
+<td>Subaru</td>
+<td>MOIRCS</td>
+<td>MOIRCS J</td>
+</tr>
+<tr class="row-even"><td>Subaru/MOIRCS/H</td>
+<td>Subaru/MOIRCS.H</td>
+<td>16371.2</td>
+<td>16230.5</td>
+<td>14723</td>
+<td>18030</td>
+<td>2788.0</td>
+<td>1038.2</td>
+<td>Subaru</td>
+<td>MOIRCS</td>
+<td>MOIRCS H</td>
+</tr>
+<tr class="row-odd"><td>Subaru/MOIRCS/Ks</td>
+<td>Subaru/MOIRCS.Ks</td>
+<td>21453.0</td>
+<td>21306.3</td>
+<td>19595</td>
+<td>23359</td>
+<td>3037.4</td>
+<td>676.8</td>
+<td>Subaru</td>
+<td>MOIRCS</td>
+<td>MOIRCS Ks</td>
+</tr>
+<tr class="row-even"><td>Subaru/MOIRCS/K</td>
+<td>Subaru/MOIRCS.K</td>
+<td>22041.7</td>
+<td>21811.4</td>
+<td>19559</td>
+<td>24643</td>
+<td>3869.6</td>
+<td>647.0</td>
+<td>Subaru</td>
+<td>MOIRCS</td>
+<td>MOIRCS K</td>
+</tr>
+</tbody>
+</table>
 <p>&lt;Plots&gt;</p>
 </div>
 <div class="section" id="ohs">
 <h2>OHS<a class="headerlink" href="#ohs" title="Permalink to this headline">¶</a></h2>
-<p>No. of filters = 9</p>
-<p>&lt;Table of Filters&gt;</p>
+<table border="1" class="docutils">
+<colgroup>
+<col width="9%" />
+<col width="9%" />
+<col width="9%" />
+<col width="9%" />
+<col width="9%" />
+<col width="9%" />
+<col width="9%" />
+<col width="9%" />
+<col width="9%" />
+<col width="9%" />
+<col width="9%" />
+</colgroup>
+<thead valign="bottom">
+<tr class="row-odd"><th class="head">wsynphot_filter_id</th>
+<th class="head">Filter ID</th>
+<th class="head">lambda_mean</th>
+<th class="head">lambda_eff</th>
+<th class="head">lambda_min</th>
+<th class="head">lambda_max</th>
+<th class="head">Weff</th>
+<th class="head">ZP (Jy)</th>
+<th class="head">Obs. Facility</th>
+<th class="head">Instrument</th>
+<th class="head">Description</th>
+</tr>
+</thead>
+<tbody valign="top">
+<tr class="row-even"><td>Subaru/OHS/z</td>
+<td>Subaru/OHS.z</td>
+<td>10213.5</td>
+<td>10115.9</td>
+<td>9184</td>
+<td>11283</td>
+<td>1775.5</td>
+<td>2068.2</td>
+<td>Subaru</td>
+<td>OHS</td>
+<td>OHS z filter</td>
+</tr>
+<tr class="row-odd"><td>Subaru/OHS/J</td>
+<td>Subaru/OHS.J</td>
+<td>12484.1</td>
+<td>12417.4</td>
+<td>11482</td>
+<td>13495</td>
+<td>1516.7</td>
+<td>1562.2</td>
+<td>Subaru</td>
+<td>OHS</td>
+<td>OHS J filter</td>
+</tr>
+<tr class="row-even"><td>Subaru/OHS/H</td>
+<td>Subaru/OHS.H</td>
+<td>16298.3</td>
+<td>16141.1</td>
+<td>14510</td>
+<td>18091</td>
+<td>2845.7</td>
+<td>1045.9</td>
+<td>Subaru</td>
+<td>OHS</td>
+<td>OHS H filter</td>
+</tr>
+<tr class="row-odd"><td>Subaru/OHS/N204</td>
+<td>Subaru/OHS.N204</td>
+<td>20331.2</td>
+<td>20330.3</td>
+<td>20130</td>
+<td>20544</td>
+<td>206.0</td>
+<td>745.2</td>
+<td>Subaru</td>
+<td>OHS</td>
+<td>OHS N204 filter</td>
+</tr>
+<tr class="row-even"><td>Subaru/OHS/Kp</td>
+<td>Subaru/OHS.Kp</td>
+<td>21125.2</td>
+<td>20941.5</td>
+<td>19018</td>
+<td>23235</td>
+<td>3401.9</td>
+<td>693.7</td>
+<td>Subaru</td>
+<td>OHS</td>
+<td>OHS K’ filter</td>
+</tr>
+<tr class="row-odd"><td>Subaru/OHS/H210</td>
+<td>Subaru/OHS.H210</td>
+<td>21198.1</td>
+<td>21197.1</td>
+<td>20981</td>
+<td>21418</td>
+<td>207.8</td>
+<td>691.8</td>
+<td>Subaru</td>
+<td>OHS</td>
+<td>OHS H2 1-0 filter</td>
+</tr>
+<tr class="row-even"><td>Subaru/OHS/N215</td>
+<td>Subaru/OHS.N215</td>
+<td>21468.9</td>
+<td>21467.4</td>
+<td>21257</td>
+<td>21683</td>
+<td>216.6</td>
+<td>672.6</td>
+<td>Subaru</td>
+<td>OHS</td>
+<td>OHS N215 filter</td>
+</tr>
+<tr class="row-odd"><td>Subaru/OHS/K</td>
+<td>Subaru/OHS.K</td>
+<td>22005.4</td>
+<td>21840.4</td>
+<td>19859</td>
+<td>24015</td>
+<td>3242.3</td>
+<td>647.7</td>
+<td>Subaru</td>
+<td>OHS</td>
+<td>OHS K filter</td>
+</tr>
+<tr class="row-even"><td>Subaru/OHS/H221</td>
+<td>Subaru/OHS.H221</td>
+<td>22502.4</td>
+<td>22501.4</td>
+<td>22277</td>
+<td>22725</td>
+<td>218.7</td>
+<td>623.6</td>
+<td>Subaru</td>
+<td>OHS</td>
+<td>OHS H2 2-1 filter</td>
+</tr>
+</tbody>
+</table>
 <p>&lt;Plots&gt;</p>
 </div>
 <div class="section" id="suprime">
 <h2>Suprime<a class="headerlink" href="#suprime" title="Permalink to this headline">¶</a></h2>
-<p>No. of filters = 11</p>
-<p>&lt;Table of Filters&gt;</p>
+<table border="1" class="docutils">
+<colgroup>
+<col width="9%" />
+<col width="9%" />
+<col width="9%" />
+<col width="9%" />
+<col width="9%" />
+<col width="9%" />
+<col width="9%" />
+<col width="9%" />
+<col width="9%" />
+<col width="9%" />
+<col width="9%" />
+</colgroup>
+<thead valign="bottom">
+<tr class="row-odd"><th class="head">wsynphot_filter_id</th>
+<th class="head">Filter ID</th>
+<th class="head">lambda_mean</th>
+<th class="head">lambda_eff</th>
+<th class="head">lambda_min</th>
+<th class="head">lambda_max</th>
+<th class="head">Weff</th>
+<th class="head">ZP (Jy)</th>
+<th class="head">Obs. Facility</th>
+<th class="head">Instrument</th>
+<th class="head">Description</th>
+</tr>
+</thead>
+<tbody valign="top">
+<tr class="row-even"><td>Subaru/Suprime/B</td>
+<td>Subaru/Suprime.B</td>
+<td>4373.3</td>
+<td>4345.3</td>
+<td>3602</td>
+<td>5064</td>
+<td>1030.5</td>
+<td>3934.2</td>
+<td>Subaru</td>
+<td>Suprime</td>
+<td>Suprime B</td>
+</tr>
+<tr class="row-odd"><td>Subaru/Suprime/SDSS_g</td>
+<td>Subaru/Suprime.SDSS_g</td>
+<td>4705.5</td>
+<td>4619.4</td>
+<td>3840</td>
+<td>5556</td>
+<td>1337.9</td>
+<td>3971.6</td>
+<td>Subaru</td>
+<td>Suprime</td>
+<td>Suprime g’</td>
+</tr>
+<tr class="row-even"><td>Subaru/Suprime/V</td>
+<td>Subaru/Suprime.V</td>
+<td>5448.1</td>
+<td>5401.8</td>
+<td>4802</td>
+<td>6167</td>
+<td>962.5</td>
+<td>3621.2</td>
+<td>Subaru</td>
+<td>Suprime</td>
+<td>Suprime V</td>
+</tr>
+<tr class="row-odd"><td>Subaru/Suprime/SDSS_r</td>
+<td>Subaru/Suprime.SDSS_r</td>
+<td>6253.7</td>
+<td>6165.2</td>
+<td>5390</td>
+<td>7195</td>
+<td>1382.3</td>
+<td>3132.4</td>
+<td>Subaru</td>
+<td>Suprime</td>
+<td>Suprime r’</td>
+</tr>
+<tr class="row-even"><td>Subaru/Suprime/Rc</td>
+<td>Subaru/Suprime.Rc</td>
+<td>6508.4</td>
+<td>6450.0</td>
+<td>5765</td>
+<td>7368</td>
+<td>1143.2</td>
+<td>2998.6</td>
+<td>Subaru</td>
+<td>Suprime</td>
+<td>Suprime Rc</td>
+</tr>
+<tr class="row-odd"><td>Subaru/Suprime/NB711</td>
+<td>Subaru/Suprime.NB711</td>
+<td>7120.2</td>
+<td>7119.7</td>
+<td>7010</td>
+<td>7227</td>
+<td>78.8</td>
+<td>2755.5</td>
+<td>Subaru</td>
+<td>Suprime</td>
+<td>Suprime NB711</td>
+</tr>
+<tr class="row-even"><td>Subaru/Suprime/SDSS_i</td>
+<td>Subaru/Suprime.SDSS_i</td>
+<td>7675.4</td>
+<td>7591.2</td>
+<td>6721</td>
+<td>8655</td>
+<td>1505.7</td>
+<td>2534.8</td>
+<td>Subaru</td>
+<td>Suprime</td>
+<td>Suprime i’</td>
+</tr>
+<tr class="row-odd"><td>Subaru/Suprime/Ic</td>
+<td>Subaru/Suprime.Ic</td>
+<td>7972.7</td>
+<td>7903.6</td>
+<td>7041</td>
+<td>8895</td>
+<td>1349.4</td>
+<td>2424.7</td>
+<td>Subaru</td>
+<td>Suprime</td>
+<td>Suprime Ic</td>
+</tr>
+<tr class="row-even"><td>Subaru/Suprime/NB816</td>
+<td>Subaru/Suprime.NB816</td>
+<td>8150.6</td>
+<td>8149.8</td>
+<td>8022</td>
+<td>8263</td>
+<td>118.9</td>
+<td>2366.2</td>
+<td>Subaru</td>
+<td>Suprime</td>
+<td>Suprime NB816</td>
+</tr>
+<tr class="row-odd"><td>Subaru/Suprime/NB921</td>
+<td>Subaru/Suprime.NB921</td>
+<td>9183.1</td>
+<td>9179.3</td>
+<td>9038</td>
+<td>9328</td>
+<td>135.1</td>
+<td>2275.2</td>
+<td>Subaru</td>
+<td>Suprime</td>
+<td>Suprime NB921</td>
+</tr>
+<tr class="row-even"><td>Subaru/Suprime/SDSS_z</td>
+<td>Subaru/Suprime.SDSS_z</td>
+<td>9194.7</td>
+<td>9153.1</td>
+<td>8138</td>
+<td>10269</td>
+<td>1403.5</td>
+<td>2250.9</td>
+<td>Subaru</td>
+<td>Suprime</td>
+<td>Suprime z’</td>
+</tr>
+</tbody>
+</table>
 <p>&lt;Plots&gt;</p>
 </div>
 </div>

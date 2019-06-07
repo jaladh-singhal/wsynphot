@@ -6,7 +6,7 @@
   <head>
     <meta http-equiv="X-UA-Compatible" content="IE=Edge" />
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-    <title>Filters of Observation Facility: P200 &#8212; wsynphot v0.0.dev109</title>
+    <title>Filters of Observation Facility: P200 &#8212; wsynphot v0.0.dev110</title>
     <link rel="stylesheet" href="../_static/bootstrap-astropy.css" type="text/css" />
     <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
     <link rel="stylesheet" type="text/css" href="../_static/graphviz.css" />
@@ -62,7 +62,7 @@
 	 |
       </li>
       <li>
-	<a href="../index.html">wsynphot v0.0.dev109</a>
+	<a href="../index.html">wsynphot v0.0.dev110</a>
 	 &#187;
       </li>
       <li><a href="../filter-list.html" accesskey="U">List of the available filters</a> &#187;</li>
@@ -82,14 +82,480 @@
 <p>Following <strong>Instruments</strong> are present:</p>
 <div class="section" id="lfc">
 <h2>LFC<a class="headerlink" href="#lfc" title="Permalink to this headline">¶</a></h2>
-<p>No. of filters = 12</p>
-<p>&lt;Table of Filters&gt;</p>
+<table border="1" class="docutils">
+<colgroup>
+<col width="9%" />
+<col width="9%" />
+<col width="9%" />
+<col width="9%" />
+<col width="9%" />
+<col width="9%" />
+<col width="9%" />
+<col width="9%" />
+<col width="9%" />
+<col width="9%" />
+<col width="9%" />
+</colgroup>
+<thead valign="bottom">
+<tr class="row-odd"><th class="head">wsynphot_filter_id</th>
+<th class="head">Filter ID</th>
+<th class="head">lambda_mean</th>
+<th class="head">lambda_eff</th>
+<th class="head">lambda_min</th>
+<th class="head">lambda_max</th>
+<th class="head">Weff</th>
+<th class="head">ZP (Jy)</th>
+<th class="head">Obs. Facility</th>
+<th class="head">Instrument</th>
+<th class="head">Description</th>
+</tr>
+</thead>
+<tbody valign="top">
+<tr class="row-even"><td>P200/LFC/sdss_u</td>
+<td>P200/LFC.sdss_u</td>
+<td>3508.1</td>
+<td>3527.6</td>
+<td>3153</td>
+<td>3986</td>
+<td>544.5</td>
+<td>1424.1</td>
+<td>P200</td>
+<td>LFC</td>
+<td>LFC sdss u’ filter</td>
+</tr>
+<tr class="row-odd"><td>P200/LFC/B</td>
+<td>P200/LFC.B</td>
+<td>4360.8</td>
+<td>4324.5</td>
+<td>3773</td>
+<td>5286</td>
+<td>923.3</td>
+<td>4051.8</td>
+<td>P200</td>
+<td>LFC</td>
+<td>LFC B bessel filter</td>
+</tr>
+<tr class="row-even"><td>P200/LFC/sdss_g</td>
+<td>P200/LFC.sdss_g</td>
+<td>4755.0</td>
+<td>4665.2</td>
+<td>3832</td>
+<td>5496</td>
+<td>1305.2</td>
+<td>3952.4</td>
+<td>P200</td>
+<td>LFC</td>
+<td>LFC sdss g’ filter</td>
+</tr>
+<tr class="row-odd"><td>P200/LFC/V</td>
+<td>P200/LFC.V</td>
+<td>5390.1</td>
+<td>5344.8</td>
+<td>4808</td>
+<td>6359</td>
+<td>805.5</td>
+<td>3662.1</td>
+<td>P200</td>
+<td>LFC</td>
+<td>LFC V bessel filter</td>
+</tr>
+<tr class="row-even"><td>P200/LFC/sdss_r</td>
+<td>P200/LFC.sdss_r</td>
+<td>6281.9</td>
+<td>6192.8</td>
+<td>5427</td>
+<td>7086</td>
+<td>1380.8</td>
+<td>3119.9</td>
+<td>P200</td>
+<td>LFC</td>
+<td>LFC sdss r’ filter</td>
+</tr>
+<tr class="row-odd"><td>P200/LFC/R</td>
+<td>P200/LFC.R</td>
+<td>6470.3</td>
+<td>6318.9</td>
+<td>5451</td>
+<td>8661</td>
+<td>1383.0</td>
+<td>3031.5</td>
+<td>P200</td>
+<td>LFC</td>
+<td>LFC R bessel filter</td>
+</tr>
+<tr class="row-even"><td>P200/LFC/Rs</td>
+<td>P200/LFC.Rs</td>
+<td>6907.0</td>
+<td>6860.9</td>
+<td>6238</td>
+<td>7626</td>
+<td>1106.7</td>
+<td>2813.9</td>
+<td>P200</td>
+<td>LFC</td>
+<td>LFC Rs filter</td>
+</tr>
+<tr class="row-odd"><td>P200/LFC/RI</td>
+<td>P200/LFC.RI</td>
+<td>7684.3</td>
+<td>7405.0</td>
+<td>6067</td>
+<td>9409</td>
+<td>2804.0</td>
+<td>2540.8</td>
+<td>P200</td>
+<td>LFC</td>
+<td>LFC RI filter</td>
+</tr>
+<tr class="row-even"><td>P200/LFC/sdss_i</td>
+<td>P200/LFC.sdss_i</td>
+<td>7717.9</td>
+<td>7635.9</td>
+<td>6737</td>
+<td>8625</td>
+<td>1421.3</td>
+<td>2518.5</td>
+<td>P200</td>
+<td>LFC</td>
+<td>LFC sdss i’ filter</td>
+</tr>
+<tr class="row-odd"><td>P200/LFC/Is</td>
+<td>P200/LFC.Is</td>
+<td>8147.5</td>
+<td>8063.6</td>
+<td>7252</td>
+<td>9125</td>
+<td>1479.1</td>
+<td>2388.9</td>
+<td>P200</td>
+<td>LFC</td>
+<td>LFC Is filter</td>
+</tr>
+<tr class="row-even"><td>P200/LFC/I</td>
+<td>P200/LFC.I</td>
+<td>8823.9</td>
+<td>8540.8</td>
+<td>7004</td>
+<td>11676</td>
+<td>2966.4</td>
+<td>2280.4</td>
+<td>P200</td>
+<td>LFC</td>
+<td>LFC I bessel filter</td>
+</tr>
+<tr class="row-odd"><td>P200/LFC/sdss_z</td>
+<td>P200/LFC.sdss_z</td>
+<td>9668.2</td>
+<td>9500.7</td>
+<td>7949</td>
+<td>11000</td>
+<td>2623.6</td>
+<td>2140.7</td>
+<td>P200</td>
+<td>LFC</td>
+<td>LFC sdss z’ filter</td>
+</tr>
+</tbody>
+</table>
 <p>&lt;Plots&gt;</p>
 </div>
 <div class="section" id="wirc">
 <h2>WIRC<a class="headerlink" href="#wirc" title="Permalink to this headline">¶</a></h2>
-<p>No. of filters = 22</p>
-<p>&lt;Table of Filters&gt;</p>
+<table border="1" class="docutils">
+<colgroup>
+<col width="9%" />
+<col width="9%" />
+<col width="9%" />
+<col width="9%" />
+<col width="9%" />
+<col width="9%" />
+<col width="9%" />
+<col width="9%" />
+<col width="9%" />
+<col width="9%" />
+<col width="9%" />
+</colgroup>
+<thead valign="bottom">
+<tr class="row-odd"><th class="head">wsynphot_filter_id</th>
+<th class="head">Filter ID</th>
+<th class="head">lambda_mean</th>
+<th class="head">lambda_eff</th>
+<th class="head">lambda_min</th>
+<th class="head">lambda_max</th>
+<th class="head">Weff</th>
+<th class="head">ZP (Jy)</th>
+<th class="head">Obs. Facility</th>
+<th class="head">Instrument</th>
+<th class="head">Description</th>
+</tr>
+</thead>
+<tbody valign="top">
+<tr class="row-even"><td>P200/WIRC/Jcont</td>
+<td>P200/WIRC.Jcont</td>
+<td>12064.2</td>
+<td>12063.0</td>
+<td>11853</td>
+<td>12247</td>
+<td>184.6</td>
+<td>1658.1</td>
+<td>P200</td>
+<td>WIRC</td>
+<td>WIRC Jcont filter (corrected for tilt and temperature)</td>
+</tr>
+<tr class="row-odd"><td>P200/WIRC/Jcont_ori</td>
+<td>P200/WIRC.Jcont_ori</td>
+<td>12157.6</td>
+<td>12156.4</td>
+<td>11946</td>
+<td>12341</td>
+<td>185.0</td>
+<td>1639.6</td>
+<td>P200</td>
+<td>WIRC</td>
+<td>WIRC Jcont filter (original data)</td>
+</tr>
+<tr class="row-even"><td>P200/WIRC/J_ori</td>
+<td>P200/WIRC.J_ori</td>
+<td>12470.7</td>
+<td>12403.5</td>
+<td>11483</td>
+<td>13482</td>
+<td>1521.7</td>
+<td>1564.9</td>
+<td>P200</td>
+<td>WIRC</td>
+<td>WIRC J filter (original data)</td>
+</tr>
+<tr class="row-odd"><td>P200/WIRC/Pab</td>
+<td>P200/WIRC.Pab</td>
+<td>12883.5</td>
+<td>12885.2</td>
+<td>12680</td>
+<td>13066</td>
+<td>186.5</td>
+<td>1417.0</td>
+<td>P200</td>
+<td>WIRC</td>
+<td>WIRC Pa-Beta filter (corrected for tilt and temperature)</td>
+</tr>
+<tr class="row-even"><td>P200/WIRC/Pab_ori</td>
+<td>P200/WIRC.Pab_ori</td>
+<td>12964.3</td>
+<td>12964.2</td>
+<td>12760</td>
+<td>13147</td>
+<td>186.8</td>
+<td>1469.6</td>
+<td>P200</td>
+<td>WIRC</td>
+<td>WIRC Pa-Beta filter (original data)</td>
+</tr>
+<tr class="row-odd"><td>P200/WIRC/Hcont</td>
+<td>P200/WIRC.Hcont</td>
+<td>15697.4</td>
+<td>15696.2</td>
+<td>15466</td>
+<td>15925</td>
+<td>235.2</td>
+<td>1096.1</td>
+<td>P200</td>
+<td>WIRC</td>
+<td>WIRC Hcont filter (corrected for tilt and temperature)</td>
+</tr>
+<tr class="row-even"><td>P200/WIRC/Hcont_ori</td>
+<td>P200/WIRC.Hcont_ori</td>
+<td>15796.0</td>
+<td>15794.2</td>
+<td>15564</td>
+<td>16024</td>
+<td>235.7</td>
+<td>1075.6</td>
+<td>P200</td>
+<td>WIRC</td>
+<td>WIRC Hcont filter (original data)</td>
+</tr>
+<tr class="row-odd"><td>P200/WIRC/CH4s</td>
+<td>P200/WIRC.CH4s</td>
+<td>16061.3</td>
+<td>16027.4</td>
+<td>14954</td>
+<td>17262</td>
+<td>1186.1</td>
+<td>1060.7</td>
+<td>P200</td>
+<td>WIRC</td>
+<td>WIRC CH4_s filter (corrected for tilt and temperature)</td>
+</tr>
+<tr class="row-even"><td>P200/WIRC/CH4s_ori</td>
+<td>P200/WIRC.CH4s_ori</td>
+<td>16092.4</td>
+<td>16060.4</td>
+<td>14982</td>
+<td>17294</td>
+<td>1186.7</td>
+<td>1058.2</td>
+<td>P200</td>
+<td>WIRC</td>
+<td>WIRC CH4_s filter (original data)</td>
+</tr>
+<tr class="row-odd"><td>P200/WIRC/H_ori</td>
+<td>P200/WIRC.H_ori</td>
+<td>16321.6</td>
+<td>16159.7</td>
+<td>14486</td>
+<td>18126</td>
+<td>2884.2</td>
+<td>1043.9</td>
+<td>P200</td>
+<td>WIRC</td>
+<td>WIRC H filter (original data)</td>
+</tr>
+<tr class="row-even"><td>P200/WIRC/FeII</td>
+<td>P200/WIRC.FeII</td>
+<td>16423.0</td>
+<td>16422.1</td>
+<td>16176</td>
+<td>16665</td>
+<td>250.9</td>
+<td>1016.9</td>
+<td>P200</td>
+<td>WIRC</td>
+<td>WIRC FeII filter (corrected for tilt and temperature)</td>
+</tr>
+<tr class="row-odd"><td>P200/WIRC/FeII_ori</td>
+<td>P200/WIRC.FeII_ori</td>
+<td>16522.9</td>
+<td>16524.3</td>
+<td>16275</td>
+<td>16765</td>
+<td>251.3</td>
+<td>1026.1</td>
+<td>P200</td>
+<td>WIRC</td>
+<td>WIRC FeII filter (original data)</td>
+</tr>
+<tr class="row-even"><td>P200/WIRC/CH4L</td>
+<td>P200/WIRC.CH4L</td>
+<td>16869.4</td>
+<td>16831.7</td>
+<td>15638</td>
+<td>18231</td>
+<td>1307.1</td>
+<td>991.9</td>
+<td>P200</td>
+<td>WIRC</td>
+<td>WIRC CH4_L filter (corrected for tilt and temperature)</td>
+</tr>
+<tr class="row-odd"><td>P200/WIRC/CH4L_ori</td>
+<td>P200/WIRC.CH4L_ori</td>
+<td>16902.3</td>
+<td>16864.1</td>
+<td>15667</td>
+<td>18265</td>
+<td>1310.6</td>
+<td>989.0</td>
+<td>P200</td>
+<td>WIRC</td>
+<td>WIRC CH4_L filter (original data)</td>
+</tr>
+<tr class="row-even"><td>P200/WIRC/Ks</td>
+<td>P200/WIRC.Ks</td>
+<td>21452.7</td>
+<td>21301.1</td>
+<td>19559</td>
+<td>23399</td>
+<td>3117.5</td>
+<td>676.9</td>
+<td>P200</td>
+<td>WIRC</td>
+<td>WIRC Ks filter (corrected for tilt and temperature)</td>
+</tr>
+<tr class="row-odd"><td>P200/WIRC/Ks_ori</td>
+<td>P200/WIRC.Ks_ori</td>
+<td>21474.1</td>
+<td>21322.5</td>
+<td>19578</td>
+<td>23423</td>
+<td>3120.6</td>
+<td>675.7</td>
+<td>P200</td>
+<td>WIRC</td>
+<td>WIRC Ks filter (original data)</td>
+</tr>
+<tr class="row-even"><td>P200/WIRC/Brg</td>
+<td>P200/WIRC.Brg</td>
+<td>21690.5</td>
+<td>21689.3</td>
+<td>21357</td>
+<td>22006</td>
+<td>325.6</td>
+<td>639.4</td>
+<td>P200</td>
+<td>WIRC</td>
+<td>WIRC Br-gamma filter (corrected for tilt and temperature)</td>
+</tr>
+<tr class="row-odd"><td>P200/WIRC/Brg_ori</td>
+<td>P200/WIRC.Brg_ori</td>
+<td>21894.0</td>
+<td>21893.2</td>
+<td>21560</td>
+<td>22210</td>
+<td>326.2</td>
+<td>648.8</td>
+<td>P200</td>
+<td>WIRC</td>
+<td>WIRC Br-gamma filter (original data)</td>
+</tr>
+<tr class="row-even"><td>P200/WIRC/Kcont</td>
+<td>P200/WIRC.Kcont</td>
+<td>22672.0</td>
+<td>22669.8</td>
+<td>22316</td>
+<td>23002</td>
+<td>329.3</td>
+<td>615.4</td>
+<td>P200</td>
+<td>WIRC</td>
+<td>WIRC Kcont filter (corrected for tilt and temperature)</td>
+</tr>
+<tr class="row-odd"><td>P200/WIRC/Kcont_ori</td>
+<td>P200/WIRC.Kcont_ori</td>
+<td>22882.9</td>
+<td>22880.6</td>
+<td>22526</td>
+<td>23213</td>
+<td>330.0</td>
+<td>605.6</td>
+<td>P200</td>
+<td>WIRC</td>
+<td>WIRC Kcont filter (original data)</td>
+</tr>
+<tr class="row-even"><td>P200/WIRC/CO</td>
+<td>P200/WIRC.CO</td>
+<td>22911.9</td>
+<td>22909.9</td>
+<td>22560</td>
+<td>23224</td>
+<td>299.5</td>
+<td>604.3</td>
+<td>P200</td>
+<td>WIRC</td>
+<td>WIRC CO (2-0 BH) filter (corrected for tilt and temperature)</td>
+</tr>
+<tr class="row-odd"><td>P200/WIRC/CO_ori</td>
+<td>P200/WIRC.CO_ori</td>
+<td>23061.9</td>
+<td>23059.9</td>
+<td>22710</td>
+<td>23374</td>
+<td>300.0</td>
+<td>597.5</td>
+<td>P200</td>
+<td>WIRC</td>
+<td>WIRC CO (2-0 BH) filter (original data)</td>
+</tr>
+</tbody>
+</table>
 <p>&lt;Plots&gt;</p>
 </div>
 </div>

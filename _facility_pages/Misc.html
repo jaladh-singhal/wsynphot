@@ -6,7 +6,7 @@
   <head>
     <meta http-equiv="X-UA-Compatible" content="IE=Edge" />
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-    <title>Filters of Observation Facility: Misc &#8212; wsynphot v0.0.dev109</title>
+    <title>Filters of Observation Facility: Misc &#8212; wsynphot v0.0.dev110</title>
     <link rel="stylesheet" href="../_static/bootstrap-astropy.css" type="text/css" />
     <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
     <link rel="stylesheet" type="text/css" href="../_static/graphviz.css" />
@@ -62,7 +62,7 @@
 	 |
       </li>
       <li>
-	<a href="../index.html">wsynphot v0.0.dev109</a>
+	<a href="../index.html">wsynphot v0.0.dev110</a>
 	 &#187;
       </li>
       <li><a href="../filter-list.html" accesskey="U">List of the available filters</a> &#187;</li>
@@ -82,38 +82,452 @@
 <p>Following <strong>Instruments</strong> are present:</p>
 <div class="section" id="apass">
 <h2>APASS<a class="headerlink" href="#apass" title="Permalink to this headline">¶</a></h2>
-<p>No. of filters = 6</p>
-<p>&lt;Table of Filters&gt;</p>
+<table border="1" class="docutils">
+<colgroup>
+<col width="9%" />
+<col width="9%" />
+<col width="9%" />
+<col width="9%" />
+<col width="9%" />
+<col width="9%" />
+<col width="9%" />
+<col width="9%" />
+<col width="9%" />
+<col width="9%" />
+<col width="9%" />
+</colgroup>
+<thead valign="bottom">
+<tr class="row-odd"><th class="head">wsynphot_filter_id</th>
+<th class="head">Filter ID</th>
+<th class="head">lambda_mean</th>
+<th class="head">lambda_eff</th>
+<th class="head">lambda_min</th>
+<th class="head">lambda_max</th>
+<th class="head">Weff</th>
+<th class="head">ZP (Jy)</th>
+<th class="head">Obs. Facility</th>
+<th class="head">Instrument</th>
+<th class="head">Description</th>
+</tr>
+</thead>
+<tbody valign="top">
+<tr class="row-even"><td>Misc/APASS/B</td>
+<td>Misc/APASS.B</td>
+<td>4313.3</td>
+<td>4297.2</td>
+<td>3613</td>
+<td>5113</td>
+<td>843.1</td>
+<td>3998.3</td>
+<td>Misc</td>
+<td>APASS</td>
+<td>APASS B filter, defined as identical to GCPD/Johnson.B_Landolt</td>
+</tr>
+<tr class="row-odd"><td>Misc/APASS/sdss_g</td>
+<td>Misc/APASS.sdss_g</td>
+<td>4718.9</td>
+<td>4640.4</td>
+<td>3783</td>
+<td>5549</td>
+<td>1158.4</td>
+<td>3965.9</td>
+<td>Misc</td>
+<td>APASS</td>
+<td>APASS g filter, defined as identical to SLOAN/SDSS.g</td>
+</tr>
+<tr class="row-even"><td>Misc/APASS/V</td>
+<td>Misc/APASS.V</td>
+<td>5446.5</td>
+<td>5394.3</td>
+<td>4796</td>
+<td>6455</td>
+<td>870.6</td>
+<td>3624.1</td>
+<td>Misc</td>
+<td>APASS</td>
+<td>APASS V filter, defined as identical to GCPD/Johnson.V_Landolt</td>
+</tr>
+<tr class="row-odd"><td>Misc/APASS/sdss_r</td>
+<td>Misc/APASS.sdss_r</td>
+<td>6185.2</td>
+<td>6122.3</td>
+<td>5415</td>
+<td>6989</td>
+<td>1111.2</td>
+<td>3162.0</td>
+<td>Misc</td>
+<td>APASS</td>
+<td>APASS r filter, defined as identical to SLOAN/SDSS.r</td>
+</tr>
+<tr class="row-even"><td>Misc/APASS/sdss_i</td>
+<td>Misc/APASS.sdss_i</td>
+<td>7499.7</td>
+<td>7439.5</td>
+<td>6689</td>
+<td>8389</td>
+<td>1044.6</td>
+<td>2602.0</td>
+<td>Misc</td>
+<td>APASS</td>
+<td>APASS i filter, defined as identical to SLOAN/SDSS.i</td>
+</tr>
+<tr class="row-odd"><td>Misc/APASS/sdss_z</td>
+<td>Misc/APASS.sdss_z</td>
+<td>8961.5</td>
+<td>8897.1</td>
+<td>7960</td>
+<td>10833</td>
+<td>1124.6</td>
+<td>2244.7</td>
+<td>Misc</td>
+<td>APASS</td>
+<td>APASS z filter, defined as identical to SLOAN/SDSS.z</td>
+</tr>
+</tbody>
+</table>
 <p>&lt;Plots&gt;</p>
 </div>
 <div class="section" id="atlas">
 <h2>Atlas<a class="headerlink" href="#atlas" title="Permalink to this headline">¶</a></h2>
-<p>No. of filters = 2</p>
-<p>&lt;Table of Filters&gt;</p>
+<table border="1" class="docutils">
+<colgroup>
+<col width="9%" />
+<col width="9%" />
+<col width="9%" />
+<col width="9%" />
+<col width="9%" />
+<col width="9%" />
+<col width="9%" />
+<col width="9%" />
+<col width="9%" />
+<col width="9%" />
+<col width="9%" />
+</colgroup>
+<thead valign="bottom">
+<tr class="row-odd"><th class="head">wsynphot_filter_id</th>
+<th class="head">Filter ID</th>
+<th class="head">lambda_mean</th>
+<th class="head">lambda_eff</th>
+<th class="head">lambda_min</th>
+<th class="head">lambda_max</th>
+<th class="head">Weff</th>
+<th class="head">ZP (Jy)</th>
+<th class="head">Obs. Facility</th>
+<th class="head">Instrument</th>
+<th class="head">Description</th>
+</tr>
+</thead>
+<tbody valign="top">
+<tr class="row-even"><td>Misc/Atlas/cyan</td>
+<td>Misc/Atlas.cyan</td>
+<td>5408.7</td>
+<td>5183.9</td>
+<td>4157</td>
+<td>6556</td>
+<td>2144.5</td>
+<td>3585.8</td>
+<td>Misc</td>
+<td>Atlas</td>
+<td>ATLAS cyan filter.</td>
+</tr>
+<tr class="row-odd"><td>Misc/Atlas/orange</td>
+<td>Misc/Atlas.orange</td>
+<td>6866.3</td>
+<td>6632.2</td>
+<td>5582</td>
+<td>8249</td>
+<td>2368.0</td>
+<td>2846.8</td>
+<td>Misc</td>
+<td>Atlas</td>
+<td>ATLAS orange filter.</td>
+</tr>
+</tbody>
+</table>
 <p>&lt;Plots&gt;</p>
 </div>
 <div class="section" id="crts">
 <h2>CRTS<a class="headerlink" href="#crts" title="Permalink to this headline">¶</a></h2>
-<p>No. of filters = 1</p>
-<p>&lt;Table of Filters&gt;</p>
+<table border="1" class="docutils">
+<colgroup>
+<col width="9%" />
+<col width="9%" />
+<col width="9%" />
+<col width="9%" />
+<col width="9%" />
+<col width="9%" />
+<col width="9%" />
+<col width="9%" />
+<col width="9%" />
+<col width="9%" />
+<col width="9%" />
+</colgroup>
+<thead valign="bottom">
+<tr class="row-odd"><th class="head">wsynphot_filter_id</th>
+<th class="head">Filter ID</th>
+<th class="head">lambda_mean</th>
+<th class="head">lambda_eff</th>
+<th class="head">lambda_min</th>
+<th class="head">lambda_max</th>
+<th class="head">Weff</th>
+<th class="head">ZP (Jy)</th>
+<th class="head">Obs. Facility</th>
+<th class="head">Instrument</th>
+<th class="head">Description</th>
+</tr>
+</thead>
+<tbody valign="top">
+<tr class="row-even"><td>Misc/CRTS/C</td>
+<td>Misc/CRTS.C</td>
+<td>6693.3</td>
+<td>5618.4</td>
+<td>2989</td>
+<td>10003</td>
+<td>5189.7</td>
+<td>2690.1</td>
+<td>Misc</td>
+<td>CRTS</td>
+<td>Catalina Survey clear filter</td>
+</tr>
+</tbody>
+</table>
 <p>&lt;Plots&gt;</p>
 </div>
 <div class="section" id="mcps">
 <h2>MCPS<a class="headerlink" href="#mcps" title="Permalink to this headline">¶</a></h2>
-<p>No. of filters = 4</p>
-<p>&lt;Table of Filters&gt;</p>
+<table border="1" class="docutils">
+<colgroup>
+<col width="9%" />
+<col width="9%" />
+<col width="9%" />
+<col width="9%" />
+<col width="9%" />
+<col width="9%" />
+<col width="9%" />
+<col width="9%" />
+<col width="9%" />
+<col width="9%" />
+<col width="9%" />
+</colgroup>
+<thead valign="bottom">
+<tr class="row-odd"><th class="head">wsynphot_filter_id</th>
+<th class="head">Filter ID</th>
+<th class="head">lambda_mean</th>
+<th class="head">lambda_eff</th>
+<th class="head">lambda_min</th>
+<th class="head">lambda_max</th>
+<th class="head">Weff</th>
+<th class="head">ZP (Jy)</th>
+<th class="head">Obs. Facility</th>
+<th class="head">Instrument</th>
+<th class="head">Description</th>
+</tr>
+</thead>
+<tbody valign="top">
+<tr class="row-even"><td>Misc/MCPS/U</td>
+<td>Misc/MCPS.U</td>
+<td>3652.0</td>
+<td>3709.3</td>
+<td>3075</td>
+<td>4145</td>
+<td>542.7</td>
+<td>1919.9</td>
+<td>Misc</td>
+<td>MCPS</td>
+<td>MCPS Johnson U</td>
+</tr>
+<tr class="row-odd"><td>Misc/MCPS/B</td>
+<td>Misc/MCPS.B</td>
+<td>4448.1</td>
+<td>4393.4</td>
+<td>3662</td>
+<td>5500</td>
+<td>1010.3</td>
+<td>4021.4</td>
+<td>Misc</td>
+<td>MCPS</td>
+<td>MCPS Johnson B</td>
+</tr>
+<tr class="row-even"><td>Misc/MCPS/V</td>
+<td>Misc/MCPS.V</td>
+<td>5504.7</td>
+<td>5438.7</td>
+<td>4767</td>
+<td>6900</td>
+<td>870.7</td>
+<td>3585.3</td>
+<td>Misc</td>
+<td>MCPS</td>
+<td>MCPS Johnson V</td>
+</tr>
+<tr class="row-odd"><td>Misc/MCPS/I</td>
+<td>Misc/MCPS.I</td>
+<td>8780.7</td>
+<td>8565.1</td>
+<td>7000</td>
+<td>11800</td>
+<td>2316.0</td>
+<td>2282.8</td>
+<td>Misc</td>
+<td>MCPS</td>
+<td>MCPS Johnson I</td>
+</tr>
+</tbody>
+</table>
 <p>&lt;Plots&gt;</p>
 </div>
 <div class="section" id="rotse">
 <h2>ROTSE<a class="headerlink" href="#rotse" title="Permalink to this headline">¶</a></h2>
-<p>No. of filters = 1</p>
-<p>&lt;Table of Filters&gt;</p>
+<table border="1" class="docutils">
+<colgroup>
+<col width="9%" />
+<col width="9%" />
+<col width="9%" />
+<col width="9%" />
+<col width="9%" />
+<col width="9%" />
+<col width="9%" />
+<col width="9%" />
+<col width="9%" />
+<col width="9%" />
+<col width="9%" />
+</colgroup>
+<thead valign="bottom">
+<tr class="row-odd"><th class="head">wsynphot_filter_id</th>
+<th class="head">Filter ID</th>
+<th class="head">lambda_mean</th>
+<th class="head">lambda_eff</th>
+<th class="head">lambda_min</th>
+<th class="head">lambda_max</th>
+<th class="head">Weff</th>
+<th class="head">ZP (Jy)</th>
+<th class="head">Obs. Facility</th>
+<th class="head">Instrument</th>
+<th class="head">Description</th>
+</tr>
+</thead>
+<tbody valign="top">
+<tr class="row-even"><td>Misc/ROTSE/R</td>
+<td>Misc/ROTSE.R</td>
+<td>6352.6</td>
+<td>5497.2</td>
+<td>3085</td>
+<td>10000</td>
+<td>4404.5</td>
+<td>2969.1</td>
+<td>Misc</td>
+<td>ROTSE</td>
+<td>ROTSE-III approximate response curve</td>
+</tr>
+</tbody>
+</table>
 <p>&lt;Plots&gt;</p>
 </div>
 <div class="section" id="ucac">
 <h2>UCAC<a class="headerlink" href="#ucac" title="Permalink to this headline">¶</a></h2>
-<p>No. of filters = 6</p>
-<p>&lt;Table of Filters&gt;</p>
+<table border="1" class="docutils">
+<colgroup>
+<col width="9%" />
+<col width="9%" />
+<col width="9%" />
+<col width="9%" />
+<col width="9%" />
+<col width="9%" />
+<col width="9%" />
+<col width="9%" />
+<col width="9%" />
+<col width="9%" />
+<col width="9%" />
+</colgroup>
+<thead valign="bottom">
+<tr class="row-odd"><th class="head">wsynphot_filter_id</th>
+<th class="head">Filter ID</th>
+<th class="head">lambda_mean</th>
+<th class="head">lambda_eff</th>
+<th class="head">lambda_min</th>
+<th class="head">lambda_max</th>
+<th class="head">Weff</th>
+<th class="head">ZP (Jy)</th>
+<th class="head">Obs. Facility</th>
+<th class="head">Instrument</th>
+<th class="head">Description</th>
+</tr>
+</thead>
+<tbody valign="top">
+<tr class="row-even"><td>Misc/UCAC/B</td>
+<td>Misc/UCAC.B</td>
+<td>4313.3</td>
+<td>4297.2</td>
+<td>3613</td>
+<td>5113</td>
+<td>843.1</td>
+<td>3998.3</td>
+<td>Misc</td>
+<td>UCAC</td>
+<td>UCAC4 B filter, defined as identical to GCPD/Johnson.B_Landolt</td>
+</tr>
+<tr class="row-odd"><td>Misc/UCAC/sdss_g</td>
+<td>Misc/UCAC.sdss_g</td>
+<td>4718.9</td>
+<td>4640.4</td>
+<td>3783</td>
+<td>5549</td>
+<td>1158.4</td>
+<td>3965.9</td>
+<td>Misc</td>
+<td>UCAC</td>
+<td>UCAC4 g filter, defined as identical to MISC/APASS.sdss_g and SLOAN/SDSS.g</td>
+</tr>
+<tr class="row-even"><td>Misc/UCAC/V</td>
+<td>Misc/UCAC.V</td>
+<td>5446.5</td>
+<td>5394.3</td>
+<td>4796</td>
+<td>6455</td>
+<td>870.6</td>
+<td>3624.1</td>
+<td>Misc</td>
+<td>UCAC</td>
+<td>UCAC4 V filter, defined as identical to GCPD/Johnson.V_Landolt</td>
+</tr>
+<tr class="row-odd"><td>Misc/UCAC/R</td>
+<td>Misc/UCAC.R</td>
+<td>6096.0</td>
+<td>6040.4</td>
+<td>5217</td>
+<td>7324</td>
+<td>870.4</td>
+<td>3228.9</td>
+<td>Misc</td>
+<td>UCAC</td>
+<td>UCAC R filter</td>
+</tr>
+<tr class="row-even"><td>Misc/UCAC/sdss_r</td>
+<td>Misc/UCAC.sdss_r</td>
+<td>6185.2</td>
+<td>6122.3</td>
+<td>5415</td>
+<td>6989</td>
+<td>1111.2</td>
+<td>3162.0</td>
+<td>Misc</td>
+<td>UCAC</td>
+<td>UCAC4 r filter, defined as identical to MISC/APASS.sdss_r and SLOAN/SDSS.r</td>
+</tr>
+<tr class="row-odd"><td>Misc/UCAC/sdss_i</td>
+<td>Misc/UCAC.sdss_i</td>
+<td>7499.7</td>
+<td>7439.5</td>
+<td>6689</td>
+<td>8389</td>
+<td>1044.6</td>
+<td>2602.0</td>
+<td>Misc</td>
+<td>UCAC</td>
+<td>UCAC4 i filter, defined as identical to MISC/APASS.sdss_i and SLOAN/SDSS.i</td>
+</tr>
+</tbody>
+</table>
 <p>&lt;Plots&gt;</p>
 </div>
 </div>
