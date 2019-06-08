@@ -1,0 +1,49 @@
+# Specify branches to trigger for Continuous Deployment (including those for PRs)
+trigger:
+- master
+
+pr:
+- master
+
+# Before setting up this pipeline (creating this yml file 1st time), make sure to generate a ssh key locally 
+# And add public key (from generated rsa pair of keys) to github at repo>settings>deploy_key
+# Use steps at: https://docs.microsoft.com/en-us/azure/devops/pipelines/tasks/utility/install-ssh-key?view=azure-devops#example-setup-using-github
+
+steps:
+  # Download a secure file to a temporary location on the build or release agent
+  - task: DownloadSecureFile@1
+    inputs: 
+      secureFile: 'id_azure_rsa'
+
+  # Install an SSH key prior to a build or release to give azure access to deploy
+  - task: InstallSSHKey@0
+    inputs:
+      hostName: $(gh_host)
+      sshPublicKey: $(public_key)
+      #sshPassphrase: Optional (since not used while generating ssh key)
+      sshKeySecureFile: 'id_azure_rsa'
+
+  - bash: |
+      echo "##vso[task.prependpath]$CONDA/bin"
+    displayName: Add conda to PATH
+
+  - bash: |
+      sudo chown -R $USER $CONDA
+      conda update -y conda
+    displayName: Update conda and activate it
+
+  # Build & deploy docs from python 3 environment. Hence use starkit_env3.yml
+  - bash: |
+      curl -O https://raw.githubusercontent.com/starkit/starkit/master/starkit_env3.yml
+      conda env create -n starkit --file ./starkit_env3.yml
+    displayName: 'Create starkit python3 environment'
+
+  - bash: |
+      source activate starkit
+      pip install git+https://github.com/starkit/starkit
+    displayName: Install starkit (since it is required by wsynphot)
+
+  - bash: |
+      source activate starkit
+      bash deploy_docs.sh
+    displayName: Build wsynphot docs & Deploy to gh-pages
