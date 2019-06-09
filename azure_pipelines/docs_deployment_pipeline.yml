@@ -48,5 +48,5 @@ steps:
 
   - bash: |
       source activate starkit
-      bash deploy_docs.sh
+      bash azure_pipelines/deploy_docs.sh
     displayName: Build wsynphot docs & Deploy to gh-pages
