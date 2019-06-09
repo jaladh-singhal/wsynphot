@@ -5,6 +5,9 @@ trigger:
 pr:
 - master
 
+pool:
+  vmImage: 'ubuntu-16.04'
+
 # Before setting up this pipeline (creating this yml file 1st time), make sure to generate a ssh key locally 
 # And add public key (from generated rsa pair of keys) to github at repo>settings>deploy_key
 # Use steps at: https://docs.microsoft.com/en-us/azure/devops/pipelines/tasks/utility/install-ssh-key?view=azure-devops#example-setup-using-github
