@@ -29,6 +29,6 @@ Installation
     $ git clone https://github.com/starkit/wsynphot.git
     $ cd wsynphot
     $ python setup.py <CMD>
-    # <CMD> may be install, develop, build, etc.
+    # <CMD> may be install, develop, build_docs, etc.
 
 .. role:: inst-end
