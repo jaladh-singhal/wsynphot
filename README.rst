@@ -1,5 +1,5 @@
 Wsynphot
-==========
+========
 
 .. image:: https://travis-ci.com/starkit/wsynphot.svg?branch=master
    :target: https://travis-ci.com/starkit/wsynphot
