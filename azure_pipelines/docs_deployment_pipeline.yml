@@ -47,6 +47,30 @@ steps:
       source activate starkit
       pip install git+https://github.com/starkit/starkit
     displayName: Install starkit (since it is required by wsynphot)
+  
+  - bash: |
+      source activate starkit
+      python setup.py install
+      CACHE_DIR=`python -c 'from wsynphot.config import get_cache_dir; print(get_cache_dir())'`
+      echo '##vso[task.setvariable variable=cache_dir]'$CACHE_DIR
+    displayName: Install wsynphot & get cache directory
+
+  - task: c@1
+    inputs:
+      getVSTSFeed: 'c1845006-93d1-48cd-8b6b-f7e0b7beabce'
+      PackageName: 'svo_cache'
+    # getVSTSFeed value is the guid for feed named filter_data
+  # Sets latest version  of universal package in a variable 
+  # i.e. named as package name appended by VersionNumber 
+
+  - task: UniversalPackages@0
+    inputs:
+      command: 'download'
+      downloadDirectory: $(cache_dir)
+      vstsFeed: 'filter_data'
+      vstsFeedPackage: 'svo_cache'
+      vstsPackageVersion: $(svo_cacheVersionNumber) 
+    displayName: Download the filter data artifact in cache directory
 
   - bash: |
       source activate starkit
