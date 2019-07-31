@@ -70,5 +70,10 @@ steps:
 
   - bash: |
       source activate starkit
+      python -c 'import wsynphot; wsynphot.download_calibration_data()'
+    displayName: Download calibration data
+
+  - bash: |
+      source activate starkit
       bash azure_pipelines/deploy_docs.sh
     displayName: Build wsynphot docs & Deploy to gh-pages
