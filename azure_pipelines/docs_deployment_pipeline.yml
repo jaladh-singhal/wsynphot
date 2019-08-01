@@ -57,7 +57,7 @@ steps:
 
   - pwsh: |
       $head = @{ Authorization = "Bearer $env:SYSTEM_ACCESSTOKEN" }
-      $url = https://feeds.dev.azure.com/jaladhsinghal/_apis/packaging/Feeds/filter_data/packages/83f63c28-09df-41fb-b7e1-44f2e655e3f4?api-version=5.0-preview.1"
+      $url = "https://feeds.dev.azure.com/jaladhsinghal/_apis/packaging/Feeds/filter_data/packages/83f63c28-09df-41fb-b7e1-44f2e655e3f4?api-version=5.0-preview.1"
       $package = Invoke-RestMethod -Uri $url -Method Get -Headers $head -ContentType application/json
       $latestVersion = ($package.versions.Where({ $_.isLatest -eq $True })).version
       Write-Host "The latest version is $latestVersion"
