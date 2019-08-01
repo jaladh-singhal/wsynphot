@@ -52,7 +52,8 @@ steps:
   - bash: |
       source activate starkit
       python setup.py install
-      CACHE_DIR=`python -c 'from wsynphot.config import get_cache_dir; print(get_cache_dir())'`
+      CACHE_DIR=`python -c 'import logging; logging.disable(logging.CRITICAL); \
+      from wsynphot.config import get_cache_dir; print(get_cache_dir())'`
       echo '##vso[task.setvariable variable=cache_dir]'$CACHE_DIR
     displayName: Install wsynphot & get cache directory
 
@@ -83,7 +84,8 @@ steps:
 
   - bash: |
       source activate starkit
-      UPDATE=`python -c 'import wsynphot; print(wsynphot.update_filter_data())'`
+      UPDATE=`python -c 'import logging; logging.disable(logging.CRITICAL); \
+      import wsynphot; print(wsynphot.update_filter_data())'`
       echo '##vso[task.setvariable variable=update_status]'$UPDATE
     displayName: Update the filter data present in cache directory
 
@@ -95,7 +97,7 @@ steps:
       vstsFeedPackagePublish: 'svo_cache'
       versionOption: 'major'
     condition: and(succeeded(), eq(variables['update_status'], 'True'))
-    displayName: Publish the updated filter data as a newer versioned artifact
+    displayName: Publish back the filter data as a newer versioned artifact if got updated
     # Publish filter data only if got updated
 
   - bash: |
