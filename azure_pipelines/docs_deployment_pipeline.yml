@@ -9,9 +9,6 @@ pr:
 pool:
   vmImage: 'ubuntu-16.04'
 
-variables:
-- group: filter_data_feed_info
-
 # Before setting up this pipeline (creating this yml file 1st time), make sure to generate a ssh key locally 
 # And add public key (from generated rsa pair of keys) to github at repo>settings>deploy_key
 # Use steps at: https://docs.microsoft.com/en-us/azure/devops/pipelines/tasks/utility/install-ssh-key?view=azure-devops#example-setup-using-github
@@ -59,13 +56,24 @@ steps:
       echo '##vso[task.setvariable variable=cache_dir]'$CACHE_DIR
     displayName: Install wsynphot & get cache directory
 
+  - pwsh: |
+      $head = @{ Authorization = "Bearer $env:SYSTEM_ACCESSTOKEN" }
+      $url = https://feeds.dev.azure.com/jaladhsinghal/_apis/packaging/Feeds/filter_data/packages/83f63c28-09df-41fb-b7e1-44f2e655e3f4?api-version=5.0-preview.1"
+      $package = Invoke-RestMethod -Uri $url -Method Get -Headers $head -ContentType application/json
+      $latestVersion = ($package.versions.Where({ $_.isLatest -eq $True })).version
+      Write-Host "The latest version is $latestVersion"
+      Write-Host "##vso[task.setvariable variable=latestVersion]$latestVersion"
+    env:
+      SYSTEM_ACCESSTOKEN: $(System.AccessToken)
+    displayName: Get latest version of svo_cache package (filter data artifact)
+
   - task: UniversalPackages@0
     inputs:
       command: 'download'
       downloadDirectory: $(cache_dir)
       vstsFeed: 'filter_data'
       vstsFeedPackage: 'svo_cache'
-      vstsPackageVersion: $(svo_cache_latest_version) 
+      vstsPackageVersion: $(latestVersion) 
     displayName: Download the filter data artifact in cache directory
 
   - bash: |
