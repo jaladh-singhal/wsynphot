@@ -95,19 +95,20 @@ steps:
       source activate starkit
       UPDATE=`python -c 'import logging; logging.disable(logging.CRITICAL); \
       import wsynphot; print(wsynphot.update_filter_data())'`
-      echo '##vso[task.setvariable variable=update_status]'$UPDATE
 
       if [ $UPDATE = 'True' ]; then
-        NUM=$BUILD_BUILDNUMBER
-        if [ ${NUM:9} -eq 1 ]; then 
-          VER="${NUM:0:4}.$((10#${NUM:4:2})).$((10#${NUM:6:2}))"
+        NEXT_VER=`date -u +'%Y.%-m.%-d'`
+        if [ $NEXT_VER = $LATESTVERSION ]; then
+          UPDATE='False'
         else
-          VER="${NUM:0:4}.$((10#${NUM:4:2})).$((10#${NUM:6:2}))-${NUM:9}"
+          echo '##vso[task.setvariable variable=next_version]'$NEXT_VER
         fi
-        echo "VER=$VER"
-        echo '##vso[task.setvariable variable=update_version]'$VER
       fi
-    # Extract version no. from build no. so that version is in format <year>.<month>.<date>-<build seq>
+      echo '##vso[task.setvariable variable=update_status]'$UPDATE
+    # Set version no. as date <year>.<month>.<day>
+    # In a very rare case when SVO got updated >1 time in a day, don't publish back
+    # the updated data as artifact, since duplicate versions will conflict! 
+    # Despite of it, the data used from cache dir will always be up-to-date.
     displayName: Update the filter data present in cache directory
 
   # If data got updated then publish it back to feed so that next time when filter data is accessed,
@@ -119,8 +120,7 @@ steps:
       vstsFeedPublish: 'filter_data'
       vstsFeedPackagePublish: 'svo_cache'
       versionOption: 'custom'
-      versionPublish: $(update_version)
-      packagePublishDescription: 'Published by pipeline $(Build.DefinitionName) at build no: $(Build.BuildNumber)'
+      versionPublish: $(next_version)
     condition: and(succeeded(), eq(variables['update_status'], 'True'))
     displayName: If filter data got updated, publish it back as a newer versioned artifact
 
