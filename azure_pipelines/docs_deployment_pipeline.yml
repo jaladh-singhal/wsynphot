@@ -95,7 +95,18 @@ steps:
       UPDATE=`python -c 'import logging; logging.disable(logging.CRITICAL); \
       import wsynphot; print(wsynphot.update_filter_data())'`
       echo '##vso[task.setvariable variable=update_status]'$UPDATE
-      echo "BuildID = $BUILD_BUILDID BuildNumber = $BUILD_BUILDNUMBER"
+
+      if [ $UPDATE = 'True' ]; then
+        NUM=$BUILD_BUILDNUMBER
+        if [ ${NUM:9} -eq 1 ]; then 
+          VER="${NUM:0:4}.${NUM:4:2}.${NUM:6:2}"
+        else
+          VER="${NUM:0:4}.${NUM:4:2}.${NUM:6:2}-${NUM:9}"
+        fi
+        echo "VER=$VER"
+        echo '##vso[task.setvariable variable=update_version]'$VER
+      fi
+    # Extract version no. from build no. so that version is in format yyyy.mm.dd-x
     displayName: Update the filter data present in cache directory
 
   # If data got updated then publish it back to feed so that next time when filter data is accessed,
@@ -106,7 +117,9 @@ steps:
       publishDirectory: $(cache_dir)
       vstsFeedPublish: 'filter_data'
       vstsFeedPackagePublish: 'svo_cache'
-      versionOption: 'major'
+      versionOption: 'custom'
+      versionPublish: $(update_version)
+      packagePublishDescription: 'Published by pipeline $(Build.DefinitionName) at build no: $(Build.BuildNumber)'
     condition: and(succeeded(), eq(variables['update_status'], 'True'))
     displayName: If filter data got updated, publish it back as a newer versioned artifact
 
