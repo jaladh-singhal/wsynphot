@@ -95,6 +95,7 @@ steps:
       UPDATE=`python -c 'import logging; logging.disable(logging.CRITICAL); \
       import wsynphot; print(wsynphot.update_filter_data())'`
       echo '##vso[task.setvariable variable=update_status]'$UPDATE
+      echo "BuildID = $BUILD_BUILDID BuildNumber = $BUILD_BUILDNUMBER"
     displayName: Update the filter data present in cache directory
 
   # If data got updated then publish it back to feed so that next time when filter data is accessed,
